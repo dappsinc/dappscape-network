@@ -1,4 +1,4 @@
 # dappscape-network
 Dappscape Network built on Hyperledger Composer 
 
-!(dappscape_architecture.png)
+![Architecture](dappscape_architecture.png)
