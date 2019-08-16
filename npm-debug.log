@@ -1,0 +1,3645 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'composer-connector-server',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData composer-connector-server@^0.16.6
+8 silly fetchNamedPackageData composer-connector-server
+9 silly mapToRegistry name composer-connector-server
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'composer-connector-server',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'composer-connector-server',
+12 silly mapToRegistry   name: 'composer-connector-server',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/composer-connector-server
+14 verbose request uri https://registry.npmjs.org/composer-connector-server
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 6:03:36 PM
+17 verbose request id af2aa8af0a3d1792
+18 verbose etag "5ae8a457-4a4b32"
+19 verbose lastModified Tue, 1 May 2018 17:31:03 GMT
+20 http request GET https://registry.npmjs.org/composer-connector-server
+21 http 304 https://registry.npmjs.org/composer-connector-server
+22 verbose headers { date: 'Wed, 02 May 2018 01:03:13 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: '"5ae8a457-4a4b32"',
+22 verbose headers   age: '3204',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-pao17422-PAO',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1525222993.487089,VS0,VE1',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Wed, 02 May 2018 01:03:13 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: '"5ae8a457-4a4b32"',
+23 silly get     age: '3204',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-pao17422-PAO',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1525222993.487089,VS0,VE1',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose etag https://registry.npmjs.org/composer-connector-server from cache
+25 verbose get saving composer-connector-server to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\composer-connector-server\.cache.json
+26 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule composer-connector-server@0.16.6 checking installable status
+40 silly cache add args [ 'composer-connector-server@^0.16.6', null ]
+41 verbose cache add spec composer-connector-server@^0.16.6
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'composer-connector-server@^0.16.6',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'composer-connector-server',
+42 silly cache add   name: 'composer-connector-server',
+42 silly cache add   rawSpec: '^0.16.6',
+42 silly cache add   spec: '>=0.16.6 <0.17.0',
+42 silly cache add   type: 'range' }
+43 silly addNamed composer-connector-server@>=0.16.6 <0.17.0
+44 verbose addNamed ">=0.16.6 <0.17.0" is a valid semver range for composer-connector-server
+45 silly addNameRange { name: 'composer-connector-server',
+45 silly addNameRange   range: '>=0.16.6 <0.17.0',
+45 silly addNameRange   hasData: false }
+46 silly mapToRegistry name composer-connector-server
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'composer-connector-server',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'composer-connector-server',
+49 silly mapToRegistry   name: 'composer-connector-server',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/composer-connector-server
+51 verbose addNameRange registry:https://registry.npmjs.org/composer-connector-server not in flight; fetching
+52 verbose get https://registry.npmjs.org/composer-connector-server not expired, no request
+53 silly addNameRange number 2 { name: 'composer-connector-server',
+53 silly addNameRange   range: '>=0.16.6 <0.17.0',
+53 silly addNameRange   hasData: true }
+54 silly addNameRange versions [ 'composer-connector-server',
+54 silly addNameRange   [ '0.3.9-20170130110740',
+54 silly addNameRange     '0.3.9-20170130133543',
+54 silly addNameRange     '0.3.10-20170130140804',
+54 silly addNameRange     '0.3.10',
+54 silly addNameRange     '0.3.10-20170130152546',
+54 silly addNameRange     '0.3.11-20170130160915',
+54 silly addNameRange     '0.3.11-20170130162307',
+54 silly addNameRange     '0.3.11-20170130165810',
+54 silly addNameRange     '0.3.11-20170130173458',
+54 silly addNameRange     '0.3.11-20170130175300',
+54 silly addNameRange     '0.3.11-20170130181002',
+54 silly addNameRange     '0.3.11',
+54 silly addNameRange     '0.4.0-20170130215557',
+54 silly addNameRange     '0.4.0',
+54 silly addNameRange     '0.4.1-20170131144110',
+54 silly addNameRange     '0.4.1-20170131180139',
+54 silly addNameRange     '0.4.1-20170131180331',
+54 silly addNameRange     '0.3.12-20170131190044',
+54 silly addNameRange     '0.4.1-20170131192303',
+54 silly addNameRange     '0.4.1-20170131192515',
+54 silly addNameRange     '0.4.1-20170131222734',
+54 silly addNameRange     '0.4.1-20170131222835',
+54 silly addNameRange     '0.4.1-20170201120431',
+54 silly addNameRange     '0.4.1-20170201120902',
+54 silly addNameRange     '0.4.1-20170201131837',
+54 silly addNameRange     '0.4.1-20170201132059',
+54 silly addNameRange     '0.4.1-20170201183738',
+54 silly addNameRange     '0.4.1-20170201184136',
+54 silly addNameRange     '0.4.1-20170202071214',
+54 silly addNameRange     '0.4.1-20170202071455',
+54 silly addNameRange     '0.4.1-20170202095512',
+54 silly addNameRange     '0.4.1-20170202095650',
+54 silly addNameRange     '0.4.1-20170202123714',
+54 silly addNameRange     '0.4.1-20170202124113',
+54 silly addNameRange     '0.4.1-20170202141342',
+54 silly addNameRange     '0.4.1-20170202141422',
+54 silly addNameRange     '0.4.1-20170202162523',
+54 silly addNameRange     '0.4.1-20170202162756',
+54 silly addNameRange     '0.4.1-20170202183923',
+54 silly addNameRange     '0.4.1-20170202184119',
+54 silly addNameRange     '0.4.1-20170202223046',
+54 silly addNameRange     '0.4.1-20170203104319',
+54 silly addNameRange     '0.4.1-20170203104408',
+54 silly addNameRange     '0.4.1-20170203122454',
+54 silly addNameRange     '0.4.1-20170203123152',
+54 silly addNameRange     '0.4.1-20170203133121',
+54 silly addNameRange     '0.4.1-20170203133343',
+54 silly addNameRange     '0.4.1-20170203144824',
+54 silly addNameRange     '0.4.1-20170203144913',
+54 silly addNameRange     '0.4.1',
+54 silly addNameRange     '0.4.1-20170203213537',
+54 silly addNameRange     '0.4.1-20170203213935',
+54 silly addNameRange     '0.4.1-20170203233011',
+54 silly addNameRange     '0.4.1-20170204102327',
+54 silly addNameRange     '0.4.1-20170204125930',
+54 silly addNameRange     '0.4.1-20170204131504',
+54 silly addNameRange     '0.4.1-20170204143115',
+54 silly addNameRange     '0.4.1-20170205233716',
+54 silly addNameRange     '0.4.1-20170206135056',
+54 silly addNameRange     '0.4.1-20170206153101',
+54 silly addNameRange     '0.4.1-20170206174256',
+54 silly addNameRange     '0.4.1-20170206200727',
+54 silly addNameRange     '0.4.2-20170206223553',
+54 silly addNameRange     '0.4.1-20170207100801',
+54 silly addNameRange     '0.4.1-20170207100905',
+54 silly addNameRange     '0.4.2-20170207112643',
+54 silly addNameRange     '0.4.2-20170207233353',
+54 silly addNameRange     '0.4.2-20170208121509',
+54 silly addNameRange     '0.4.2-20170208164504',
+54 silly addNameRange     '0.4.2-20170208185715',
+54 silly addNameRange     '0.4.2-20170209060232',
+54 silly addNameRange     '0.4.2-20170209082751',
+54 silly addNameRange     '0.4.2-20170209100742',
+54 silly addNameRange     '0.4.2-20170209111808',
+54 silly addNameRange     '0.4.2-20170209140612',
+54 silly addNameRange     '0.4.2-20170209153456',
+54 silly addNameRange     '0.4.2-20170209170941',
+54 silly addNameRange     '0.4.2-20170209183400',
+54 silly addNameRange     '0.4.2-20170209212225',
+54 silly addNameRange     '0.4.2-20170210072335',
+54 silly addNameRange     '0.4.2-20170210112519',
+54 silly addNameRange     '0.4.2-20170210130108',
+54 silly addNameRange     '0.4.2-20170210154528',
+54 silly addNameRange     '0.4.2-20170210165116',
+54 silly addNameRange     '0.4.2-20170210173439',
+54 silly addNameRange     '0.4.2-20170210181945',
+54 silly addNameRange     '0.4.2-20170210203654',
+54 silly addNameRange     '0.4.2',
+54 silly addNameRange     '0.4.3-20170211153544',
+54 silly addNameRange     '0.4.3-20170211163711',
+54 silly addNameRange     '0.4.3-20170211170822',
+54 silly addNameRange     '0.4.3',
+54 silly addNameRange     '0.4.4-20170211213407',
+54 silly addNameRange     '0.4.4-20170212163424',
+54 silly addNameRange     '0.4.4-20170213155418',
+54 silly addNameRange     '0.4.4-20170213164028',
+54 silly addNameRange     '0.4.4-20170213183233',
+54 silly addNameRange     '0.4.4-20170213191336',
+54 silly addNameRange     '0.4.4-20170214073109',
+54 silly addNameRange     '0.4.4-20170214110241',
+54 silly addNameRange     ... 1810 more items ] ]
+55 silly addNamed composer-connector-server@0.16.6
+56 verbose addNamed "0.16.6" is a plain semver version for composer-connector-server
+57 silly cache afterAdd composer-connector-server@0.16.6
+58 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\composer-connector-server\0.16.6\package\package.json not in flight; writing
+59 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+60 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\composer-connector-server\0.16.6\package\package.json written
+61 silly fetchNamedPackageData composer-connector-hlfv1
+62 silly mapToRegistry name composer-connector-hlfv1
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'composer-connector-hlfv1',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'composer-connector-hlfv1',
+65 silly mapToRegistry   name: 'composer-connector-hlfv1',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/composer-connector-hlfv1
+67 silly fetchNamedPackageData yargs
+68 silly mapToRegistry name yargs
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry data Result {
+71 silly mapToRegistry   raw: 'yargs',
+71 silly mapToRegistry   scope: null,
+71 silly mapToRegistry   escapedName: 'yargs',
+71 silly mapToRegistry   name: 'yargs',
+71 silly mapToRegistry   rawSpec: '',
+71 silly mapToRegistry   spec: 'latest',
+71 silly mapToRegistry   type: 'tag' }
+72 silly mapToRegistry uri https://registry.npmjs.org/yargs
+73 verbose request uri https://registry.npmjs.org/yargs
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 6:03:37 PM
+76 verbose etag "5ae02498-4c838"
+77 verbose lastModified Wed, 25 Apr 2018 6:47:52 GMT
+78 http request GET https://registry.npmjs.org/yargs
+79 verbose request uri https://registry.npmjs.org/composer-connector-hlfv1
+80 verbose request no auth needed
+81 info attempt registry request try #1 at 6:03:37 PM
+82 verbose etag "5ae8a419-45498f"
+83 verbose lastModified Tue, 1 May 2018 17:30:01 GMT
+84 http request GET https://registry.npmjs.org/composer-connector-hlfv1
+85 http 304 https://registry.npmjs.org/yargs
+86 verbose headers { date: 'Wed, 02 May 2018 01:03:14 GMT',
+86 verbose headers   via: '1.1 varnish',
+86 verbose headers   'cache-control': 'max-age=300',
+86 verbose headers   etag: '"5ae02498-4c838"',
+86 verbose headers   age: '7235',
+86 verbose headers   connection: 'keep-alive',
+86 verbose headers   'x-served-by': 'cache-pao17422-PAO',
+86 verbose headers   'x-cache': 'HIT',
+86 verbose headers   'x-cache-hits': '23',
+86 verbose headers   'x-timer': 'S1525222994.412669,VS0,VE0',
+86 verbose headers   vary: 'Accept-Encoding, Accept' }
+87 silly get cb [ 304,
+87 silly get   { date: 'Wed, 02 May 2018 01:03:14 GMT',
+87 silly get     via: '1.1 varnish',
+87 silly get     'cache-control': 'max-age=300',
+87 silly get     etag: '"5ae02498-4c838"',
+87 silly get     age: '7235',
+87 silly get     connection: 'keep-alive',
+87 silly get     'x-served-by': 'cache-pao17422-PAO',
+87 silly get     'x-cache': 'HIT',
+87 silly get     'x-cache-hits': '23',
+87 silly get     'x-timer': 'S1525222994.412669,VS0,VE0',
+87 silly get     vary: 'Accept-Encoding, Accept' } ]
+88 verbose etag https://registry.npmjs.org/yargs from cache
+89 verbose get saving yargs to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\yargs\.cache.json
+90 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+91 silly resolveWithNewModule yargs@10.0.3 checking installable status
+92 silly cache add args [ 'yargs@10.0.3', null ]
+93 verbose cache add spec yargs@10.0.3
+94 silly cache add parsed spec Result {
+94 silly cache add   raw: 'yargs@10.0.3',
+94 silly cache add   scope: null,
+94 silly cache add   escapedName: 'yargs',
+94 silly cache add   name: 'yargs',
+94 silly cache add   rawSpec: '10.0.3',
+94 silly cache add   spec: '10.0.3',
+94 silly cache add   type: 'version' }
+95 silly addNamed yargs@10.0.3
+96 verbose addNamed "10.0.3" is a plain semver version for yargs
+97 silly mapToRegistry name yargs
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'yargs',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'yargs',
+100 silly mapToRegistry   name: 'yargs',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/yargs
+102 verbose addNameVersion registry:https://registry.npmjs.org/yargs not in flight; fetching
+103 verbose get https://registry.npmjs.org/yargs not expired, no request
+104 silly cache afterAdd yargs@10.0.3
+105 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\yargs\10.0.3\package\package.json not in flight; writing
+106 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+107 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\yargs\10.0.3\package\package.json written
+108 http 304 https://registry.npmjs.org/composer-connector-hlfv1
+109 verbose headers { date: 'Wed, 02 May 2018 01:03:14 GMT',
+109 verbose headers   via: '1.1 varnish',
+109 verbose headers   'cache-control': 'max-age=300',
+109 verbose headers   etag: '"5ae8a419-45498f"',
+109 verbose headers   age: '5723',
+109 verbose headers   connection: 'keep-alive',
+109 verbose headers   'x-served-by': 'cache-pao17427-PAO',
+109 verbose headers   'x-cache': 'HIT',
+109 verbose headers   'x-cache-hits': '1',
+109 verbose headers   'x-timer': 'S1525222995.605844,VS0,VE1',
+109 verbose headers   vary: 'Accept-Encoding, Accept' }
+110 silly get cb [ 304,
+110 silly get   { date: 'Wed, 02 May 2018 01:03:14 GMT',
+110 silly get     via: '1.1 varnish',
+110 silly get     'cache-control': 'max-age=300',
+110 silly get     etag: '"5ae8a419-45498f"',
+110 silly get     age: '5723',
+110 silly get     connection: 'keep-alive',
+110 silly get     'x-served-by': 'cache-pao17427-PAO',
+110 silly get     'x-cache': 'HIT',
+110 silly get     'x-cache-hits': '1',
+110 silly get     'x-timer': 'S1525222995.605844,VS0,VE1',
+110 silly get     vary: 'Accept-Encoding, Accept' } ]
+111 verbose etag https://registry.npmjs.org/composer-connector-hlfv1 from cache
+112 verbose get saving composer-connector-hlfv1 to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\composer-connector-hlfv1\.cache.json
+113 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+114 silly resolveWithNewModule composer-connector-hlfv1@0.16.6 checking installable status
+115 silly cache add args [ 'composer-connector-hlfv1@0.16.6', null ]
+116 verbose cache add spec composer-connector-hlfv1@0.16.6
+117 silly cache add parsed spec Result {
+117 silly cache add   raw: 'composer-connector-hlfv1@0.16.6',
+117 silly cache add   scope: null,
+117 silly cache add   escapedName: 'composer-connector-hlfv1',
+117 silly cache add   name: 'composer-connector-hlfv1',
+117 silly cache add   rawSpec: '0.16.6',
+117 silly cache add   spec: '0.16.6',
+117 silly cache add   type: 'version' }
+118 silly addNamed composer-connector-hlfv1@0.16.6
+119 verbose addNamed "0.16.6" is a plain semver version for composer-connector-hlfv1
+120 silly mapToRegistry name composer-connector-hlfv1
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry data Result {
+123 silly mapToRegistry   raw: 'composer-connector-hlfv1',
+123 silly mapToRegistry   scope: null,
+123 silly mapToRegistry   escapedName: 'composer-connector-hlfv1',
+123 silly mapToRegistry   name: 'composer-connector-hlfv1',
+123 silly mapToRegistry   rawSpec: '',
+123 silly mapToRegistry   spec: 'latest',
+123 silly mapToRegistry   type: 'tag' }
+124 silly mapToRegistry uri https://registry.npmjs.org/composer-connector-hlfv1
+125 verbose addNameVersion registry:https://registry.npmjs.org/composer-connector-hlfv1 not in flight; fetching
+126 verbose get https://registry.npmjs.org/composer-connector-hlfv1 not expired, no request
+127 silly cache afterAdd composer-connector-hlfv1@0.16.6
+128 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\composer-connector-hlfv1\0.16.6\package\package.json not in flight; writing
+129 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+130 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\composer-connector-hlfv1\0.16.6\package\package.json written
+131 silly fetchNamedPackageData fabric-client
+132 silly mapToRegistry name fabric-client
+133 silly mapToRegistry using default registry
+134 silly mapToRegistry registry https://registry.npmjs.org/
+135 silly mapToRegistry data Result {
+135 silly mapToRegistry   raw: 'fabric-client',
+135 silly mapToRegistry   scope: null,
+135 silly mapToRegistry   escapedName: 'fabric-client',
+135 silly mapToRegistry   name: 'fabric-client',
+135 silly mapToRegistry   rawSpec: '',
+135 silly mapToRegistry   spec: 'latest',
+135 silly mapToRegistry   type: 'tag' }
+136 silly mapToRegistry uri https://registry.npmjs.org/fabric-client
+137 verbose request uri https://registry.npmjs.org/fabric-client
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 6:03:37 PM
+140 verbose etag "5ae09c7f-9784f"
+141 verbose lastModified Wed, 25 Apr 2018 15:19:27 GMT
+142 http request GET https://registry.npmjs.org/fabric-client
+143 http 304 https://registry.npmjs.org/fabric-client
+144 verbose headers { date: 'Wed, 02 May 2018 01:03:14 GMT',
+144 verbose headers   via: '1.1 varnish',
+144 verbose headers   'cache-control': 'max-age=300',
+144 verbose headers   etag: '"5ae09c7f-9784f"',
+144 verbose headers   age: '5723',
+144 verbose headers   connection: 'keep-alive',
+144 verbose headers   'x-served-by': 'cache-pao17422-PAO',
+144 verbose headers   'x-cache': 'HIT',
+144 verbose headers   'x-cache-hits': '1',
+144 verbose headers   'x-timer': 'S1525222995.928817,VS0,VE0',
+144 verbose headers   vary: 'Accept-Encoding, Accept' }
+145 silly get cb [ 304,
+145 silly get   { date: 'Wed, 02 May 2018 01:03:14 GMT',
+145 silly get     via: '1.1 varnish',
+145 silly get     'cache-control': 'max-age=300',
+145 silly get     etag: '"5ae09c7f-9784f"',
+145 silly get     age: '5723',
+145 silly get     connection: 'keep-alive',
+145 silly get     'x-served-by': 'cache-pao17422-PAO',
+145 silly get     'x-cache': 'HIT',
+145 silly get     'x-cache-hits': '1',
+145 silly get     'x-timer': 'S1525222995.928817,VS0,VE0',
+145 silly get     vary: 'Accept-Encoding, Accept' } ]
+146 verbose etag https://registry.npmjs.org/fabric-client from cache
+147 verbose get saving fabric-client to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\fabric-client\.cache.json
+148 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+149 silly resolveWithNewModule fabric-client@1.0.5 checking installable status
+150 silly cache add args [ 'fabric-client@1.0.5', null ]
+151 verbose cache add spec fabric-client@1.0.5
+152 silly cache add parsed spec Result {
+152 silly cache add   raw: 'fabric-client@1.0.5',
+152 silly cache add   scope: null,
+152 silly cache add   escapedName: 'fabric-client',
+152 silly cache add   name: 'fabric-client',
+152 silly cache add   rawSpec: '1.0.5',
+152 silly cache add   spec: '1.0.5',
+152 silly cache add   type: 'version' }
+153 silly addNamed fabric-client@1.0.5
+154 verbose addNamed "1.0.5" is a plain semver version for fabric-client
+155 silly mapToRegistry name fabric-client
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry data Result {
+158 silly mapToRegistry   raw: 'fabric-client',
+158 silly mapToRegistry   scope: null,
+158 silly mapToRegistry   escapedName: 'fabric-client',
+158 silly mapToRegistry   name: 'fabric-client',
+158 silly mapToRegistry   rawSpec: '',
+158 silly mapToRegistry   spec: 'latest',
+158 silly mapToRegistry   type: 'tag' }
+159 silly mapToRegistry uri https://registry.npmjs.org/fabric-client
+160 verbose addNameVersion registry:https://registry.npmjs.org/fabric-client not in flight; fetching
+161 verbose get https://registry.npmjs.org/fabric-client not expired, no request
+162 silly cache afterAdd fabric-client@1.0.5
+163 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\fabric-client\1.0.5\package\package.json not in flight; writing
+164 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+165 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\fabric-client\1.0.5\package\package.json written
+166 silly fetchNamedPackageData fs-extra
+167 silly mapToRegistry name fs-extra
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry data Result {
+170 silly mapToRegistry   raw: 'fs-extra',
+170 silly mapToRegistry   scope: null,
+170 silly mapToRegistry   escapedName: 'fs-extra',
+170 silly mapToRegistry   name: 'fs-extra',
+170 silly mapToRegistry   rawSpec: '',
+170 silly mapToRegistry   spec: 'latest',
+170 silly mapToRegistry   type: 'tag' }
+171 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+172 silly fetchNamedPackageData jsrsasign
+173 silly mapToRegistry name jsrsasign
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry data Result {
+176 silly mapToRegistry   raw: 'jsrsasign',
+176 silly mapToRegistry   scope: null,
+176 silly mapToRegistry   escapedName: 'jsrsasign',
+176 silly mapToRegistry   name: 'jsrsasign',
+176 silly mapToRegistry   rawSpec: '',
+176 silly mapToRegistry   spec: 'latest',
+176 silly mapToRegistry   type: 'tag' }
+177 silly mapToRegistry uri https://registry.npmjs.org/jsrsasign
+178 silly fetchNamedPackageData pkcs11js
+179 silly mapToRegistry name pkcs11js
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: 'pkcs11js',
+182 silly mapToRegistry   scope: null,
+182 silly mapToRegistry   escapedName: 'pkcs11js',
+182 silly mapToRegistry   name: 'pkcs11js',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag' }
+183 silly mapToRegistry uri https://registry.npmjs.org/pkcs11js
+184 verbose request uri https://registry.npmjs.org/pkcs11js
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 6:03:38 PM
+187 verbose etag "5aba38ab-af65"
+188 verbose lastModified Tue, 27 Mar 2018 12:27:23 GMT
+189 http request GET https://registry.npmjs.org/pkcs11js
+190 verbose request uri https://registry.npmjs.org/jsrsasign
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 6:03:38 PM
+193 verbose etag "5adc9484-19dac"
+194 verbose lastModified Sun, 22 Apr 2018 13:56:20 GMT
+195 http request GET https://registry.npmjs.org/jsrsasign
+196 verbose request uri https://registry.npmjs.org/fs-extra
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 6:03:38 PM
+199 verbose etag "5ae86cd0-23720"
+200 verbose lastModified Tue, 1 May 2018 13:34:08 GMT
+201 http request GET https://registry.npmjs.org/fs-extra
+202 http 304 https://registry.npmjs.org/pkcs11js
+203 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+203 verbose headers   via: '1.1 varnish',
+203 verbose headers   'cache-control': 'max-age=300',
+203 verbose headers   etag: '"5aba38ab-af65"',
+203 verbose headers   age: '12206',
+203 verbose headers   connection: 'keep-alive',
+203 verbose headers   'x-served-by': 'cache-pao17427-PAO',
+203 verbose headers   'x-cache': 'HIT',
+203 verbose headers   'x-cache-hits': '1',
+203 verbose headers   'x-timer': 'S1525222995.046681,VS0,VE0',
+203 verbose headers   vary: 'Accept-Encoding, Accept' }
+204 silly get cb [ 304,
+204 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+204 silly get     via: '1.1 varnish',
+204 silly get     'cache-control': 'max-age=300',
+204 silly get     etag: '"5aba38ab-af65"',
+204 silly get     age: '12206',
+204 silly get     connection: 'keep-alive',
+204 silly get     'x-served-by': 'cache-pao17427-PAO',
+204 silly get     'x-cache': 'HIT',
+204 silly get     'x-cache-hits': '1',
+204 silly get     'x-timer': 'S1525222995.046681,VS0,VE0',
+204 silly get     vary: 'Accept-Encoding, Accept' } ]
+205 verbose etag https://registry.npmjs.org/pkcs11js from cache
+206 verbose get saving pkcs11js to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\pkcs11js\.cache.json
+207 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+208 http 304 https://registry.npmjs.org/jsrsasign
+209 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+209 verbose headers   via: '1.1 varnish',
+209 verbose headers   'cache-control': 'max-age=300',
+209 verbose headers   etag: '"5adc9484-19dac"',
+209 verbose headers   age: '7585',
+209 verbose headers   connection: 'keep-alive',
+209 verbose headers   'x-served-by': 'cache-pao17422-PAO',
+209 verbose headers   'x-cache': 'HIT',
+209 verbose headers   'x-cache-hits': '1',
+209 verbose headers   'x-timer': 'S1525222995.046950,VS0,VE0',
+209 verbose headers   vary: 'Accept-Encoding, Accept' }
+210 silly get cb [ 304,
+210 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+210 silly get     via: '1.1 varnish',
+210 silly get     'cache-control': 'max-age=300',
+210 silly get     etag: '"5adc9484-19dac"',
+210 silly get     age: '7585',
+210 silly get     connection: 'keep-alive',
+210 silly get     'x-served-by': 'cache-pao17422-PAO',
+210 silly get     'x-cache': 'HIT',
+210 silly get     'x-cache-hits': '1',
+210 silly get     'x-timer': 'S1525222995.046950,VS0,VE0',
+210 silly get     vary: 'Accept-Encoding, Accept' } ]
+211 verbose etag https://registry.npmjs.org/jsrsasign from cache
+212 verbose get saving jsrsasign to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\jsrsasign\.cache.json
+213 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+214 silly resolveWithNewModule pkcs11js@1.0.15 checking installable status
+215 silly cache add args [ 'pkcs11js@^1.0.6', null ]
+216 verbose cache add spec pkcs11js@^1.0.6
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: 'pkcs11js@^1.0.6',
+217 silly cache add   scope: null,
+217 silly cache add   escapedName: 'pkcs11js',
+217 silly cache add   name: 'pkcs11js',
+217 silly cache add   rawSpec: '^1.0.6',
+217 silly cache add   spec: '>=1.0.6 <2.0.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed pkcs11js@>=1.0.6 <2.0.0
+219 verbose addNamed ">=1.0.6 <2.0.0" is a valid semver range for pkcs11js
+220 silly addNameRange { name: 'pkcs11js', range: '>=1.0.6 <2.0.0', hasData: false }
+221 silly mapToRegistry name pkcs11js
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry data Result {
+224 silly mapToRegistry   raw: 'pkcs11js',
+224 silly mapToRegistry   scope: null,
+224 silly mapToRegistry   escapedName: 'pkcs11js',
+224 silly mapToRegistry   name: 'pkcs11js',
+224 silly mapToRegistry   rawSpec: '',
+224 silly mapToRegistry   spec: 'latest',
+224 silly mapToRegistry   type: 'tag' }
+225 silly mapToRegistry uri https://registry.npmjs.org/pkcs11js
+226 verbose addNameRange registry:https://registry.npmjs.org/pkcs11js not in flight; fetching
+227 silly resolveWithNewModule jsrsasign@6.2.2 checking installable status
+228 silly cache add args [ 'jsrsasign@6.2.2', null ]
+229 verbose cache add spec jsrsasign@6.2.2
+230 silly cache add parsed spec Result {
+230 silly cache add   raw: 'jsrsasign@6.2.2',
+230 silly cache add   scope: null,
+230 silly cache add   escapedName: 'jsrsasign',
+230 silly cache add   name: 'jsrsasign',
+230 silly cache add   rawSpec: '6.2.2',
+230 silly cache add   spec: '6.2.2',
+230 silly cache add   type: 'version' }
+231 silly addNamed jsrsasign@6.2.2
+232 verbose addNamed "6.2.2" is a plain semver version for jsrsasign
+233 silly mapToRegistry name jsrsasign
+234 silly mapToRegistry using default registry
+235 silly mapToRegistry registry https://registry.npmjs.org/
+236 silly mapToRegistry data Result {
+236 silly mapToRegistry   raw: 'jsrsasign',
+236 silly mapToRegistry   scope: null,
+236 silly mapToRegistry   escapedName: 'jsrsasign',
+236 silly mapToRegistry   name: 'jsrsasign',
+236 silly mapToRegistry   rawSpec: '',
+236 silly mapToRegistry   spec: 'latest',
+236 silly mapToRegistry   type: 'tag' }
+237 silly mapToRegistry uri https://registry.npmjs.org/jsrsasign
+238 verbose addNameVersion registry:https://registry.npmjs.org/jsrsasign not in flight; fetching
+239 verbose get https://registry.npmjs.org/pkcs11js not expired, no request
+240 silly addNameRange number 2 { name: 'pkcs11js', range: '>=1.0.6 <2.0.0', hasData: true }
+241 silly addNameRange versions [ 'pkcs11js',
+241 silly addNameRange   [ '1.0.0',
+241 silly addNameRange     '1.0.1',
+241 silly addNameRange     '1.0.2',
+241 silly addNameRange     '1.0.3',
+241 silly addNameRange     '1.0.4',
+241 silly addNameRange     '1.0.5',
+241 silly addNameRange     '1.0.6',
+241 silly addNameRange     '1.0.7',
+241 silly addNameRange     '1.0.8',
+241 silly addNameRange     '1.0.9',
+241 silly addNameRange     '1.0.10',
+241 silly addNameRange     '1.0.11',
+241 silly addNameRange     '1.0.12',
+241 silly addNameRange     '1.0.13',
+241 silly addNameRange     '1.0.14',
+241 silly addNameRange     '1.0.15' ] ]
+242 silly addNamed pkcs11js@1.0.15
+243 verbose addNamed "1.0.15" is a plain semver version for pkcs11js
+244 verbose get https://registry.npmjs.org/jsrsasign not expired, no request
+245 silly cache afterAdd pkcs11js@1.0.15
+246 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\pkcs11js\1.0.15\package\package.json not in flight; writing
+247 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+248 silly cache afterAdd jsrsasign@6.2.2
+249 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\jsrsasign\6.2.2\package\package.json not in flight; writing
+250 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+251 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\pkcs11js\1.0.15\package\package.json written
+252 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\jsrsasign\6.2.2\package\package.json written
+253 http 304 https://registry.npmjs.org/fs-extra
+254 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+254 verbose headers   via: '1.1 varnish',
+254 verbose headers   'cache-control': 'max-age=300',
+254 verbose headers   etag: '"5ae86cd0-23720"',
+254 verbose headers   age: '12384',
+254 verbose headers   connection: 'keep-alive',
+254 verbose headers   'x-served-by': 'cache-pao17430-PAO',
+254 verbose headers   'x-cache': 'HIT',
+254 verbose headers   'x-cache-hits': '23',
+254 verbose headers   'x-timer': 'S1525222995.190774,VS0,VE0',
+254 verbose headers   vary: 'Accept-Encoding, Accept' }
+255 silly get cb [ 304,
+255 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+255 silly get     via: '1.1 varnish',
+255 silly get     'cache-control': 'max-age=300',
+255 silly get     etag: '"5ae86cd0-23720"',
+255 silly get     age: '12384',
+255 silly get     connection: 'keep-alive',
+255 silly get     'x-served-by': 'cache-pao17430-PAO',
+255 silly get     'x-cache': 'HIT',
+255 silly get     'x-cache-hits': '23',
+255 silly get     'x-timer': 'S1525222995.190774,VS0,VE0',
+255 silly get     vary: 'Accept-Encoding, Accept' } ]
+256 verbose etag https://registry.npmjs.org/fs-extra from cache
+257 verbose get saving fs-extra to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\fs-extra\.cache.json
+258 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+259 silly resolveWithNewModule fs-extra@0.30.0 checking installable status
+260 silly cache add args [ 'fs-extra@>=0.30.0 <0.31.0', null ]
+261 verbose cache add spec fs-extra@>=0.30.0 <0.31.0
+262 silly cache add parsed spec Result {
+262 silly cache add   raw: 'fs-extra@>=0.30.0 <0.31.0',
+262 silly cache add   scope: null,
+262 silly cache add   escapedName: 'fs-extra',
+262 silly cache add   name: 'fs-extra',
+262 silly cache add   rawSpec: '>=0.30.0 <0.31.0',
+262 silly cache add   spec: '>=0.30.0 <0.31.0',
+262 silly cache add   type: 'range' }
+263 silly addNamed fs-extra@>=0.30.0 <0.31.0
+264 verbose addNamed ">=0.30.0 <0.31.0" is a valid semver range for fs-extra
+265 silly addNameRange { name: 'fs-extra', range: '>=0.30.0 <0.31.0', hasData: false }
+266 silly mapToRegistry name fs-extra
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry data Result {
+269 silly mapToRegistry   raw: 'fs-extra',
+269 silly mapToRegistry   scope: null,
+269 silly mapToRegistry   escapedName: 'fs-extra',
+269 silly mapToRegistry   name: 'fs-extra',
+269 silly mapToRegistry   rawSpec: '',
+269 silly mapToRegistry   spec: 'latest',
+269 silly mapToRegistry   type: 'tag' }
+270 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+271 verbose addNameRange registry:https://registry.npmjs.org/fs-extra not in flight; fetching
+272 verbose get https://registry.npmjs.org/fs-extra not expired, no request
+273 silly addNameRange number 2 { name: 'fs-extra', range: '>=0.30.0 <0.31.0', hasData: true }
+274 silly addNameRange versions [ 'fs-extra',
+274 silly addNameRange   [ '0.0.1',
+274 silly addNameRange     '0.0.11',
+274 silly addNameRange     '0.0.3',
+274 silly addNameRange     '0.0.4',
+274 silly addNameRange     '0.1.0',
+274 silly addNameRange     '0.1.1',
+274 silly addNameRange     '0.1.2',
+274 silly addNameRange     '0.1.3',
+274 silly addNameRange     '0.2.0',
+274 silly addNameRange     '0.2.1',
+274 silly addNameRange     '0.3.0',
+274 silly addNameRange     '0.3.1',
+274 silly addNameRange     '0.3.2',
+274 silly addNameRange     '0.4.0',
+274 silly addNameRange     '0.5.0',
+274 silly addNameRange     '0.6.0',
+274 silly addNameRange     '0.6.1',
+274 silly addNameRange     '0.6.2',
+274 silly addNameRange     '0.6.3',
+274 silly addNameRange     '0.6.4',
+274 silly addNameRange     '0.7.0',
+274 silly addNameRange     '0.7.1',
+274 silly addNameRange     '0.8.0',
+274 silly addNameRange     '0.8.1',
+274 silly addNameRange     '0.9.0',
+274 silly addNameRange     '0.9.1',
+274 silly addNameRange     '0.10.0',
+274 silly addNameRange     '0.11.0',
+274 silly addNameRange     '0.11.1',
+274 silly addNameRange     '0.12.0',
+274 silly addNameRange     '0.13.0',
+274 silly addNameRange     '0.14.0',
+274 silly addNameRange     '0.15.0',
+274 silly addNameRange     '0.16.0',
+274 silly addNameRange     '0.16.1',
+274 silly addNameRange     '0.16.2',
+274 silly addNameRange     '0.16.3',
+274 silly addNameRange     '0.16.4',
+274 silly addNameRange     '0.16.5',
+274 silly addNameRange     '0.17.0',
+274 silly addNameRange     '0.18.0',
+274 silly addNameRange     '0.18.1',
+274 silly addNameRange     '0.18.2',
+274 silly addNameRange     '0.18.3',
+274 silly addNameRange     '0.18.4',
+274 silly addNameRange     '0.19.0',
+274 silly addNameRange     '0.20.0',
+274 silly addNameRange     '0.20.1',
+274 silly addNameRange     '0.21.0',
+274 silly addNameRange     '0.22.0',
+274 silly addNameRange     '0.22.1',
+274 silly addNameRange     '0.23.0',
+274 silly addNameRange     '0.23.1',
+274 silly addNameRange     '0.24.0',
+274 silly addNameRange     '0.25.0',
+274 silly addNameRange     '0.26.0',
+274 silly addNameRange     '0.26.1',
+274 silly addNameRange     '0.26.2',
+274 silly addNameRange     '0.26.3',
+274 silly addNameRange     '0.26.4',
+274 silly addNameRange     '0.26.5',
+274 silly addNameRange     '0.26.6',
+274 silly addNameRange     '0.26.7',
+274 silly addNameRange     '0.27.0',
+274 silly addNameRange     '0.28.0',
+274 silly addNameRange     '0.29.0',
+274 silly addNameRange     '0.30.0',
+274 silly addNameRange     '1.0.0',
+274 silly addNameRange     '2.0.0',
+274 silly addNameRange     '2.1.0',
+274 silly addNameRange     '2.1.1',
+274 silly addNameRange     '2.1.2',
+274 silly addNameRange     '3.0.0',
+274 silly addNameRange     '3.0.1',
+274 silly addNameRange     '4.0.0',
+274 silly addNameRange     '4.0.1',
+274 silly addNameRange     '4.0.2',
+274 silly addNameRange     '4.0.3',
+274 silly addNameRange     '5.0.0',
+274 silly addNameRange     '6.0.0' ] ]
+275 silly addNamed fs-extra@0.30.0
+276 verbose addNamed "0.30.0" is a plain semver version for fs-extra
+277 silly cache afterAdd fs-extra@0.30.0
+278 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\fs-extra\0.30.0\package\package.json not in flight; writing
+279 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+280 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\fs-extra\0.30.0\package\package.json written
+281 silly fetchNamedPackageData os-locale
+282 silly mapToRegistry name os-locale
+283 silly mapToRegistry using default registry
+284 silly mapToRegistry registry https://registry.npmjs.org/
+285 silly mapToRegistry data Result {
+285 silly mapToRegistry   raw: 'os-locale',
+285 silly mapToRegistry   scope: null,
+285 silly mapToRegistry   escapedName: 'os-locale',
+285 silly mapToRegistry   name: 'os-locale',
+285 silly mapToRegistry   rawSpec: '',
+285 silly mapToRegistry   spec: 'latest',
+285 silly mapToRegistry   type: 'tag' }
+286 silly mapToRegistry uri https://registry.npmjs.org/os-locale
+287 silly fetchNamedPackageData string-width
+288 silly mapToRegistry name string-width
+289 silly mapToRegistry using default registry
+290 silly mapToRegistry registry https://registry.npmjs.org/
+291 silly mapToRegistry data Result {
+291 silly mapToRegistry   raw: 'string-width',
+291 silly mapToRegistry   scope: null,
+291 silly mapToRegistry   escapedName: 'string-width',
+291 silly mapToRegistry   name: 'string-width',
+291 silly mapToRegistry   rawSpec: '',
+291 silly mapToRegistry   spec: 'latest',
+291 silly mapToRegistry   type: 'tag' }
+292 silly mapToRegistry uri https://registry.npmjs.org/string-width
+293 verbose request uri https://registry.npmjs.org/string-width
+294 verbose request no auth needed
+295 info attempt registry request try #1 at 6:03:38 PM
+296 verbose etag "59d381fa-2d22"
+297 verbose lastModified Tue, 3 Oct 2017 12:26:34 GMT
+298 http request GET https://registry.npmjs.org/string-width
+299 verbose request uri https://registry.npmjs.org/os-locale
+300 verbose request no auth needed
+301 info attempt registry request try #1 at 6:03:38 PM
+302 verbose etag "5a09bbde-3a5d"
+303 verbose lastModified Mon, 13 Nov 2017 15:35:58 GMT
+304 http request GET https://registry.npmjs.org/os-locale
+305 http 304 https://registry.npmjs.org/string-width
+306 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+306 verbose headers   via: '1.1 varnish',
+306 verbose headers   'cache-control': 'max-age=300',
+306 verbose headers   etag: '"59d381fa-2d22"',
+306 verbose headers   age: '9327',
+306 verbose headers   connection: 'keep-alive',
+306 verbose headers   'x-served-by': 'cache-pao17427-PAO',
+306 verbose headers   'x-cache': 'HIT',
+306 verbose headers   'x-cache-hits': '55',
+306 verbose headers   'x-timer': 'S1525222995.372072,VS0,VE0',
+306 verbose headers   vary: 'Accept-Encoding, Accept' }
+307 silly get cb [ 304,
+307 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+307 silly get     via: '1.1 varnish',
+307 silly get     'cache-control': 'max-age=300',
+307 silly get     etag: '"59d381fa-2d22"',
+307 silly get     age: '9327',
+307 silly get     connection: 'keep-alive',
+307 silly get     'x-served-by': 'cache-pao17427-PAO',
+307 silly get     'x-cache': 'HIT',
+307 silly get     'x-cache-hits': '55',
+307 silly get     'x-timer': 'S1525222995.372072,VS0,VE0',
+307 silly get     vary: 'Accept-Encoding, Accept' } ]
+308 verbose etag https://registry.npmjs.org/string-width from cache
+309 verbose get saving string-width to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\string-width\.cache.json
+310 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+311 http 304 https://registry.npmjs.org/os-locale
+312 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+312 verbose headers   via: '1.1 varnish',
+312 verbose headers   'cache-control': 'max-age=300',
+312 verbose headers   etag: '"5a09bbde-3a5d"',
+312 verbose headers   age: '6688',
+312 verbose headers   connection: 'keep-alive',
+312 verbose headers   'x-served-by': 'cache-pao17422-PAO',
+312 verbose headers   'x-cache': 'HIT',
+312 verbose headers   'x-cache-hits': '14',
+312 verbose headers   'x-timer': 'S1525222995.372345,VS0,VE0',
+312 verbose headers   vary: 'Accept-Encoding, Accept' }
+313 silly get cb [ 304,
+313 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+313 silly get     via: '1.1 varnish',
+313 silly get     'cache-control': 'max-age=300',
+313 silly get     etag: '"5a09bbde-3a5d"',
+313 silly get     age: '6688',
+313 silly get     connection: 'keep-alive',
+313 silly get     'x-served-by': 'cache-pao17422-PAO',
+313 silly get     'x-cache': 'HIT',
+313 silly get     'x-cache-hits': '14',
+313 silly get     'x-timer': 'S1525222995.372345,VS0,VE0',
+313 silly get     vary: 'Accept-Encoding, Accept' } ]
+314 verbose etag https://registry.npmjs.org/os-locale from cache
+315 verbose get saving os-locale to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\os-locale\.cache.json
+316 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+317 silly resolveWithNewModule string-width@2.1.1 checking installable status
+318 silly cache add args [ 'string-width@^2.0.0', null ]
+319 verbose cache add spec string-width@^2.0.0
+320 silly cache add parsed spec Result {
+320 silly cache add   raw: 'string-width@^2.0.0',
+320 silly cache add   scope: null,
+320 silly cache add   escapedName: 'string-width',
+320 silly cache add   name: 'string-width',
+320 silly cache add   rawSpec: '^2.0.0',
+320 silly cache add   spec: '>=2.0.0 <3.0.0',
+320 silly cache add   type: 'range' }
+321 silly addNamed string-width@>=2.0.0 <3.0.0
+322 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for string-width
+323 silly addNameRange { name: 'string-width', range: '>=2.0.0 <3.0.0', hasData: false }
+324 silly mapToRegistry name string-width
+325 silly mapToRegistry using default registry
+326 silly mapToRegistry registry https://registry.npmjs.org/
+327 silly mapToRegistry data Result {
+327 silly mapToRegistry   raw: 'string-width',
+327 silly mapToRegistry   scope: null,
+327 silly mapToRegistry   escapedName: 'string-width',
+327 silly mapToRegistry   name: 'string-width',
+327 silly mapToRegistry   rawSpec: '',
+327 silly mapToRegistry   spec: 'latest',
+327 silly mapToRegistry   type: 'tag' }
+328 silly mapToRegistry uri https://registry.npmjs.org/string-width
+329 verbose addNameRange registry:https://registry.npmjs.org/string-width not in flight; fetching
+330 silly resolveWithNewModule os-locale@2.1.0 checking installable status
+331 silly cache add args [ 'os-locale@^2.0.0', null ]
+332 verbose cache add spec os-locale@^2.0.0
+333 silly cache add parsed spec Result {
+333 silly cache add   raw: 'os-locale@^2.0.0',
+333 silly cache add   scope: null,
+333 silly cache add   escapedName: 'os-locale',
+333 silly cache add   name: 'os-locale',
+333 silly cache add   rawSpec: '^2.0.0',
+333 silly cache add   spec: '>=2.0.0 <3.0.0',
+333 silly cache add   type: 'range' }
+334 silly addNamed os-locale@>=2.0.0 <3.0.0
+335 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for os-locale
+336 silly addNameRange { name: 'os-locale', range: '>=2.0.0 <3.0.0', hasData: false }
+337 silly mapToRegistry name os-locale
+338 silly mapToRegistry using default registry
+339 silly mapToRegistry registry https://registry.npmjs.org/
+340 silly mapToRegistry data Result {
+340 silly mapToRegistry   raw: 'os-locale',
+340 silly mapToRegistry   scope: null,
+340 silly mapToRegistry   escapedName: 'os-locale',
+340 silly mapToRegistry   name: 'os-locale',
+340 silly mapToRegistry   rawSpec: '',
+340 silly mapToRegistry   spec: 'latest',
+340 silly mapToRegistry   type: 'tag' }
+341 silly mapToRegistry uri https://registry.npmjs.org/os-locale
+342 verbose addNameRange registry:https://registry.npmjs.org/os-locale not in flight; fetching
+343 verbose get https://registry.npmjs.org/string-width not expired, no request
+344 silly addNameRange number 2 { name: 'string-width', range: '>=2.0.0 <3.0.0', hasData: true }
+345 silly addNameRange versions [ 'string-width',
+345 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '2.0.0', '2.1.0', '2.1.1' ] ]
+346 silly addNamed string-width@2.1.1
+347 verbose addNamed "2.1.1" is a plain semver version for string-width
+348 verbose get https://registry.npmjs.org/os-locale not expired, no request
+349 silly addNameRange number 2 { name: 'os-locale', range: '>=2.0.0 <3.0.0', hasData: true }
+350 silly addNameRange versions [ 'os-locale',
+350 silly addNameRange   [ '1.0.0',
+350 silly addNameRange     '1.0.1',
+350 silly addNameRange     '1.1.0',
+350 silly addNameRange     '1.2.0',
+350 silly addNameRange     '1.2.1',
+350 silly addNameRange     '1.3.0',
+350 silly addNameRange     '1.3.1',
+350 silly addNameRange     '1.4.0',
+350 silly addNameRange     '2.0.0',
+350 silly addNameRange     '2.1.0' ] ]
+351 silly addNamed os-locale@2.1.0
+352 verbose addNamed "2.1.0" is a plain semver version for os-locale
+353 silly cache afterAdd string-width@2.1.1
+354 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\string-width\2.1.1\package\package.json not in flight; writing
+355 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+356 silly cache afterAdd os-locale@2.1.0
+357 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\os-locale\2.1.0\package\package.json not in flight; writing
+358 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+359 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\string-width\2.1.1\package\package.json written
+360 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\os-locale\2.1.0\package\package.json written
+361 silly fetchNamedPackageData is-fullwidth-code-point
+362 silly mapToRegistry name is-fullwidth-code-point
+363 silly mapToRegistry using default registry
+364 silly mapToRegistry registry https://registry.npmjs.org/
+365 silly mapToRegistry data Result {
+365 silly mapToRegistry   raw: 'is-fullwidth-code-point',
+365 silly mapToRegistry   scope: null,
+365 silly mapToRegistry   escapedName: 'is-fullwidth-code-point',
+365 silly mapToRegistry   name: 'is-fullwidth-code-point',
+365 silly mapToRegistry   rawSpec: '',
+365 silly mapToRegistry   spec: 'latest',
+365 silly mapToRegistry   type: 'tag' }
+366 silly mapToRegistry uri https://registry.npmjs.org/is-fullwidth-code-point
+367 silly fetchNamedPackageData strip-ansi
+368 silly mapToRegistry name strip-ansi
+369 silly mapToRegistry using default registry
+370 silly mapToRegistry registry https://registry.npmjs.org/
+371 silly mapToRegistry data Result {
+371 silly mapToRegistry   raw: 'strip-ansi',
+371 silly mapToRegistry   scope: null,
+371 silly mapToRegistry   escapedName: 'strip-ansi',
+371 silly mapToRegistry   name: 'strip-ansi',
+371 silly mapToRegistry   rawSpec: '',
+371 silly mapToRegistry   spec: 'latest',
+371 silly mapToRegistry   type: 'tag' }
+372 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+373 verbose request uri https://registry.npmjs.org/is-fullwidth-code-point
+374 verbose request no auth needed
+375 info attempt registry request try #1 at 6:03:38 PM
+376 verbose etag "59504a1b-128d"
+377 verbose lastModified Sun, 25 Jun 2017 23:41:15 GMT
+378 http request GET https://registry.npmjs.org/is-fullwidth-code-point
+379 verbose request uri https://registry.npmjs.org/strip-ansi
+380 verbose request no auth needed
+381 info attempt registry request try #1 at 6:03:38 PM
+382 verbose etag "5a9e7239-44b5"
+383 verbose lastModified Tue, 6 Mar 2018 10:49:29 GMT
+384 http request GET https://registry.npmjs.org/strip-ansi
+385 http 304 https://registry.npmjs.org/strip-ansi
+386 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+386 verbose headers   via: '1.1 varnish',
+386 verbose headers   'cache-control': 'max-age=300',
+386 verbose headers   etag: '"5a9e7239-44b5"',
+386 verbose headers   age: '543',
+386 verbose headers   connection: 'keep-alive',
+386 verbose headers   'x-served-by': 'cache-pao17427-PAO',
+386 verbose headers   'x-cache': 'HIT',
+386 verbose headers   'x-cache-hits': '5',
+386 verbose headers   'x-timer': 'S1525222995.417906,VS0,VE0',
+386 verbose headers   vary: 'Accept-Encoding, Accept' }
+387 silly get cb [ 304,
+387 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+387 silly get     via: '1.1 varnish',
+387 silly get     'cache-control': 'max-age=300',
+387 silly get     etag: '"5a9e7239-44b5"',
+387 silly get     age: '543',
+387 silly get     connection: 'keep-alive',
+387 silly get     'x-served-by': 'cache-pao17427-PAO',
+387 silly get     'x-cache': 'HIT',
+387 silly get     'x-cache-hits': '5',
+387 silly get     'x-timer': 'S1525222995.417906,VS0,VE0',
+387 silly get     vary: 'Accept-Encoding, Accept' } ]
+388 verbose etag https://registry.npmjs.org/strip-ansi from cache
+389 verbose get saving strip-ansi to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\strip-ansi\.cache.json
+390 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+391 http 304 https://registry.npmjs.org/is-fullwidth-code-point
+392 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+392 verbose headers   via: '1.1 varnish',
+392 verbose headers   'cache-control': 'max-age=300',
+392 verbose headers   etag: '"59504a1b-128d"',
+392 verbose headers   age: '9346',
+392 verbose headers   connection: 'keep-alive',
+392 verbose headers   'x-served-by': 'cache-pao17430-PAO',
+392 verbose headers   'x-cache': 'HIT',
+392 verbose headers   'x-cache-hits': '27',
+392 verbose headers   'x-timer': 'S1525222995.417932,VS0,VE0',
+392 verbose headers   vary: 'Accept-Encoding, Accept' }
+393 silly get cb [ 304,
+393 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+393 silly get     via: '1.1 varnish',
+393 silly get     'cache-control': 'max-age=300',
+393 silly get     etag: '"59504a1b-128d"',
+393 silly get     age: '9346',
+393 silly get     connection: 'keep-alive',
+393 silly get     'x-served-by': 'cache-pao17430-PAO',
+393 silly get     'x-cache': 'HIT',
+393 silly get     'x-cache-hits': '27',
+393 silly get     'x-timer': 'S1525222995.417932,VS0,VE0',
+393 silly get     vary: 'Accept-Encoding, Accept' } ]
+394 verbose etag https://registry.npmjs.org/is-fullwidth-code-point from cache
+395 verbose get saving is-fullwidth-code-point to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\is-fullwidth-code-point\.cache.json
+396 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+397 silly resolveWithNewModule strip-ansi@4.0.0 checking installable status
+398 silly cache add args [ 'strip-ansi@^4.0.0', null ]
+399 verbose cache add spec strip-ansi@^4.0.0
+400 silly cache add parsed spec Result {
+400 silly cache add   raw: 'strip-ansi@^4.0.0',
+400 silly cache add   scope: null,
+400 silly cache add   escapedName: 'strip-ansi',
+400 silly cache add   name: 'strip-ansi',
+400 silly cache add   rawSpec: '^4.0.0',
+400 silly cache add   spec: '>=4.0.0 <5.0.0',
+400 silly cache add   type: 'range' }
+401 silly addNamed strip-ansi@>=4.0.0 <5.0.0
+402 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for strip-ansi
+403 silly addNameRange { name: 'strip-ansi', range: '>=4.0.0 <5.0.0', hasData: false }
+404 silly mapToRegistry name strip-ansi
+405 silly mapToRegistry using default registry
+406 silly mapToRegistry registry https://registry.npmjs.org/
+407 silly mapToRegistry data Result {
+407 silly mapToRegistry   raw: 'strip-ansi',
+407 silly mapToRegistry   scope: null,
+407 silly mapToRegistry   escapedName: 'strip-ansi',
+407 silly mapToRegistry   name: 'strip-ansi',
+407 silly mapToRegistry   rawSpec: '',
+407 silly mapToRegistry   spec: 'latest',
+407 silly mapToRegistry   type: 'tag' }
+408 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+409 verbose addNameRange registry:https://registry.npmjs.org/strip-ansi not in flight; fetching
+410 silly resolveWithNewModule is-fullwidth-code-point@2.0.0 checking installable status
+411 silly cache add args [ 'is-fullwidth-code-point@^2.0.0', null ]
+412 verbose cache add spec is-fullwidth-code-point@^2.0.0
+413 silly cache add parsed spec Result {
+413 silly cache add   raw: 'is-fullwidth-code-point@^2.0.0',
+413 silly cache add   scope: null,
+413 silly cache add   escapedName: 'is-fullwidth-code-point',
+413 silly cache add   name: 'is-fullwidth-code-point',
+413 silly cache add   rawSpec: '^2.0.0',
+413 silly cache add   spec: '>=2.0.0 <3.0.0',
+413 silly cache add   type: 'range' }
+414 silly addNamed is-fullwidth-code-point@>=2.0.0 <3.0.0
+415 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for is-fullwidth-code-point
+416 silly addNameRange { name: 'is-fullwidth-code-point',
+416 silly addNameRange   range: '>=2.0.0 <3.0.0',
+416 silly addNameRange   hasData: false }
+417 silly mapToRegistry name is-fullwidth-code-point
+418 silly mapToRegistry using default registry
+419 silly mapToRegistry registry https://registry.npmjs.org/
+420 silly mapToRegistry data Result {
+420 silly mapToRegistry   raw: 'is-fullwidth-code-point',
+420 silly mapToRegistry   scope: null,
+420 silly mapToRegistry   escapedName: 'is-fullwidth-code-point',
+420 silly mapToRegistry   name: 'is-fullwidth-code-point',
+420 silly mapToRegistry   rawSpec: '',
+420 silly mapToRegistry   spec: 'latest',
+420 silly mapToRegistry   type: 'tag' }
+421 silly mapToRegistry uri https://registry.npmjs.org/is-fullwidth-code-point
+422 verbose addNameRange registry:https://registry.npmjs.org/is-fullwidth-code-point not in flight; fetching
+423 verbose get https://registry.npmjs.org/strip-ansi not expired, no request
+424 silly addNameRange number 2 { name: 'strip-ansi', range: '>=4.0.0 <5.0.0', hasData: true }
+425 silly addNameRange versions [ 'strip-ansi',
+425 silly addNameRange   [ '0.1.0',
+425 silly addNameRange     '0.1.1',
+425 silly addNameRange     '0.2.0',
+425 silly addNameRange     '0.2.1',
+425 silly addNameRange     '0.2.2',
+425 silly addNameRange     '0.3.0',
+425 silly addNameRange     '1.0.0',
+425 silly addNameRange     '2.0.0',
+425 silly addNameRange     '2.0.1',
+425 silly addNameRange     '3.0.0',
+425 silly addNameRange     '3.0.1',
+425 silly addNameRange     '4.0.0' ] ]
+426 silly addNamed strip-ansi@4.0.0
+427 verbose addNamed "4.0.0" is a plain semver version for strip-ansi
+428 verbose get https://registry.npmjs.org/is-fullwidth-code-point not expired, no request
+429 silly addNameRange number 2 { name: 'is-fullwidth-code-point',
+429 silly addNameRange   range: '>=2.0.0 <3.0.0',
+429 silly addNameRange   hasData: true }
+430 silly addNameRange versions [ 'is-fullwidth-code-point', [ '1.0.0', '2.0.0' ] ]
+431 silly addNamed is-fullwidth-code-point@2.0.0
+432 verbose addNamed "2.0.0" is a plain semver version for is-fullwidth-code-point
+433 silly cache afterAdd strip-ansi@4.0.0
+434 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\strip-ansi\4.0.0\package\package.json not in flight; writing
+435 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+436 silly cache afterAdd is-fullwidth-code-point@2.0.0
+437 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\is-fullwidth-code-point\2.0.0\package\package.json not in flight; writing
+438 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+439 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\strip-ansi\4.0.0\package\package.json written
+440 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\is-fullwidth-code-point\2.0.0\package\package.json written
+441 silly fetchNamedPackageData ansi-regex
+442 silly mapToRegistry name ansi-regex
+443 silly mapToRegistry using default registry
+444 silly mapToRegistry registry https://registry.npmjs.org/
+445 silly mapToRegistry data Result {
+445 silly mapToRegistry   raw: 'ansi-regex',
+445 silly mapToRegistry   scope: null,
+445 silly mapToRegistry   escapedName: 'ansi-regex',
+445 silly mapToRegistry   name: 'ansi-regex',
+445 silly mapToRegistry   rawSpec: '',
+445 silly mapToRegistry   spec: 'latest',
+445 silly mapToRegistry   type: 'tag' }
+446 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+447 verbose request uri https://registry.npmjs.org/ansi-regex
+448 verbose request no auth needed
+449 info attempt registry request try #1 at 6:03:38 PM
+450 verbose etag "5a962e9f-3a91"
+451 verbose lastModified Wed, 28 Feb 2018 4:22:55 GMT
+452 http request GET https://registry.npmjs.org/ansi-regex
+453 http 304 https://registry.npmjs.org/ansi-regex
+454 verbose headers { date: 'Wed, 02 May 2018 01:03:15 GMT',
+454 verbose headers   via: '1.1 varnish',
+454 verbose headers   'cache-control': 'max-age=300',
+454 verbose headers   etag: '"5a962e9f-3a91"',
+454 verbose headers   age: '12132',
+454 verbose headers   connection: 'keep-alive',
+454 verbose headers   'x-served-by': 'cache-pao17422-PAO',
+454 verbose headers   'x-cache': 'HIT',
+454 verbose headers   'x-cache-hits': '83',
+454 verbose headers   'x-timer': 'S1525222995.450020,VS0,VE0',
+454 verbose headers   vary: 'Accept-Encoding, Accept' }
+455 silly get cb [ 304,
+455 silly get   { date: 'Wed, 02 May 2018 01:03:15 GMT',
+455 silly get     via: '1.1 varnish',
+455 silly get     'cache-control': 'max-age=300',
+455 silly get     etag: '"5a962e9f-3a91"',
+455 silly get     age: '12132',
+455 silly get     connection: 'keep-alive',
+455 silly get     'x-served-by': 'cache-pao17422-PAO',
+455 silly get     'x-cache': 'HIT',
+455 silly get     'x-cache-hits': '83',
+455 silly get     'x-timer': 'S1525222995.450020,VS0,VE0',
+455 silly get     vary: 'Accept-Encoding, Accept' } ]
+456 verbose etag https://registry.npmjs.org/ansi-regex from cache
+457 verbose get saving ansi-regex to C:\Users\domst\AppData\Roaming\npm-cache\registry.npmjs.org\ansi-regex\.cache.json
+458 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+459 silly resolveWithNewModule ansi-regex@3.0.0 checking installable status
+460 silly cache add args [ 'ansi-regex@^3.0.0', null ]
+461 verbose cache add spec ansi-regex@^3.0.0
+462 silly cache add parsed spec Result {
+462 silly cache add   raw: 'ansi-regex@^3.0.0',
+462 silly cache add   scope: null,
+462 silly cache add   escapedName: 'ansi-regex',
+462 silly cache add   name: 'ansi-regex',
+462 silly cache add   rawSpec: '^3.0.0',
+462 silly cache add   spec: '>=3.0.0 <4.0.0',
+462 silly cache add   type: 'range' }
+463 silly addNamed ansi-regex@>=3.0.0 <4.0.0
+464 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for ansi-regex
+465 silly addNameRange { name: 'ansi-regex', range: '>=3.0.0 <4.0.0', hasData: false }
+466 silly mapToRegistry name ansi-regex
+467 silly mapToRegistry using default registry
+468 silly mapToRegistry registry https://registry.npmjs.org/
+469 silly mapToRegistry data Result {
+469 silly mapToRegistry   raw: 'ansi-regex',
+469 silly mapToRegistry   scope: null,
+469 silly mapToRegistry   escapedName: 'ansi-regex',
+469 silly mapToRegistry   name: 'ansi-regex',
+469 silly mapToRegistry   rawSpec: '',
+469 silly mapToRegistry   spec: 'latest',
+469 silly mapToRegistry   type: 'tag' }
+470 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+471 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex not in flight; fetching
+472 verbose get https://registry.npmjs.org/ansi-regex not expired, no request
+473 silly addNameRange number 2 { name: 'ansi-regex', range: '>=3.0.0 <4.0.0', hasData: true }
+474 silly addNameRange versions [ 'ansi-regex',
+474 silly addNameRange   [ '0.1.0',
+474 silly addNameRange     '0.2.0',
+474 silly addNameRange     '0.2.1',
+474 silly addNameRange     '1.0.0',
+474 silly addNameRange     '1.1.0',
+474 silly addNameRange     '1.1.1',
+474 silly addNameRange     '2.0.0',
+474 silly addNameRange     '2.1.1',
+474 silly addNameRange     '3.0.0' ] ]
+475 silly addNamed ansi-regex@3.0.0
+476 verbose addNamed "3.0.0" is a plain semver version for ansi-regex
+477 silly cache afterAdd ansi-regex@3.0.0
+478 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\ansi-regex\3.0.0\package\package.json not in flight; writing
+479 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+480 verbose afterAdd C:\Users\domst\AppData\Roaming\npm-cache\ansi-regex\3.0.0\package\package.json written
+481 silly loadAllDepsIntoIdealTree Finishing
+482 silly loadIdealTree Finishing
+483 silly currentTree crm-network@1.0.0
+483 silly currentTree +-- @protobufjs/aspromise@1.1.2
+483 silly currentTree +-- @protobufjs/base64@1.1.2
+483 silly currentTree +-- @protobufjs/codegen@1.0.8
+483 silly currentTree +-- @protobufjs/eventemitter@1.1.0
+483 silly currentTree +-- @protobufjs/fetch@1.1.0
+483 silly currentTree +-- @protobufjs/inquire@1.1.0
+483 silly currentTree +-- @protobufjs/path@1.1.2
+483 silly currentTree +-- @protobufjs/pool@1.1.0
+483 silly currentTree +-- @protobufjs/utf8@1.1.0
+483 silly currentTree +-- @types/geojson@1.0.6
+483 silly currentTree +-- @types/long@3.0.32
+483 silly currentTree +-- @types/node@7.0.4
+483 silly currentTree +-- accepts@1.3.3
+483 silly currentTree +-- acorn@5.1.2
+483 silly currentTree +-- addressparser@1.0.1
+483 silly currentTree +-- after@0.8.2
+483 silly currentTree +-- agent-base@2.1.1
+483 silly currentTree | `-- semver@5.0.3
+483 silly currentTree +-- ajv@5.5.2
+483 silly currentTree +-- amqplib@0.5.2
+483 silly currentTree | +-- bluebird@3.5.1
+483 silly currentTree | +-- isarray@0.0.1
+483 silly currentTree | +-- readable-stream@1.1.14
+483 silly currentTree | `-- string_decoder@0.10.31
+483 silly currentTree +-- ansi-regex@2.1.1
+483 silly currentTree +-- ansi-styles@2.2.1
+483 silly currentTree +-- any-promise@1.3.0
+483 silly currentTree +-- aproba@1.2.0
+483 silly currentTree +-- are-we-there-yet@1.1.4
+483 silly currentTree +-- arguejs@0.2.3
+483 silly currentTree +-- array-flatten@1.1.1
+483 silly currentTree +-- arraybuffer.slice@0.0.6
+483 silly currentTree +-- asap@2.0.6
+483 silly currentTree +-- ascli@1.0.1
+483 silly currentTree +-- asn1@0.2.3
+483 silly currentTree +-- assert-plus@1.0.0
+483 silly currentTree +-- ast-types@0.11.3
+483 silly currentTree +-- async-limiter@1.0.0
+483 silly currentTree +-- async@2.6.0
+483 silly currentTree +-- asynckit@0.4.0
+483 silly currentTree +-- aws-sign2@0.7.0
+483 silly currentTree +-- aws4@1.6.0
+483 silly currentTree +-- axios@0.15.3
+483 silly currentTree +-- babel-runtime@6.26.0
+483 silly currentTree | `-- core-js@2.5.5
+483 silly currentTree +-- backo2@1.0.2
+483 silly currentTree +-- balanced-match@1.0.0
+483 silly currentTree +-- base64-arraybuffer@0.1.5
+483 silly currentTree +-- base64id@1.0.0
+483 silly currentTree +-- bcrypt-pbkdf@1.0.1
+483 silly currentTree +-- better-assert@1.0.2
+483 silly currentTree +-- big-number@0.3.1
+483 silly currentTree +-- bitsyntax@0.0.4
+483 silly currentTree +-- bl@1.2.2
+483 silly currentTree +-- blob@0.0.4
+483 silly currentTree +-- bluebird@2.11.0
+483 silly currentTree +-- bn.js@4.11.8
+483 silly currentTree +-- body-parser@1.17.2
+483 silly currentTree +-- boom@4.3.1
+483 silly currentTree +-- brace-expansion@1.1.11
+483 silly currentTree +-- brorand@1.1.0
+483 silly currentTree +-- browser-request@0.3.3
+483 silly currentTree +-- browserfs@1.1.0
+483 silly currentTree +-- buffer-from@1.0.0
+483 silly currentTree +-- buffer-more-ints@0.0.2
+483 silly currentTree +-- buildmail@4.0.1
+483 silly currentTree | `-- punycode@1.4.1
+483 silly currentTree +-- builtin-modules@1.1.1
+483 silly currentTree +-- builtins@1.0.3
+483 silly currentTree +-- busboy@0.2.14
+483 silly currentTree | +-- isarray@0.0.1
+483 silly currentTree | +-- readable-stream@1.1.14
+483 silly currentTree | `-- string_decoder@0.10.31
+483 silly currentTree +-- bytebuffer@5.0.1
+483 silly currentTree +-- bytes@2.4.0
+483 silly currentTree +-- callsite@1.0.0
+483 silly currentTree +-- camelcase@2.1.1
+483 silly currentTree +-- camelize@1.0.0
+483 silly currentTree +-- caseless@0.12.0
+483 silly currentTree +-- chalk@1.1.3
+483 silly currentTree +-- charenc@0.0.2
+483 silly currentTree +-- circular-json@0.5.3
+483 silly currentTree +-- claudia-api-builder@3.0.2
+483 silly currentTree +-- cliui@3.2.0
+483 silly currentTree +-- cloudant-follow@0.16.1
+483 silly currentTree | `-- debug@3.1.0
+483 silly currentTree +-- cls-bluebird@2.1.0
+483 silly currentTree +-- co@4.6.0
+483 silly currentTree +-- code-point-at@1.1.0
+483 silly currentTree +-- colors@1.0.3
+483 silly currentTree +-- colour@0.7.1
+483 silly currentTree +-- combined-stream@1.0.6
+483 silly currentTree +-- commander@2.9.0
+483 silly currentTree +-- comment-parser@0.4.0
+483 silly currentTree +-- component-bind@1.0.0
+483 silly currentTree +-- component-emitter@1.1.2
+483 silly currentTree +-- component-inherit@0.0.3
+483 silly currentTree +-- composer-admin@0.16.6
+483 silly currentTree +-- composer-client@0.15.2
+483 silly currentTree | +-- composer-common@0.15.2
+483 silly currentTree | +-- composer-connector-hlfv1@0.15.2
+483 silly currentTree | +-- composer-runtime-hlfv1@0.15.2
+483 silly currentTree | +-- debug@2.6.2
+483 silly currentTree | +-- fabric-ca-client@1.0.2
+483 silly currentTree | | `-- fs-extra@0.30.0
+483 silly currentTree | +-- fabric-client@1.0.2
+483 silly currentTree | | +-- fs-extra@0.30.0
+483 silly currentTree | | `-- jsrsasign@6.2.2
+483 silly currentTree | +-- jsrsasign@6.2.3
+483 silly currentTree | +-- ms@0.7.2
+483 silly currentTree | `-- sjcl@1.0.3
+483 silly currentTree +-- composer-common@0.16.6
+483 silly currentTree | +-- debug@2.6.2
+483 silly currentTree | `-- ms@0.7.2
+483 silly currentTree +-- composer-runtime-hlfv1@0.16.6
+483 silly currentTree +-- concat-map@0.0.1
+483 silly currentTree +-- concat-stream@1.6.2
+483 silly currentTree +-- config@1.24.0
+483 silly currentTree +-- console-control-strings@1.1.0
+483 silly currentTree +-- content-disposition@0.5.2
+483 silly currentTree +-- content-security-policy-builder@2.0.0
+483 silly currentTree +-- content-type@1.0.4
+483 silly currentTree +-- cookie-signature@1.0.6
+483 silly currentTree +-- cookie@0.3.1
+483 silly currentTree +-- core-js@2.3.0
+483 silly currentTree +-- core-util-is@1.0.2
+483 silly currentTree +-- cors@2.8.4
+483 silly currentTree +-- cross-spawn@5.1.0
+483 silly currentTree +-- crypt@0.0.2
+483 silly currentTree +-- cryptiles@3.1.2
+483 silly currentTree | `-- boom@5.2.0
+483 silly currentTree +-- crypto@0.0.3
+483 silly currentTree +-- csprng@0.1.2
+483 silly currentTree +-- cycle@1.0.3
+483 silly currentTree +-- dashdash@1.14.1
+483 silly currentTree +-- dasherize@2.0.0
+483 silly currentTree +-- data-uri-to-buffer@1.2.0
+483 silly currentTree +-- date-format@1.2.0
+483 silly currentTree +-- debug@2.6.7
+483 silly currentTree +-- decamelize@1.2.0
+483 silly currentTree +-- deep-is@0.1.3
+483 silly currentTree +-- degenerator@1.0.4
+483 silly currentTree +-- delayed-stream@1.0.0
+483 silly currentTree +-- delegates@1.0.0
+483 silly currentTree +-- depd@1.1.2
+483 silly currentTree +-- destroy@1.0.4
+483 silly currentTree +-- dicer@0.2.5
+483 silly currentTree | +-- isarray@0.0.1
+483 silly currentTree | +-- readable-stream@1.1.14
+483 silly currentTree | `-- string_decoder@0.10.31
+483 silly currentTree +-- dns-prefetch-control@0.1.0
+483 silly currentTree +-- doctrine@2.0.0
+483 silly currentTree +-- dont-sniff-mimetype@1.0.0
+483 silly currentTree +-- dotenv@4.0.0
+483 silly currentTree +-- dottie@2.0.0
+483 silly currentTree +-- double-ended-queue@2.1.0-0
+483 silly currentTree +-- ecc-jsbn@0.1.1
+483 silly currentTree +-- ee-first@1.1.1
+483 silly currentTree +-- elliptic@6.4.0
+483 silly currentTree +-- encodeurl@1.0.2
+483 silly currentTree +-- end-of-stream@1.4.1
+483 silly currentTree +-- engine.io-client@1.8.3
+483 silly currentTree | +-- component-emitter@1.2.1
+483 silly currentTree | +-- debug@2.3.3
+483 silly currentTree | +-- ms@0.7.2
+483 silly currentTree | `-- ws@1.1.2
+483 silly currentTree +-- engine.io-parser@1.3.2
+483 silly currentTree +-- engine.io@1.8.3
+483 silly currentTree | +-- debug@2.3.3
+483 silly currentTree | +-- ms@0.7.2
+483 silly currentTree | `-- ws@1.1.2
+483 silly currentTree +-- errs@0.3.2
+483 silly currentTree +-- es6-promise@3.0.2
+483 silly currentTree +-- escape-html@1.0.3
+483 silly currentTree +-- escape-string-regexp@1.0.5
+483 silly currentTree +-- escodegen@1.9.1
+483 silly currentTree | `-- esprima@3.1.3
+483 silly currentTree +-- esprima@3.1.2
+483 silly currentTree +-- estraverse@4.2.0
+483 silly currentTree +-- esutils@2.0.2
+483 silly currentTree +-- etag@1.8.1
+483 silly currentTree +-- execa@0.7.0
+483 silly currentTree +-- expect-ct@0.1.0
+483 silly currentTree +-- express-fileupload@0.4.0
+483 silly currentTree | +-- fs-extra@4.0.3
+483 silly currentTree | `-- jsonfile@4.0.0
+483 silly currentTree +-- express@4.16.3
+483 silly currentTree | +-- accepts@1.3.5
+483 silly currentTree | +-- body-parser@1.18.2
+483 silly currentTree | +-- bytes@3.0.0
+483 silly currentTree | +-- debug@2.6.9
+483 silly currentTree | +-- finalhandler@1.1.1
+483 silly currentTree | +-- fresh@0.5.2
+483 silly currentTree | +-- iconv-lite@0.4.19
+483 silly currentTree | +-- ipaddr.js@1.6.0
+483 silly currentTree | +-- mime@1.4.1
+483 silly currentTree | +-- proxy-addr@2.0.3
+483 silly currentTree | +-- qs@6.5.1
+483 silly currentTree | +-- raw-body@2.3.2
+483 silly currentTree | | +-- depd@1.1.1
+483 silly currentTree | | +-- http-errors@1.6.2
+483 silly currentTree | | `-- setprototypeof@1.0.3
+483 silly currentTree | +-- send@0.16.2
+483 silly currentTree | +-- serve-static@1.13.2
+483 silly currentTree | +-- statuses@1.4.0
+483 silly currentTree | `-- utils-merge@1.0.1
+483 silly currentTree +-- extend@3.0.1
+483 silly currentTree +-- extsprintf@1.3.0
+483 silly currentTree +-- eyes@0.1.8
+483 silly currentTree +-- fabric-ca-client@1.0.5
+483 silly currentTree | +-- fs-extra@0.30.0
+483 silly currentTree | `-- jsrsasign@6.2.3
+483 silly currentTree +-- fast-deep-equal@1.1.0
+483 silly currentTree +-- fast-json-stable-stringify@2.0.0
+483 silly currentTree +-- fast-levenshtein@2.0.6
+483 silly currentTree +-- faye-websocket@0.11.1
+483 silly currentTree +-- faye@1.2.3
+483 silly currentTree +-- file-saver@1.3.3
+483 silly currentTree +-- file-uri-to-path@1.0.0
+483 silly currentTree +-- fill-keys@1.0.2
+483 silly currentTree +-- finalhandler@1.0.6
+483 silly currentTree | +-- debug@2.6.9
+483 silly currentTree | `-- statuses@1.3.1
+483 silly currentTree +-- find-up@2.1.0
+483 silly currentTree +-- follow-redirects@1.0.0
+483 silly currentTree +-- forever-agent@0.6.1
+483 silly currentTree +-- form-data@2.3.2
+483 silly currentTree +-- forwarded@0.1.2
+483 silly currentTree +-- frameguard@3.0.0
+483 silly currentTree +-- fresh@0.5.0
+483 silly currentTree +-- fs-extra@1.0.0
+483 silly currentTree +-- fs-promise@1.0.0
+483 silly currentTree +-- fs.realpath@1.0.0
+483 silly currentTree +-- fs@0.0.2
+483 silly currentTree +-- ftp@0.3.10
+483 silly currentTree | +-- isarray@0.0.1
+483 silly currentTree | +-- readable-stream@1.1.14
+483 silly currentTree | `-- string_decoder@0.10.31
+483 silly currentTree +-- gauge@2.7.4
+483 silly currentTree +-- generate-function@2.0.0
+483 silly currentTree +-- generate-object-property@1.2.0
+483 silly currentTree +-- generic-pool@3.4.2
+483 silly currentTree +-- get-caller-file@1.0.2
+483 silly currentTree +-- get-stream@3.0.0
+483 silly currentTree +-- get-uri@2.0.1
+483 silly currentTree +-- getpass@0.1.7
+483 silly currentTree +-- glob@7.1.2
+483 silly currentTree | `-- minimatch@3.0.4
+483 silly currentTree +-- graceful-fs@4.1.11
+483 silly currentTree +-- graceful-readlink@1.0.1
+483 silly currentTree +-- grpc@1.6.6
+483 silly currentTree | +-- abbrev@1.1.1
+483 silly currentTree | +-- ajv@4.11.8
+483 silly currentTree | +-- ansi-regex@2.1.1
+483 silly currentTree | +-- aproba@1.2.0
+483 silly currentTree | +-- are-we-there-yet@1.1.4
+483 silly currentTree | +-- asn1@0.2.3
+483 silly currentTree | +-- assert-plus@0.2.0
+483 silly currentTree | +-- asynckit@0.4.0
+483 silly currentTree | +-- aws-sign2@0.6.0
+483 silly currentTree | +-- aws4@1.6.0
+483 silly currentTree | +-- balanced-match@1.0.0
+483 silly currentTree | +-- bcrypt-pbkdf@1.0.1
+483 silly currentTree | +-- block-stream@0.0.9
+483 silly currentTree | +-- boom@2.10.1
+483 silly currentTree | +-- brace-expansion@1.1.8
+483 silly currentTree | +-- caseless@0.12.0
+483 silly currentTree | +-- co@4.6.0
+483 silly currentTree | +-- code-point-at@1.1.0
+483 silly currentTree | +-- combined-stream@1.0.5
+483 silly currentTree | +-- concat-map@0.0.1
+483 silly currentTree | +-- console-control-strings@1.1.0
+483 silly currentTree | +-- core-util-is@1.0.2
+483 silly currentTree | +-- cryptiles@2.0.5
+483 silly currentTree | +-- dashdash@1.14.1
+483 silly currentTree | | `-- assert-plus@1.0.0
+483 silly currentTree | +-- debug@2.6.9
+483 silly currentTree | +-- deep-extend@0.4.2
+483 silly currentTree | +-- delayed-stream@1.0.0
+483 silly currentTree | +-- delegates@1.0.0
+483 silly currentTree | +-- ecc-jsbn@0.1.1
+483 silly currentTree | +-- extend@3.0.1
+483 silly currentTree | +-- extsprintf@1.3.0
+483 silly currentTree | +-- forever-agent@0.6.1
+483 silly currentTree | +-- form-data@2.1.4
+483 silly currentTree | +-- fs.realpath@1.0.0
+483 silly currentTree | +-- fstream-ignore@1.0.5
+483 silly currentTree | +-- fstream@1.0.11
+483 silly currentTree | +-- gauge@2.7.4
+483 silly currentTree | +-- getpass@0.1.7
+483 silly currentTree | | `-- assert-plus@1.0.0
+483 silly currentTree | +-- glob@7.1.2
+483 silly currentTree | +-- graceful-fs@4.1.11
+483 silly currentTree | +-- har-schema@1.0.5
+483 silly currentTree | +-- har-validator@4.2.1
+483 silly currentTree | +-- has-unicode@2.0.1
+483 silly currentTree | +-- hawk@3.1.3
+483 silly currentTree | +-- hoek@2.16.3
+483 silly currentTree | +-- http-signature@1.1.1
+483 silly currentTree | +-- inflight@1.0.6
+483 silly currentTree | +-- inherits@2.0.3
+483 silly currentTree | +-- ini@1.3.4
+483 silly currentTree | +-- is-fullwidth-code-point@1.0.0
+483 silly currentTree | +-- is-typedarray@1.0.0
+483 silly currentTree | +-- isarray@1.0.0
+483 silly currentTree | +-- isstream@0.1.2
+483 silly currentTree | +-- jsbn@0.1.1
+483 silly currentTree | +-- json-schema@0.2.3
+483 silly currentTree | +-- json-stable-stringify@1.0.1
+483 silly currentTree | +-- json-stringify-safe@5.0.1
+483 silly currentTree | +-- jsonify@0.0.0
+483 silly currentTree | +-- jsprim@1.4.1
+483 silly currentTree | | `-- assert-plus@1.0.0
+483 silly currentTree | +-- mime-db@1.30.0
+483 silly currentTree | +-- mime-types@2.1.17
+483 silly currentTree | +-- minimatch@3.0.4
+483 silly currentTree | +-- minimist@1.2.0
+483 silly currentTree | +-- mkdirp@0.5.1
+483 silly currentTree | | `-- minimist@0.0.8
+483 silly currentTree | +-- ms@2.0.0
+483 silly currentTree | +-- node-pre-gyp@0.6.38
+483 silly currentTree | +-- nopt@4.0.1
+483 silly currentTree | +-- npmlog@4.1.2
+483 silly currentTree | +-- number-is-nan@1.0.1
+483 silly currentTree | +-- oauth-sign@0.8.2
+483 silly currentTree | +-- object-assign@4.1.1
+483 silly currentTree | +-- once@1.4.0
+483 silly currentTree | +-- os-homedir@1.0.2
+483 silly currentTree | +-- os-tmpdir@1.0.2
+483 silly currentTree | +-- osenv@0.1.4
+483 silly currentTree | +-- path-is-absolute@1.0.1
+483 silly currentTree | +-- performance-now@0.2.0
+483 silly currentTree | +-- process-nextick-args@1.0.7
+483 silly currentTree | +-- protobufjs@5.0.2
+483 silly currentTree | +-- punycode@1.4.1
+483 silly currentTree | +-- qs@6.4.0
+483 silly currentTree | +-- rc@1.2.1
+483 silly currentTree | +-- readable-stream@2.3.3
+483 silly currentTree | +-- request@2.81.0
+483 silly currentTree | +-- rimraf@2.6.2
+483 silly currentTree | +-- safe-buffer@5.1.1
+483 silly currentTree | +-- semver@5.4.1
+483 silly currentTree | +-- set-blocking@2.0.0
+483 silly currentTree | +-- signal-exit@3.0.2
+483 silly currentTree | +-- sntp@1.0.9
+483 silly currentTree | +-- sshpk@1.13.1
+483 silly currentTree | | `-- assert-plus@1.0.0
+483 silly currentTree | +-- string_decoder@1.0.3
+483 silly currentTree | +-- string-width@1.0.2
+483 silly currentTree | +-- stringstream@0.0.5
+483 silly currentTree | +-- strip-ansi@3.0.1
+483 silly currentTree | +-- strip-json-comments@2.0.1
+483 silly currentTree | +-- tar-pack@3.4.0
+483 silly currentTree | +-- tar@2.2.1
+483 silly currentTree | +-- tough-cookie@2.3.3
+483 silly currentTree | +-- tunnel-agent@0.6.0
+483 silly currentTree | +-- tweetnacl@0.14.5
+483 silly currentTree | +-- uid-number@0.0.6
+483 silly currentTree | +-- util-deprecate@1.0.2
+483 silly currentTree | +-- uuid@3.1.0
+483 silly currentTree | +-- verror@1.10.0
+483 silly currentTree | | `-- assert-plus@1.0.0
+483 silly currentTree | +-- wide-align@1.1.2
+483 silly currentTree | `-- wrappy@1.0.2
+483 silly currentTree +-- har-schema@2.0.0
+483 silly currentTree +-- har-validator@5.0.3
+483 silly currentTree +-- has-ansi@2.0.0
+483 silly currentTree +-- has-binary@0.1.7
+483 silly currentTree | `-- isarray@0.0.1
+483 silly currentTree +-- has-cors@1.1.0
+483 silly currentTree +-- has-unicode@2.0.1
+483 silly currentTree +-- hash.js@1.1.3
+483 silly currentTree +-- hawk@6.0.2
+483 silly currentTree +-- helmet-csp@2.7.0
+483 silly currentTree +-- helmet@3.12.0
+483 silly currentTree +-- hide-powered-by@1.0.0
+483 silly currentTree +-- hipchat-notifier@1.1.0
+483 silly currentTree +-- hmac-drbg@1.0.1
+483 silly currentTree +-- hoek@4.2.1
+483 silly currentTree +-- homedir@0.6.0
+483 silly currentTree +-- hosted-git-info@2.6.0
+483 silly currentTree +-- hpkp@2.0.0
+483 silly currentTree +-- hsts@2.1.0
+483 silly currentTree +-- http-errors@1.6.3
+483 silly currentTree +-- http-parser-js@0.4.11
+483 silly currentTree +-- http-proxy-agent@1.0.0
+483 silly currentTree +-- http-signature@1.2.0
+483 silly currentTree +-- http-status@1.0.1
+483 silly currentTree +-- http@0.0.0
+483 silly currentTree +-- httpntlm@1.6.1
+483 silly currentTree | `-- underscore@1.7.0
+483 silly currentTree +-- httpreq@0.4.24
+483 silly currentTree +-- https-proxy-agent@1.0.0
+483 silly currentTree +-- iconv-lite@0.4.15
+483 silly currentTree +-- ienoopen@1.0.0
+483 silly currentTree +-- immediate@3.0.6
+483 silly currentTree +-- indexof@0.0.1
+483 silly currentTree +-- inflection@1.10.0
+483 silly currentTree +-- inflight@1.0.6
+483 silly currentTree +-- inherits@2.0.3
+483 silly currentTree +-- ini@1.3.5
+483 silly currentTree +-- invert-kv@1.0.0
+483 silly currentTree +-- ip@1.0.1
+483 silly currentTree +-- ipaddr.js@1.4.0
+483 silly currentTree +-- is-bluebird@1.0.2
+483 silly currentTree +-- is-buffer@1.1.6
+483 silly currentTree +-- is-builtin-module@1.0.0
+483 silly currentTree +-- is-fullwidth-code-point@1.0.0
+483 silly currentTree +-- is-my-ip-valid@1.0.0
+483 silly currentTree +-- is-my-json-valid@2.17.2
+483 silly currentTree +-- is-object@1.0.1
+483 silly currentTree +-- is-property@1.0.2
+483 silly currentTree +-- is-stream@1.1.0
+483 silly currentTree +-- is-typedarray@1.0.0
+483 silly currentTree +-- isarray@1.0.0
+483 silly currentTree +-- isexe@2.0.0
+483 silly currentTree +-- isstream@0.1.2
+483 silly currentTree +-- js-sha3@0.5.7
+483 silly currentTree +-- jsbn@0.1.1
+483 silly currentTree +-- json-schema-traverse@0.3.1
+483 silly currentTree +-- json-schema@0.2.3
+483 silly currentTree +-- json-stable-stringify@1.0.1
+483 silly currentTree +-- json-stringify-safe@5.0.1
+483 silly currentTree +-- json3@3.3.2
+483 silly currentTree +-- json5@0.4.0
+483 silly currentTree +-- jsonfile@2.4.0
+483 silly currentTree +-- jsonify@0.0.0
+483 silly currentTree +-- jsonpointer@4.0.1
+483 silly currentTree +-- jsprim@1.4.1
+483 silly currentTree +-- jsrsasign@8.0.3
+483 silly currentTree +-- jssha@2.3.1
+483 silly currentTree +-- jszip@3.1.3
+483 silly currentTree | +-- process-nextick-args@1.0.7
+483 silly currentTree | +-- readable-stream@2.0.6
+483 silly currentTree | `-- string_decoder@0.10.31
+483 silly currentTree +-- klaw@1.3.1
+483 silly currentTree +-- lcid@1.0.0
+483 silly currentTree +-- left-pad@1.1.3
+483 silly currentTree +-- levn@0.3.0
+483 silly currentTree +-- libbase64@0.1.0
+483 silly currentTree +-- libmime@3.0.0
+483 silly currentTree +-- libqp@1.1.0
+483 silly currentTree +-- lie@3.1.1
+483 silly currentTree +-- locate-path@2.0.0
+483 silly currentTree +-- lodash.reduce@4.6.0
+483 silly currentTree +-- lodash@4.17.5
+483 silly currentTree +-- log4js@2.5.3
+483 silly currentTree | `-- debug@3.1.0
+483 silly currentTree +-- loggly@1.1.1
+483 silly currentTree | +-- assert-plus@0.2.0
+483 silly currentTree | +-- aws-sign2@0.6.0
+483 silly currentTree | +-- bl@1.1.2
+483 silly currentTree | +-- boom@2.10.1
+483 silly currentTree | +-- caseless@0.11.0
+483 silly currentTree | +-- cryptiles@2.0.5
+483 silly currentTree | +-- form-data@2.0.0
+483 silly currentTree | +-- har-validator@2.0.6
+483 silly currentTree | +-- hawk@3.1.3
+483 silly currentTree | +-- hoek@2.16.3
+483 silly currentTree | +-- http-signature@1.1.1
+483 silly currentTree | +-- node-uuid@1.4.8
+483 silly currentTree | +-- process-nextick-args@1.0.7
+483 silly currentTree | +-- qs@6.2.3
+483 silly currentTree | +-- readable-stream@2.0.6
+483 silly currentTree | +-- request@2.75.0
+483 silly currentTree | +-- sntp@1.0.9
+483 silly currentTree | +-- string_decoder@0.10.31
+483 silly currentTree | `-- tunnel-agent@0.4.3
+483 silly currentTree +-- long@3.2.0
+483 silly currentTree +-- lorem-ipsum@1.0.4
+483 silly currentTree +-- lru-cache@4.1.2
+483 silly currentTree +-- mailcomposer@4.0.1
+483 silly currentTree +-- mailgun-js@0.7.15
+483 silly currentTree | +-- async@2.1.5
+483 silly currentTree | +-- debug@2.2.0
+483 silly currentTree | +-- form-data@2.1.4
+483 silly currentTree | `-- ms@0.7.1
+483 silly currentTree +-- md5@2.2.1
+483 silly currentTree +-- media-typer@0.3.0
+483 silly currentTree +-- mem@1.1.0
+483 silly currentTree +-- merge-descriptors@1.0.1
+483 silly currentTree +-- methods@1.1.2
+483 silly currentTree +-- mime-db@1.33.0
+483 silly currentTree +-- mime-types@2.1.18
+483 silly currentTree +-- mime@1.3.4
+483 silly currentTree +-- mimic-fn@1.2.0
+483 silly currentTree +-- minimalistic-assert@1.0.0
+483 silly currentTree +-- minimalistic-crypto-utils@1.0.1
+483 silly currentTree +-- minimatch@3.0.3
+483 silly currentTree +-- minimist@0.0.8
+483 silly currentTree +-- minipass@2.2.4
+483 silly currentTree | `-- yallist@3.0.2
+483 silly currentTree +-- minizlib@1.1.0
+483 silly currentTree +-- mkdirp@0.5.1
+483 silly currentTree +-- module-not-found-error@1.0.1
+483 silly currentTree +-- moment-timezone@0.5.16
+483 silly currentTree +-- moment@2.22.1
+483 silly currentTree +-- ms@2.0.0
+483 silly currentTree +-- mz@2.7.0
+483 silly currentTree +-- nan@2.10.0
+483 silly currentTree +-- nano@6.4.3
+483 silly currentTree +-- nconf@0.8.5
+483 silly currentTree | `-- async@1.5.2
+483 silly currentTree +-- negotiator@0.6.1
+483 silly currentTree +-- netmask@1.0.6
+483 silly currentTree +-- nforce@1.10.0
+483 silly currentTree | +-- ajv@4.11.8
+483 silly currentTree | +-- assert-plus@0.2.0
+483 silly currentTree | +-- aws-sign2@0.6.0
+483 silly currentTree | +-- boom@2.10.1
+483 silly currentTree | +-- cryptiles@2.0.5
+483 silly currentTree | +-- form-data@2.1.4
+483 silly currentTree | +-- har-schema@1.0.5
+483 silly currentTree | +-- har-validator@4.2.1
+483 silly currentTree | +-- hawk@3.1.3
+483 silly currentTree | +-- hoek@2.16.3
+483 silly currentTree | +-- http-signature@1.1.1
+483 silly currentTree | +-- lodash@3.10.1
+483 silly currentTree | +-- mime@1.4.1
+483 silly currentTree | +-- performance-now@0.2.0
+483 silly currentTree | +-- request@2.81.0
+483 silly currentTree | `-- sntp@1.0.9
+483 silly currentTree +-- nocache@2.0.0
+483 silly currentTree +-- node-nailgun-client@0.1.0
+483 silly currentTree +-- node-nailgun-server@0.1.3
+483 silly currentTree +-- node-plantuml@0.5.0
+483 silly currentTree +-- nodemailer-direct-transport@3.3.2
+483 silly currentTree +-- nodemailer-fetch@1.6.0
+483 silly currentTree +-- nodemailer-shared@1.1.0
+483 silly currentTree +-- nodemailer-smtp-pool@2.8.2
+483 silly currentTree +-- nodemailer-smtp-transport@2.7.2
+483 silly currentTree +-- nodemailer-wellknown@0.1.10
+483 silly currentTree +-- nodemailer@2.7.2
+483 silly currentTree | +-- ip@1.1.5
+483 silly currentTree | `-- socks@1.1.9
+483 silly currentTree +-- normalize-package-data@2.4.0
+483 silly currentTree +-- npm-package-arg@5.1.2
+483 silly currentTree +-- npm-registry-client@8.4.0
+483 silly currentTree +-- npm-run-path@2.0.2
+483 silly currentTree +-- npmlog@4.1.2
+483 silly currentTree +-- number-is-nan@1.0.1
+483 silly currentTree +-- oauth-sign@0.8.2
+483 silly currentTree +-- object-assign@4.1.1
+483 silly currentTree +-- object-component@0.0.3
+483 silly currentTree +-- on-finished@2.3.0
+483 silly currentTree +-- once@1.4.0
+483 silly currentTree +-- optimist@0.3.7
+483 silly currentTree +-- optionator@0.8.2
+483 silly currentTree | `-- wordwrap@1.0.0
+483 silly currentTree +-- options@0.0.6
+483 silly currentTree +-- optjs@3.2.2
+483 silly currentTree +-- os-homedir@1.0.2
+483 silly currentTree +-- os-locale@1.4.0
+483 silly currentTree +-- os-tmpdir@1.0.2
+483 silly currentTree +-- osenv@0.1.5
+483 silly currentTree +-- p-finally@1.0.0
+483 silly currentTree +-- p-limit@1.2.0
+483 silly currentTree +-- p-locate@2.0.0
+483 silly currentTree +-- p-try@1.0.0
+483 silly currentTree +-- pac-proxy-agent@1.1.0
+483 silly currentTree +-- pac-resolver@2.0.0
+483 silly currentTree | `-- co@3.0.6
+483 silly currentTree +-- pako@1.0.6
+483 silly currentTree +-- parsejson@0.0.3
+483 silly currentTree +-- parseqs@0.0.5
+483 silly currentTree +-- parseuri@0.0.5
+483 silly currentTree +-- parseurl@1.3.2
+483 silly currentTree +-- path-exists@3.0.0
+483 silly currentTree +-- path-is-absolute@1.0.1
+483 silly currentTree +-- path-key@2.0.1
+483 silly currentTree +-- path-proxy@1.0.0
+483 silly currentTree | `-- inflection@1.3.8
+483 silly currentTree +-- path-to-regexp@0.1.7
+483 silly currentTree +-- path@0.12.7
+483 silly currentTree +-- performance-now@2.1.0
+483 silly currentTree +-- pinkie-promise@2.0.1
+483 silly currentTree +-- pinkie@2.0.4
+483 silly currentTree +-- plantuml-encoder@1.2.5
+483 silly currentTree | `-- pako@1.0.3
+483 silly currentTree +-- platform@1.3.5
+483 silly currentTree +-- prelude-ls@1.1.2
+483 silly currentTree +-- process-nextick-args@2.0.0
+483 silly currentTree +-- process@0.11.10
+483 silly currentTree +-- promise-settle@0.3.0
+483 silly currentTree +-- protobufjs@6.6.3
+483 silly currentTree +-- protochain@1.0.5
+483 silly currentTree +-- proxy-addr@1.1.5
+483 silly currentTree +-- proxy-agent@2.0.0
+483 silly currentTree | `-- lru-cache@2.6.5
+483 silly currentTree +-- proxyquire@1.7.11
+483 silly currentTree +-- pseudomap@1.0.2
+483 silly currentTree +-- punycode@2.1.0
+483 silly currentTree +-- q@1.4.1
+483 silly currentTree +-- qs@6.4.0
+483 silly currentTree +-- querystring@0.2.0
+483 silly currentTree +-- range-parser@1.2.0
+483 silly currentTree +-- raw-body@2.2.0
+483 silly currentTree +-- readable-stream@2.3.5
+483 silly currentTree +-- redis-commands@1.3.5
+483 silly currentTree +-- redis-parser@2.6.0
+483 silly currentTree +-- redis@2.8.0
+483 silly currentTree +-- referrer-policy@1.1.0
+483 silly currentTree +-- regenerator-runtime@0.11.1
+483 silly currentTree +-- request@2.83.0
+483 silly currentTree | +-- qs@6.5.1
+483 silly currentTree | `-- uuid@3.2.1
+483 silly currentTree +-- requestretry@1.13.0
+483 silly currentTree +-- require-directory@2.1.1
+483 silly currentTree +-- require-main-filename@1.0.1
+483 silly currentTree +-- resolve@1.1.7
+483 silly currentTree +-- retry-as-promised@2.3.2
+483 silly currentTree | +-- bluebird@3.5.1
+483 silly currentTree | `-- debug@2.6.9
+483 silly currentTree +-- retry@0.10.1
+483 silly currentTree +-- rimraf@2.5.4
+483 silly currentTree +-- safe-buffer@5.1.1
+483 silly currentTree +-- secure-keys@1.0.0
+483 silly currentTree +-- semver@5.3.0
+483 silly currentTree +-- send@0.15.1
+483 silly currentTree | +-- debug@2.6.1
+483 silly currentTree | +-- ms@0.7.2
+483 silly currentTree | `-- statuses@1.3.1
+483 silly currentTree +-- sequelize@4.37.6
+483 silly currentTree | +-- bluebird@3.5.1
+483 silly currentTree | +-- debug@3.1.0
+483 silly currentTree | +-- inflection@1.12.0
+483 silly currentTree | +-- semver@5.5.0
+483 silly currentTree | `-- uuid@3.2.1
+483 silly currentTree +-- sequin@0.1.1
+483 silly currentTree +-- serializerr@1.0.3
+483 silly currentTree +-- serve-static@1.12.1
+483 silly currentTree +-- set-blocking@2.0.0
+483 silly currentTree +-- setprototypeof@1.1.0
+483 silly currentTree +-- shebang-command@1.2.0
+483 silly currentTree +-- shebang-regex@1.0.0
+483 silly currentTree +-- shimmer@1.2.0
+483 silly currentTree +-- signal-exit@3.0.2
+483 silly currentTree +-- sjcl-codec@0.1.1
+483 silly currentTree +-- sjcl@1.0.7
+483 silly currentTree +-- slack-node@0.2.0
+483 silly currentTree +-- slide@1.1.6
+483 silly currentTree +-- smart-buffer@1.1.15
+483 silly currentTree +-- smtp-connection@2.12.0
+483 silly currentTree +-- sntp@2.1.0
+483 silly currentTree +-- socket.io-adapter@0.5.0
+483 silly currentTree | +-- debug@2.3.3
+483 silly currentTree | `-- ms@0.7.2
+483 silly currentTree +-- socket.io-client@1.7.3
+483 silly currentTree | +-- component-emitter@1.2.1
+483 silly currentTree | +-- debug@2.3.3
+483 silly currentTree | `-- ms@0.7.2
+483 silly currentTree +-- socket.io-parser@2.3.1
+483 silly currentTree | +-- debug@2.2.0
+483 silly currentTree | +-- isarray@0.0.1
+483 silly currentTree | `-- ms@0.7.1
+483 silly currentTree +-- socket.io@1.7.3
+483 silly currentTree | +-- debug@2.3.3
+483 silly currentTree | +-- ms@0.7.2
+483 silly currentTree | `-- object-assign@4.1.0
+483 silly currentTree +-- socks-proxy-agent@2.1.1
+483 silly currentTree +-- socks@1.1.10
+483 silly currentTree | `-- ip@1.1.5
+483 silly currentTree +-- source-map@0.6.1
+483 silly currentTree +-- spdx-correct@3.0.0
+483 silly currentTree +-- spdx-exceptions@2.1.0
+483 silly currentTree +-- spdx-expression-parse@3.0.0
+483 silly currentTree +-- spdx-license-ids@3.0.0
+483 silly currentTree +-- sprintf-js@1.0.3
+483 silly currentTree +-- sprintf@0.1.5
+483 silly currentTree +-- sshpk@1.14.1
+483 silly currentTree +-- ssri@4.1.6
+483 silly currentTree +-- stack-trace@0.0.10
+483 silly currentTree +-- statuses@1.5.0
+483 silly currentTree +-- stream-buffers@3.0.1
+483 silly currentTree +-- streamifier@0.1.1
+483 silly currentTree +-- streamroller@0.7.0
+483 silly currentTree | `-- debug@3.1.0
+483 silly currentTree +-- streamsearch@0.1.2
+483 silly currentTree +-- string_decoder@1.0.3
+483 silly currentTree +-- string-width@1.0.2
+483 silly currentTree +-- stringstream@0.0.5
+483 silly currentTree +-- strip-ansi@3.0.1
+483 silly currentTree +-- strip-eof@1.0.0
+483 silly currentTree +-- supports-color@2.0.0
+483 silly currentTree +-- tar-stream@1.5.2
+483 silly currentTree +-- tar@3.1.5
+483 silly currentTree | `-- yallist@3.0.2
+483 silly currentTree +-- tedious@2.3.1
+483 silly currentTree +-- temp@0.8.3
+483 silly currentTree | `-- rimraf@2.2.8
+483 silly currentTree +-- terraformer-wkt-parser@1.1.2
+483 silly currentTree +-- terraformer@1.0.8
+483 silly currentTree +-- thenify-all@1.6.0
+483 silly currentTree +-- thenify@3.2.1
+483 silly currentTree +-- thunkify@2.1.2
+483 silly currentTree +-- timespan@2.3.0
+483 silly currentTree +-- to-array@0.1.4
+483 silly currentTree +-- toposort-class@1.0.1
+483 silly currentTree +-- tough-cookie@2.3.4
+483 silly currentTree | `-- punycode@1.4.1
+483 silly currentTree +-- tsscmp@1.0.5
+483 silly currentTree +-- tunnel-agent@0.6.0
+483 silly currentTree +-- tweetnacl@0.14.5
+483 silly currentTree +-- type-check@0.3.2
+483 silly currentTree +-- type-is@1.6.16
+483 silly currentTree +-- typedarray@0.0.6
+483 silly currentTree +-- ultron@1.0.2
+483 silly currentTree +-- underscore@1.8.3
+483 silly currentTree +-- universalify@0.1.1
+483 silly currentTree +-- unpipe@1.0.0
+483 silly currentTree +-- uri-js@3.0.2
+483 silly currentTree +-- url@0.11.0
+483 silly currentTree | `-- punycode@1.3.2
+483 silly currentTree +-- utf8-bytes@0.0.1
+483 silly currentTree +-- util-deprecate@1.0.2
+483 silly currentTree +-- util@0.10.3
+483 silly currentTree | `-- inherits@2.0.1
+483 silly currentTree +-- utils-merge@1.0.0
+483 silly currentTree +-- uuid@3.0.1
+483 silly currentTree +-- validate-npm-package-license@3.0.3
+483 silly currentTree +-- validate-npm-package-name@3.0.0
+483 silly currentTree +-- validator@9.4.1
+483 silly currentTree +-- vary@1.1.2
+483 silly currentTree +-- verror@1.10.0
+483 silly currentTree +-- websocket-driver@0.7.0
+483 silly currentTree +-- websocket-extensions@0.1.3
+483 silly currentTree +-- when@3.7.8
+483 silly currentTree +-- which-module@2.0.0
+483 silly currentTree +-- which@1.3.0
+483 silly currentTree +-- wide-align@1.1.2
+483 silly currentTree +-- window-size@0.1.4
+483 silly currentTree +-- winston@2.3.1
+483 silly currentTree | `-- async@1.0.0
+483 silly currentTree +-- wkx@0.4.4
+483 silly currentTree +-- wordwrap@0.0.3
+483 silly currentTree +-- wrap-ansi@2.1.0
+483 silly currentTree +-- wrappy@1.0.2
+483 silly currentTree +-- ws@5.1.1
+483 silly currentTree +-- wtf-8@1.0.0
+483 silly currentTree +-- x-xss-protection@1.1.0
+483 silly currentTree +-- xmlhttprequest-ssl@1.5.3
+483 silly currentTree +-- xregexp@2.0.0
+483 silly currentTree +-- xtend@4.0.1
+483 silly currentTree +-- y18n@3.2.1
+483 silly currentTree +-- yallist@2.1.2
+483 silly currentTree +-- yargs-parser@8.1.0
+483 silly currentTree | `-- camelcase@4.1.0
+483 silly currentTree +-- yargs@3.32.0
+483 silly currentTree `-- yeast@0.1.2
+484 silly idealTree crm-network@1.0.0
+484 silly idealTree +-- @protobufjs/aspromise@1.1.2
+484 silly idealTree +-- @protobufjs/base64@1.1.2
+484 silly idealTree +-- @protobufjs/codegen@1.0.8
+484 silly idealTree +-- @protobufjs/eventemitter@1.1.0
+484 silly idealTree +-- @protobufjs/fetch@1.1.0
+484 silly idealTree +-- @protobufjs/inquire@1.1.0
+484 silly idealTree +-- @protobufjs/path@1.1.2
+484 silly idealTree +-- @protobufjs/pool@1.1.0
+484 silly idealTree +-- @protobufjs/utf8@1.1.0
+484 silly idealTree +-- @types/geojson@1.0.6
+484 silly idealTree +-- @types/long@3.0.32
+484 silly idealTree +-- @types/node@7.0.4
+484 silly idealTree +-- accepts@1.3.3
+484 silly idealTree +-- acorn@5.1.2
+484 silly idealTree +-- addressparser@1.0.1
+484 silly idealTree +-- after@0.8.2
+484 silly idealTree +-- agent-base@2.1.1
+484 silly idealTree | `-- semver@5.0.3
+484 silly idealTree +-- ajv@5.5.2
+484 silly idealTree +-- amqplib@0.5.2
+484 silly idealTree | +-- bluebird@3.5.1
+484 silly idealTree | +-- isarray@0.0.1
+484 silly idealTree | +-- readable-stream@1.1.14
+484 silly idealTree | `-- string_decoder@0.10.31
+484 silly idealTree +-- ansi-regex@2.1.1
+484 silly idealTree +-- ansi-styles@2.2.1
+484 silly idealTree +-- any-promise@1.3.0
+484 silly idealTree +-- aproba@1.2.0
+484 silly idealTree +-- are-we-there-yet@1.1.4
+484 silly idealTree +-- arguejs@0.2.3
+484 silly idealTree +-- array-flatten@1.1.1
+484 silly idealTree +-- arraybuffer.slice@0.0.6
+484 silly idealTree +-- asap@2.0.6
+484 silly idealTree +-- ascli@1.0.1
+484 silly idealTree +-- asn1@0.2.3
+484 silly idealTree +-- assert-plus@1.0.0
+484 silly idealTree +-- ast-types@0.11.3
+484 silly idealTree +-- async-limiter@1.0.0
+484 silly idealTree +-- async@2.6.0
+484 silly idealTree +-- asynckit@0.4.0
+484 silly idealTree +-- aws-sign2@0.7.0
+484 silly idealTree +-- aws4@1.6.0
+484 silly idealTree +-- axios@0.15.3
+484 silly idealTree +-- babel-runtime@6.26.0
+484 silly idealTree | `-- core-js@2.5.5
+484 silly idealTree +-- backo2@1.0.2
+484 silly idealTree +-- balanced-match@1.0.0
+484 silly idealTree +-- base64-arraybuffer@0.1.5
+484 silly idealTree +-- base64id@1.0.0
+484 silly idealTree +-- bcrypt-pbkdf@1.0.1
+484 silly idealTree +-- better-assert@1.0.2
+484 silly idealTree +-- big-number@0.3.1
+484 silly idealTree +-- bitsyntax@0.0.4
+484 silly idealTree +-- bl@1.2.2
+484 silly idealTree +-- blob@0.0.4
+484 silly idealTree +-- bluebird@2.11.0
+484 silly idealTree +-- bn.js@4.11.8
+484 silly idealTree +-- body-parser@1.17.2
+484 silly idealTree +-- boom@4.3.1
+484 silly idealTree +-- brace-expansion@1.1.11
+484 silly idealTree +-- brorand@1.1.0
+484 silly idealTree +-- browser-request@0.3.3
+484 silly idealTree +-- browserfs@1.1.0
+484 silly idealTree +-- buffer-from@1.0.0
+484 silly idealTree +-- buffer-more-ints@0.0.2
+484 silly idealTree +-- buildmail@4.0.1
+484 silly idealTree | `-- punycode@1.4.1
+484 silly idealTree +-- builtin-modules@1.1.1
+484 silly idealTree +-- builtins@1.0.3
+484 silly idealTree +-- busboy@0.2.14
+484 silly idealTree | +-- isarray@0.0.1
+484 silly idealTree | +-- readable-stream@1.1.14
+484 silly idealTree | `-- string_decoder@0.10.31
+484 silly idealTree +-- bytebuffer@5.0.1
+484 silly idealTree +-- bytes@2.4.0
+484 silly idealTree +-- callsite@1.0.0
+484 silly idealTree +-- camelcase@2.1.1
+484 silly idealTree +-- camelize@1.0.0
+484 silly idealTree +-- caseless@0.12.0
+484 silly idealTree +-- chalk@1.1.3
+484 silly idealTree +-- charenc@0.0.2
+484 silly idealTree +-- circular-json@0.5.3
+484 silly idealTree +-- claudia-api-builder@3.0.2
+484 silly idealTree +-- cliui@3.2.0
+484 silly idealTree +-- cloudant-follow@0.16.1
+484 silly idealTree | `-- debug@3.1.0
+484 silly idealTree +-- cls-bluebird@2.1.0
+484 silly idealTree +-- co@4.6.0
+484 silly idealTree +-- code-point-at@1.1.0
+484 silly idealTree +-- colors@1.0.3
+484 silly idealTree +-- colour@0.7.1
+484 silly idealTree +-- combined-stream@1.0.6
+484 silly idealTree +-- commander@2.9.0
+484 silly idealTree +-- comment-parser@0.4.0
+484 silly idealTree +-- component-bind@1.0.0
+484 silly idealTree +-- component-emitter@1.1.2
+484 silly idealTree +-- component-inherit@0.0.3
+484 silly idealTree +-- composer-admin@0.16.6
+484 silly idealTree +-- composer-client@0.15.2
+484 silly idealTree | +-- composer-common@0.15.2
+484 silly idealTree | +-- composer-connector-hlfv1@0.15.2
+484 silly idealTree | +-- composer-runtime-hlfv1@0.15.2
+484 silly idealTree | +-- debug@2.6.2
+484 silly idealTree | +-- fabric-ca-client@1.0.2
+484 silly idealTree | | `-- fs-extra@0.30.0
+484 silly idealTree | +-- fabric-client@1.0.2
+484 silly idealTree | | +-- fs-extra@0.30.0
+484 silly idealTree | | `-- jsrsasign@6.2.2
+484 silly idealTree | +-- jsrsasign@6.2.3
+484 silly idealTree | +-- ms@0.7.2
+484 silly idealTree | `-- sjcl@1.0.3
+484 silly idealTree +-- composer-common@0.16.6
+484 silly idealTree | +-- debug@2.6.2
+484 silly idealTree | `-- ms@0.7.2
+484 silly idealTree +-- composer-connector-hlfv1@0.16.6
+484 silly idealTree +-- composer-connector-server@0.16.6
+484 silly idealTree | +-- ansi-regex@3.0.0
+484 silly idealTree | +-- is-fullwidth-code-point@2.0.0
+484 silly idealTree | +-- os-locale@2.1.0
+484 silly idealTree | +-- string-width@2.1.1
+484 silly idealTree | +-- strip-ansi@4.0.0
+484 silly idealTree | `-- yargs@10.0.3
+484 silly idealTree +-- composer-runtime-hlfv1@0.16.6
+484 silly idealTree +-- concat-map@0.0.1
+484 silly idealTree +-- concat-stream@1.6.2
+484 silly idealTree +-- config@1.24.0
+484 silly idealTree +-- console-control-strings@1.1.0
+484 silly idealTree +-- content-disposition@0.5.2
+484 silly idealTree +-- content-security-policy-builder@2.0.0
+484 silly idealTree +-- content-type@1.0.4
+484 silly idealTree +-- cookie-signature@1.0.6
+484 silly idealTree +-- cookie@0.3.1
+484 silly idealTree +-- core-js@2.3.0
+484 silly idealTree +-- core-util-is@1.0.2
+484 silly idealTree +-- cors@2.8.4
+484 silly idealTree +-- cross-spawn@5.1.0
+484 silly idealTree +-- crypt@0.0.2
+484 silly idealTree +-- cryptiles@3.1.2
+484 silly idealTree | `-- boom@5.2.0
+484 silly idealTree +-- crypto@0.0.3
+484 silly idealTree +-- csprng@0.1.2
+484 silly idealTree +-- cycle@1.0.3
+484 silly idealTree +-- dashdash@1.14.1
+484 silly idealTree +-- dasherize@2.0.0
+484 silly idealTree +-- data-uri-to-buffer@1.2.0
+484 silly idealTree +-- date-format@1.2.0
+484 silly idealTree +-- debug@2.6.7
+484 silly idealTree +-- decamelize@1.2.0
+484 silly idealTree +-- deep-is@0.1.3
+484 silly idealTree +-- degenerator@1.0.4
+484 silly idealTree +-- delayed-stream@1.0.0
+484 silly idealTree +-- delegates@1.0.0
+484 silly idealTree +-- depd@1.1.2
+484 silly idealTree +-- destroy@1.0.4
+484 silly idealTree +-- dicer@0.2.5
+484 silly idealTree | +-- isarray@0.0.1
+484 silly idealTree | +-- readable-stream@1.1.14
+484 silly idealTree | `-- string_decoder@0.10.31
+484 silly idealTree +-- dns-prefetch-control@0.1.0
+484 silly idealTree +-- doctrine@2.0.0
+484 silly idealTree +-- dont-sniff-mimetype@1.0.0
+484 silly idealTree +-- dotenv@4.0.0
+484 silly idealTree +-- dottie@2.0.0
+484 silly idealTree +-- double-ended-queue@2.1.0-0
+484 silly idealTree +-- ecc-jsbn@0.1.1
+484 silly idealTree +-- ee-first@1.1.1
+484 silly idealTree +-- elliptic@6.4.0
+484 silly idealTree +-- encodeurl@1.0.2
+484 silly idealTree +-- end-of-stream@1.4.1
+484 silly idealTree +-- engine.io-client@1.8.3
+484 silly idealTree | +-- component-emitter@1.2.1
+484 silly idealTree | +-- debug@2.3.3
+484 silly idealTree | +-- ms@0.7.2
+484 silly idealTree | `-- ws@1.1.2
+484 silly idealTree +-- engine.io-parser@1.3.2
+484 silly idealTree +-- engine.io@1.8.3
+484 silly idealTree | +-- debug@2.3.3
+484 silly idealTree | +-- ms@0.7.2
+484 silly idealTree | `-- ws@1.1.2
+484 silly idealTree +-- errs@0.3.2
+484 silly idealTree +-- es6-promise@3.0.2
+484 silly idealTree +-- escape-html@1.0.3
+484 silly idealTree +-- escape-string-regexp@1.0.5
+484 silly idealTree +-- escodegen@1.9.1
+484 silly idealTree | `-- esprima@3.1.3
+484 silly idealTree +-- esprima@3.1.2
+484 silly idealTree +-- estraverse@4.2.0
+484 silly idealTree +-- esutils@2.0.2
+484 silly idealTree +-- etag@1.8.1
+484 silly idealTree +-- execa@0.7.0
+484 silly idealTree +-- expect-ct@0.1.0
+484 silly idealTree +-- express-fileupload@0.4.0
+484 silly idealTree | +-- fs-extra@4.0.3
+484 silly idealTree | `-- jsonfile@4.0.0
+484 silly idealTree +-- express@4.16.3
+484 silly idealTree | +-- accepts@1.3.5
+484 silly idealTree | +-- body-parser@1.18.2
+484 silly idealTree | +-- bytes@3.0.0
+484 silly idealTree | +-- debug@2.6.9
+484 silly idealTree | +-- finalhandler@1.1.1
+484 silly idealTree | +-- fresh@0.5.2
+484 silly idealTree | +-- iconv-lite@0.4.19
+484 silly idealTree | +-- ipaddr.js@1.6.0
+484 silly idealTree | +-- mime@1.4.1
+484 silly idealTree | +-- proxy-addr@2.0.3
+484 silly idealTree | +-- qs@6.5.1
+484 silly idealTree | +-- raw-body@2.3.2
+484 silly idealTree | | +-- depd@1.1.1
+484 silly idealTree | | +-- http-errors@1.6.2
+484 silly idealTree | | `-- setprototypeof@1.0.3
+484 silly idealTree | +-- send@0.16.2
+484 silly idealTree | +-- serve-static@1.13.2
+484 silly idealTree | +-- statuses@1.4.0
+484 silly idealTree | `-- utils-merge@1.0.1
+484 silly idealTree +-- extend@3.0.1
+484 silly idealTree +-- extsprintf@1.3.0
+484 silly idealTree +-- eyes@0.1.8
+484 silly idealTree +-- fabric-ca-client@1.0.5
+484 silly idealTree | +-- fs-extra@0.30.0
+484 silly idealTree | `-- jsrsasign@6.2.3
+484 silly idealTree +-- fabric-client@1.0.5
+484 silly idealTree | +-- fs-extra@0.30.0
+484 silly idealTree | `-- jsrsasign@6.2.2
+484 silly idealTree +-- fast-deep-equal@1.1.0
+484 silly idealTree +-- fast-json-stable-stringify@2.0.0
+484 silly idealTree +-- fast-levenshtein@2.0.6
+484 silly idealTree +-- faye-websocket@0.11.1
+484 silly idealTree +-- faye@1.2.3
+484 silly idealTree +-- file-saver@1.3.3
+484 silly idealTree +-- file-uri-to-path@1.0.0
+484 silly idealTree +-- fill-keys@1.0.2
+484 silly idealTree +-- finalhandler@1.0.6
+484 silly idealTree | +-- debug@2.6.9
+484 silly idealTree | `-- statuses@1.3.1
+484 silly idealTree +-- find-up@2.1.0
+484 silly idealTree +-- follow-redirects@1.0.0
+484 silly idealTree +-- forever-agent@0.6.1
+484 silly idealTree +-- form-data@2.3.2
+484 silly idealTree +-- forwarded@0.1.2
+484 silly idealTree +-- frameguard@3.0.0
+484 silly idealTree +-- fresh@0.5.0
+484 silly idealTree +-- fs-extra@1.0.0
+484 silly idealTree +-- fs-promise@1.0.0
+484 silly idealTree +-- fs.realpath@1.0.0
+484 silly idealTree +-- fs@0.0.2
+484 silly idealTree +-- ftp@0.3.10
+484 silly idealTree | +-- isarray@0.0.1
+484 silly idealTree | +-- readable-stream@1.1.14
+484 silly idealTree | `-- string_decoder@0.10.31
+484 silly idealTree +-- gauge@2.7.4
+484 silly idealTree +-- generate-function@2.0.0
+484 silly idealTree +-- generate-object-property@1.2.0
+484 silly idealTree +-- generic-pool@3.4.2
+484 silly idealTree +-- get-caller-file@1.0.2
+484 silly idealTree +-- get-stream@3.0.0
+484 silly idealTree +-- get-uri@2.0.1
+484 silly idealTree +-- getpass@0.1.7
+484 silly idealTree +-- glob@7.1.2
+484 silly idealTree | `-- minimatch@3.0.4
+484 silly idealTree +-- graceful-fs@4.1.11
+484 silly idealTree +-- graceful-readlink@1.0.1
+484 silly idealTree +-- grpc@1.6.6
+484 silly idealTree | +-- abbrev@1.1.1
+484 silly idealTree | +-- ajv@4.11.8
+484 silly idealTree | +-- ansi-regex@2.1.1
+484 silly idealTree | +-- aproba@1.2.0
+484 silly idealTree | +-- are-we-there-yet@1.1.4
+484 silly idealTree | +-- asn1@0.2.3
+484 silly idealTree | +-- assert-plus@0.2.0
+484 silly idealTree | +-- asynckit@0.4.0
+484 silly idealTree | +-- aws-sign2@0.6.0
+484 silly idealTree | +-- aws4@1.6.0
+484 silly idealTree | +-- balanced-match@1.0.0
+484 silly idealTree | +-- bcrypt-pbkdf@1.0.1
+484 silly idealTree | +-- block-stream@0.0.9
+484 silly idealTree | +-- boom@2.10.1
+484 silly idealTree | +-- brace-expansion@1.1.8
+484 silly idealTree | +-- caseless@0.12.0
+484 silly idealTree | +-- co@4.6.0
+484 silly idealTree | +-- code-point-at@1.1.0
+484 silly idealTree | +-- combined-stream@1.0.5
+484 silly idealTree | +-- concat-map@0.0.1
+484 silly idealTree | +-- console-control-strings@1.1.0
+484 silly idealTree | +-- core-util-is@1.0.2
+484 silly idealTree | +-- cryptiles@2.0.5
+484 silly idealTree | +-- dashdash@1.14.1
+484 silly idealTree | | `-- assert-plus@1.0.0
+484 silly idealTree | +-- debug@2.6.9
+484 silly idealTree | +-- deep-extend@0.4.2
+484 silly idealTree | +-- delayed-stream@1.0.0
+484 silly idealTree | +-- delegates@1.0.0
+484 silly idealTree | +-- ecc-jsbn@0.1.1
+484 silly idealTree | +-- extend@3.0.1
+484 silly idealTree | +-- extsprintf@1.3.0
+484 silly idealTree | +-- forever-agent@0.6.1
+484 silly idealTree | +-- form-data@2.1.4
+484 silly idealTree | +-- fs.realpath@1.0.0
+484 silly idealTree | +-- fstream-ignore@1.0.5
+484 silly idealTree | +-- fstream@1.0.11
+484 silly idealTree | +-- gauge@2.7.4
+484 silly idealTree | +-- getpass@0.1.7
+484 silly idealTree | | `-- assert-plus@1.0.0
+484 silly idealTree | +-- glob@7.1.2
+484 silly idealTree | +-- graceful-fs@4.1.11
+484 silly idealTree | +-- har-schema@1.0.5
+484 silly idealTree | +-- har-validator@4.2.1
+484 silly idealTree | +-- has-unicode@2.0.1
+484 silly idealTree | +-- hawk@3.1.3
+484 silly idealTree | +-- hoek@2.16.3
+484 silly idealTree | +-- http-signature@1.1.1
+484 silly idealTree | +-- inflight@1.0.6
+484 silly idealTree | +-- inherits@2.0.3
+484 silly idealTree | +-- ini@1.3.4
+484 silly idealTree | +-- is-fullwidth-code-point@1.0.0
+484 silly idealTree | +-- is-typedarray@1.0.0
+484 silly idealTree | +-- isarray@1.0.0
+484 silly idealTree | +-- isstream@0.1.2
+484 silly idealTree | +-- jsbn@0.1.1
+484 silly idealTree | +-- json-schema@0.2.3
+484 silly idealTree | +-- json-stable-stringify@1.0.1
+484 silly idealTree | +-- json-stringify-safe@5.0.1
+484 silly idealTree | +-- jsonify@0.0.0
+484 silly idealTree | +-- jsprim@1.4.1
+484 silly idealTree | | `-- assert-plus@1.0.0
+484 silly idealTree | +-- mime-db@1.30.0
+484 silly idealTree | +-- mime-types@2.1.17
+484 silly idealTree | +-- minimatch@3.0.4
+484 silly idealTree | +-- minimist@1.2.0
+484 silly idealTree | +-- mkdirp@0.5.1
+484 silly idealTree | | `-- minimist@0.0.8
+484 silly idealTree | +-- ms@2.0.0
+484 silly idealTree | +-- node-pre-gyp@0.6.38
+484 silly idealTree | +-- nopt@4.0.1
+484 silly idealTree | +-- npmlog@4.1.2
+484 silly idealTree | +-- number-is-nan@1.0.1
+484 silly idealTree | +-- oauth-sign@0.8.2
+484 silly idealTree | +-- object-assign@4.1.1
+484 silly idealTree | +-- once@1.4.0
+484 silly idealTree | +-- os-homedir@1.0.2
+484 silly idealTree | +-- os-tmpdir@1.0.2
+484 silly idealTree | +-- osenv@0.1.4
+484 silly idealTree | +-- path-is-absolute@1.0.1
+484 silly idealTree | +-- performance-now@0.2.0
+484 silly idealTree | +-- process-nextick-args@1.0.7
+484 silly idealTree | +-- protobufjs@5.0.2
+484 silly idealTree | +-- punycode@1.4.1
+484 silly idealTree | +-- qs@6.4.0
+484 silly idealTree | +-- rc@1.2.1
+484 silly idealTree | +-- readable-stream@2.3.3
+484 silly idealTree | +-- request@2.81.0
+484 silly idealTree | +-- rimraf@2.6.2
+484 silly idealTree | +-- safe-buffer@5.1.1
+484 silly idealTree | +-- semver@5.4.1
+484 silly idealTree | +-- set-blocking@2.0.0
+484 silly idealTree | +-- signal-exit@3.0.2
+484 silly idealTree | +-- sntp@1.0.9
+484 silly idealTree | +-- sshpk@1.13.1
+484 silly idealTree | | `-- assert-plus@1.0.0
+484 silly idealTree | +-- string_decoder@1.0.3
+484 silly idealTree | +-- string-width@1.0.2
+484 silly idealTree | +-- stringstream@0.0.5
+484 silly idealTree | +-- strip-ansi@3.0.1
+484 silly idealTree | +-- strip-json-comments@2.0.1
+484 silly idealTree | +-- tar-pack@3.4.0
+484 silly idealTree | +-- tar@2.2.1
+484 silly idealTree | +-- tough-cookie@2.3.3
+484 silly idealTree | +-- tunnel-agent@0.6.0
+484 silly idealTree | +-- tweetnacl@0.14.5
+484 silly idealTree | +-- uid-number@0.0.6
+484 silly idealTree | +-- util-deprecate@1.0.2
+484 silly idealTree | +-- uuid@3.1.0
+484 silly idealTree | +-- verror@1.10.0
+484 silly idealTree | | `-- assert-plus@1.0.0
+484 silly idealTree | +-- wide-align@1.1.2
+484 silly idealTree | `-- wrappy@1.0.2
+484 silly idealTree +-- har-schema@2.0.0
+484 silly idealTree +-- har-validator@5.0.3
+484 silly idealTree +-- has-ansi@2.0.0
+484 silly idealTree +-- has-binary@0.1.7
+484 silly idealTree | `-- isarray@0.0.1
+484 silly idealTree +-- has-cors@1.1.0
+484 silly idealTree +-- has-unicode@2.0.1
+484 silly idealTree +-- hash.js@1.1.3
+484 silly idealTree +-- hawk@6.0.2
+484 silly idealTree +-- helmet-csp@2.7.0
+484 silly idealTree +-- helmet@3.12.0
+484 silly idealTree +-- hide-powered-by@1.0.0
+484 silly idealTree +-- hipchat-notifier@1.1.0
+484 silly idealTree +-- hmac-drbg@1.0.1
+484 silly idealTree +-- hoek@4.2.1
+484 silly idealTree +-- homedir@0.6.0
+484 silly idealTree +-- hosted-git-info@2.6.0
+484 silly idealTree +-- hpkp@2.0.0
+484 silly idealTree +-- hsts@2.1.0
+484 silly idealTree +-- http-errors@1.6.3
+484 silly idealTree +-- http-parser-js@0.4.11
+484 silly idealTree +-- http-proxy-agent@1.0.0
+484 silly idealTree +-- http-signature@1.2.0
+484 silly idealTree +-- http-status@1.0.1
+484 silly idealTree +-- http@0.0.0
+484 silly idealTree +-- httpntlm@1.6.1
+484 silly idealTree | `-- underscore@1.7.0
+484 silly idealTree +-- httpreq@0.4.24
+484 silly idealTree +-- https-proxy-agent@1.0.0
+484 silly idealTree +-- iconv-lite@0.4.15
+484 silly idealTree +-- ienoopen@1.0.0
+484 silly idealTree +-- immediate@3.0.6
+484 silly idealTree +-- indexof@0.0.1
+484 silly idealTree +-- inflection@1.10.0
+484 silly idealTree +-- inflight@1.0.6
+484 silly idealTree +-- inherits@2.0.3
+484 silly idealTree +-- ini@1.3.5
+484 silly idealTree +-- invert-kv@1.0.0
+484 silly idealTree +-- ip@1.0.1
+484 silly idealTree +-- ipaddr.js@1.4.0
+484 silly idealTree +-- is-bluebird@1.0.2
+484 silly idealTree +-- is-buffer@1.1.6
+484 silly idealTree +-- is-builtin-module@1.0.0
+484 silly idealTree +-- is-fullwidth-code-point@1.0.0
+484 silly idealTree +-- is-my-ip-valid@1.0.0
+484 silly idealTree +-- is-my-json-valid@2.17.2
+484 silly idealTree +-- is-object@1.0.1
+484 silly idealTree +-- is-property@1.0.2
+484 silly idealTree +-- is-stream@1.1.0
+484 silly idealTree +-- is-typedarray@1.0.0
+484 silly idealTree +-- isarray@1.0.0
+484 silly idealTree +-- isexe@2.0.0
+484 silly idealTree +-- isstream@0.1.2
+484 silly idealTree +-- js-sha3@0.5.7
+484 silly idealTree +-- jsbn@0.1.1
+484 silly idealTree +-- json-schema-traverse@0.3.1
+484 silly idealTree +-- json-schema@0.2.3
+484 silly idealTree +-- json-stable-stringify@1.0.1
+484 silly idealTree +-- json-stringify-safe@5.0.1
+484 silly idealTree +-- json3@3.3.2
+484 silly idealTree +-- json5@0.4.0
+484 silly idealTree +-- jsonfile@2.4.0
+484 silly idealTree +-- jsonify@0.0.0
+484 silly idealTree +-- jsonpointer@4.0.1
+484 silly idealTree +-- jsprim@1.4.1
+484 silly idealTree +-- jsrsasign@8.0.3
+484 silly idealTree +-- jssha@2.3.1
+484 silly idealTree +-- jszip@3.1.3
+484 silly idealTree | +-- process-nextick-args@1.0.7
+484 silly idealTree | +-- readable-stream@2.0.6
+484 silly idealTree | `-- string_decoder@0.10.31
+484 silly idealTree +-- klaw@1.3.1
+484 silly idealTree +-- lcid@1.0.0
+484 silly idealTree +-- left-pad@1.1.3
+484 silly idealTree +-- levn@0.3.0
+484 silly idealTree +-- libbase64@0.1.0
+484 silly idealTree +-- libmime@3.0.0
+484 silly idealTree +-- libqp@1.1.0
+484 silly idealTree +-- lie@3.1.1
+484 silly idealTree +-- locate-path@2.0.0
+484 silly idealTree +-- lodash.reduce@4.6.0
+484 silly idealTree +-- lodash@4.17.5
+484 silly idealTree +-- log4js@2.5.3
+484 silly idealTree | `-- debug@3.1.0
+484 silly idealTree +-- loggly@1.1.1
+484 silly idealTree | +-- assert-plus@0.2.0
+484 silly idealTree | +-- aws-sign2@0.6.0
+484 silly idealTree | +-- bl@1.1.2
+484 silly idealTree | +-- boom@2.10.1
+484 silly idealTree | +-- caseless@0.11.0
+484 silly idealTree | +-- cryptiles@2.0.5
+484 silly idealTree | +-- form-data@2.0.0
+484 silly idealTree | +-- har-validator@2.0.6
+484 silly idealTree | +-- hawk@3.1.3
+484 silly idealTree | +-- hoek@2.16.3
+484 silly idealTree | +-- http-signature@1.1.1
+484 silly idealTree | +-- node-uuid@1.4.8
+484 silly idealTree | +-- process-nextick-args@1.0.7
+484 silly idealTree | +-- qs@6.2.3
+484 silly idealTree | +-- readable-stream@2.0.6
+484 silly idealTree | +-- request@2.75.0
+484 silly idealTree | +-- sntp@1.0.9
+484 silly idealTree | +-- string_decoder@0.10.31
+484 silly idealTree | `-- tunnel-agent@0.4.3
+484 silly idealTree +-- long@3.2.0
+484 silly idealTree +-- lorem-ipsum@1.0.4
+484 silly idealTree +-- lru-cache@4.1.2
+484 silly idealTree +-- mailcomposer@4.0.1
+484 silly idealTree +-- mailgun-js@0.7.15
+484 silly idealTree | +-- async@2.1.5
+484 silly idealTree | +-- debug@2.2.0
+484 silly idealTree | +-- form-data@2.1.4
+484 silly idealTree | `-- ms@0.7.1
+484 silly idealTree +-- md5@2.2.1
+484 silly idealTree +-- media-typer@0.3.0
+484 silly idealTree +-- mem@1.1.0
+484 silly idealTree +-- merge-descriptors@1.0.1
+484 silly idealTree +-- methods@1.1.2
+484 silly idealTree +-- mime-db@1.33.0
+484 silly idealTree +-- mime-types@2.1.18
+484 silly idealTree +-- mime@1.3.4
+484 silly idealTree +-- mimic-fn@1.2.0
+484 silly idealTree +-- minimalistic-assert@1.0.0
+484 silly idealTree +-- minimalistic-crypto-utils@1.0.1
+484 silly idealTree +-- minimatch@3.0.3
+484 silly idealTree +-- minimist@0.0.8
+484 silly idealTree +-- minipass@2.2.4
+484 silly idealTree | `-- yallist@3.0.2
+484 silly idealTree +-- minizlib@1.1.0
+484 silly idealTree +-- mkdirp@0.5.1
+484 silly idealTree +-- module-not-found-error@1.0.1
+484 silly idealTree +-- moment-timezone@0.5.16
+484 silly idealTree +-- moment@2.22.1
+484 silly idealTree +-- ms@2.0.0
+484 silly idealTree +-- mz@2.7.0
+484 silly idealTree +-- nan@2.10.0
+484 silly idealTree +-- nano@6.4.3
+484 silly idealTree +-- nconf@0.8.5
+484 silly idealTree | `-- async@1.5.2
+484 silly idealTree +-- negotiator@0.6.1
+484 silly idealTree +-- netmask@1.0.6
+484 silly idealTree +-- nforce@1.10.0
+484 silly idealTree | +-- ajv@4.11.8
+484 silly idealTree | +-- assert-plus@0.2.0
+484 silly idealTree | +-- aws-sign2@0.6.0
+484 silly idealTree | +-- boom@2.10.1
+484 silly idealTree | +-- cryptiles@2.0.5
+484 silly idealTree | +-- form-data@2.1.4
+484 silly idealTree | +-- har-schema@1.0.5
+484 silly idealTree | +-- har-validator@4.2.1
+484 silly idealTree | +-- hawk@3.1.3
+484 silly idealTree | +-- hoek@2.16.3
+484 silly idealTree | +-- http-signature@1.1.1
+484 silly idealTree | +-- lodash@3.10.1
+484 silly idealTree | +-- mime@1.4.1
+484 silly idealTree | +-- performance-now@0.2.0
+484 silly idealTree | +-- request@2.81.0
+484 silly idealTree | `-- sntp@1.0.9
+484 silly idealTree +-- nocache@2.0.0
+484 silly idealTree +-- node-nailgun-client@0.1.0
+484 silly idealTree +-- node-nailgun-server@0.1.3
+484 silly idealTree +-- node-plantuml@0.5.0
+484 silly idealTree +-- nodemailer-direct-transport@3.3.2
+484 silly idealTree +-- nodemailer-fetch@1.6.0
+484 silly idealTree +-- nodemailer-shared@1.1.0
+484 silly idealTree +-- nodemailer-smtp-pool@2.8.2
+484 silly idealTree +-- nodemailer-smtp-transport@2.7.2
+484 silly idealTree +-- nodemailer-wellknown@0.1.10
+484 silly idealTree +-- nodemailer@2.7.2
+484 silly idealTree | +-- ip@1.1.5
+484 silly idealTree | `-- socks@1.1.9
+484 silly idealTree +-- normalize-package-data@2.4.0
+484 silly idealTree +-- npm-package-arg@5.1.2
+484 silly idealTree +-- npm-registry-client@8.4.0
+484 silly idealTree +-- npm-run-path@2.0.2
+484 silly idealTree +-- npmlog@4.1.2
+484 silly idealTree +-- number-is-nan@1.0.1
+484 silly idealTree +-- oauth-sign@0.8.2
+484 silly idealTree +-- object-assign@4.1.1
+484 silly idealTree +-- object-component@0.0.3
+484 silly idealTree +-- on-finished@2.3.0
+484 silly idealTree +-- once@1.4.0
+484 silly idealTree +-- optimist@0.3.7
+484 silly idealTree +-- optionator@0.8.2
+484 silly idealTree | `-- wordwrap@1.0.0
+484 silly idealTree +-- options@0.0.6
+484 silly idealTree +-- optjs@3.2.2
+484 silly idealTree +-- os-homedir@1.0.2
+484 silly idealTree +-- os-locale@1.4.0
+484 silly idealTree +-- os-tmpdir@1.0.2
+484 silly idealTree +-- osenv@0.1.5
+484 silly idealTree +-- p-finally@1.0.0
+484 silly idealTree +-- p-limit@1.2.0
+484 silly idealTree +-- p-locate@2.0.0
+484 silly idealTree +-- p-try@1.0.0
+484 silly idealTree +-- pac-proxy-agent@1.1.0
+484 silly idealTree +-- pac-resolver@2.0.0
+484 silly idealTree | `-- co@3.0.6
+484 silly idealTree +-- pako@1.0.6
+484 silly idealTree +-- parsejson@0.0.3
+484 silly idealTree +-- parseqs@0.0.5
+484 silly idealTree +-- parseuri@0.0.5
+484 silly idealTree +-- parseurl@1.3.2
+484 silly idealTree +-- path-exists@3.0.0
+484 silly idealTree +-- path-is-absolute@1.0.1
+484 silly idealTree +-- path-key@2.0.1
+484 silly idealTree +-- path-proxy@1.0.0
+484 silly idealTree | `-- inflection@1.3.8
+484 silly idealTree +-- path-to-regexp@0.1.7
+484 silly idealTree +-- path@0.12.7
+484 silly idealTree +-- performance-now@2.1.0
+484 silly idealTree +-- pinkie-promise@2.0.1
+484 silly idealTree +-- pinkie@2.0.4
+484 silly idealTree +-- pkcs11js@1.0.15
+484 silly idealTree +-- plantuml-encoder@1.2.5
+484 silly idealTree | `-- pako@1.0.3
+484 silly idealTree +-- platform@1.3.5
+484 silly idealTree +-- prelude-ls@1.1.2
+484 silly idealTree +-- process-nextick-args@2.0.0
+484 silly idealTree +-- process@0.11.10
+484 silly idealTree +-- promise-settle@0.3.0
+484 silly idealTree +-- protobufjs@6.6.3
+484 silly idealTree +-- protochain@1.0.5
+484 silly idealTree +-- proxy-addr@1.1.5
+484 silly idealTree +-- proxy-agent@2.0.0
+484 silly idealTree | `-- lru-cache@2.6.5
+484 silly idealTree +-- proxyquire@1.7.11
+484 silly idealTree +-- pseudomap@1.0.2
+484 silly idealTree +-- punycode@2.1.0
+484 silly idealTree +-- q@1.4.1
+484 silly idealTree +-- qs@6.4.0
+484 silly idealTree +-- querystring@0.2.0
+484 silly idealTree +-- range-parser@1.2.0
+484 silly idealTree +-- raw-body@2.2.0
+484 silly idealTree +-- readable-stream@2.3.5
+484 silly idealTree +-- redis-commands@1.3.5
+484 silly idealTree +-- redis-parser@2.6.0
+484 silly idealTree +-- redis@2.8.0
+484 silly idealTree +-- referrer-policy@1.1.0
+484 silly idealTree +-- regenerator-runtime@0.11.1
+484 silly idealTree +-- request@2.83.0
+484 silly idealTree | +-- qs@6.5.1
+484 silly idealTree | `-- uuid@3.2.1
+484 silly idealTree +-- requestretry@1.13.0
+484 silly idealTree +-- require-directory@2.1.1
+484 silly idealTree +-- require-main-filename@1.0.1
+484 silly idealTree +-- resolve@1.1.7
+484 silly idealTree +-- retry-as-promised@2.3.2
+484 silly idealTree | +-- bluebird@3.5.1
+484 silly idealTree | `-- debug@2.6.9
+484 silly idealTree +-- retry@0.10.1
+484 silly idealTree +-- rimraf@2.5.4
+484 silly idealTree +-- safe-buffer@5.1.1
+484 silly idealTree +-- secure-keys@1.0.0
+484 silly idealTree +-- semver@5.3.0
+484 silly idealTree +-- send@0.15.1
+484 silly idealTree | +-- debug@2.6.1
+484 silly idealTree | +-- ms@0.7.2
+484 silly idealTree | `-- statuses@1.3.1
+484 silly idealTree +-- sequelize@4.37.6
+484 silly idealTree | +-- bluebird@3.5.1
+484 silly idealTree | +-- debug@3.1.0
+484 silly idealTree | +-- inflection@1.12.0
+484 silly idealTree | +-- semver@5.5.0
+484 silly idealTree | `-- uuid@3.2.1
+484 silly idealTree +-- sequin@0.1.1
+484 silly idealTree +-- serializerr@1.0.3
+484 silly idealTree +-- serve-static@1.12.1
+484 silly idealTree +-- set-blocking@2.0.0
+484 silly idealTree +-- setprototypeof@1.1.0
+484 silly idealTree +-- shebang-command@1.2.0
+484 silly idealTree +-- shebang-regex@1.0.0
+484 silly idealTree +-- shimmer@1.2.0
+484 silly idealTree +-- signal-exit@3.0.2
+484 silly idealTree +-- sjcl-codec@0.1.1
+484 silly idealTree +-- sjcl@1.0.7
+484 silly idealTree +-- slack-node@0.2.0
+484 silly idealTree +-- slide@1.1.6
+484 silly idealTree +-- smart-buffer@1.1.15
+484 silly idealTree +-- smtp-connection@2.12.0
+484 silly idealTree +-- sntp@2.1.0
+484 silly idealTree +-- socket.io-adapter@0.5.0
+484 silly idealTree | +-- debug@2.3.3
+484 silly idealTree | `-- ms@0.7.2
+484 silly idealTree +-- socket.io-client@1.7.3
+484 silly idealTree | +-- component-emitter@1.2.1
+484 silly idealTree | +-- debug@2.3.3
+484 silly idealTree | `-- ms@0.7.2
+484 silly idealTree +-- socket.io-parser@2.3.1
+484 silly idealTree | +-- debug@2.2.0
+484 silly idealTree | +-- isarray@0.0.1
+484 silly idealTree | `-- ms@0.7.1
+484 silly idealTree +-- socket.io@1.7.3
+484 silly idealTree | +-- debug@2.3.3
+484 silly idealTree | +-- ms@0.7.2
+484 silly idealTree | `-- object-assign@4.1.0
+484 silly idealTree +-- socks-proxy-agent@2.1.1
+484 silly idealTree +-- socks@1.1.10
+484 silly idealTree | `-- ip@1.1.5
+484 silly idealTree +-- source-map@0.6.1
+484 silly idealTree +-- spdx-correct@3.0.0
+484 silly idealTree +-- spdx-exceptions@2.1.0
+484 silly idealTree +-- spdx-expression-parse@3.0.0
+484 silly idealTree +-- spdx-license-ids@3.0.0
+484 silly idealTree +-- sprintf-js@1.0.3
+484 silly idealTree +-- sprintf@0.1.5
+484 silly idealTree +-- sshpk@1.14.1
+484 silly idealTree +-- ssri@4.1.6
+484 silly idealTree +-- stack-trace@0.0.10
+484 silly idealTree +-- statuses@1.5.0
+484 silly idealTree +-- stream-buffers@3.0.1
+484 silly idealTree +-- streamifier@0.1.1
+484 silly idealTree +-- streamroller@0.7.0
+484 silly idealTree | `-- debug@3.1.0
+484 silly idealTree +-- streamsearch@0.1.2
+484 silly idealTree +-- string_decoder@1.0.3
+484 silly idealTree +-- string-width@1.0.2
+484 silly idealTree +-- stringstream@0.0.5
+484 silly idealTree +-- strip-ansi@3.0.1
+484 silly idealTree +-- strip-eof@1.0.0
+484 silly idealTree +-- supports-color@2.0.0
+484 silly idealTree +-- tar-stream@1.5.2
+484 silly idealTree +-- tar@3.1.5
+484 silly idealTree | `-- yallist@3.0.2
+484 silly idealTree +-- tedious@2.3.1
+484 silly idealTree +-- temp@0.8.3
+484 silly idealTree | `-- rimraf@2.2.8
+484 silly idealTree +-- terraformer-wkt-parser@1.1.2
+484 silly idealTree +-- terraformer@1.0.8
+484 silly idealTree +-- thenify-all@1.6.0
+484 silly idealTree +-- thenify@3.2.1
+484 silly idealTree +-- thunkify@2.1.2
+484 silly idealTree +-- timespan@2.3.0
+484 silly idealTree +-- to-array@0.1.4
+484 silly idealTree +-- toposort-class@1.0.1
+484 silly idealTree +-- tough-cookie@2.3.4
+484 silly idealTree | `-- punycode@1.4.1
+484 silly idealTree +-- tsscmp@1.0.5
+484 silly idealTree +-- tunnel-agent@0.6.0
+484 silly idealTree +-- tweetnacl@0.14.5
+484 silly idealTree +-- type-check@0.3.2
+484 silly idealTree +-- type-is@1.6.16
+484 silly idealTree +-- typedarray@0.0.6
+484 silly idealTree +-- ultron@1.0.2
+484 silly idealTree +-- underscore@1.8.3
+484 silly idealTree +-- universalify@0.1.1
+484 silly idealTree +-- unpipe@1.0.0
+484 silly idealTree +-- uri-js@3.0.2
+484 silly idealTree +-- url@0.11.0
+484 silly idealTree | `-- punycode@1.3.2
+484 silly idealTree +-- utf8-bytes@0.0.1
+484 silly idealTree +-- util-deprecate@1.0.2
+484 silly idealTree +-- util@0.10.3
+484 silly idealTree | `-- inherits@2.0.1
+484 silly idealTree +-- utils-merge@1.0.0
+484 silly idealTree +-- uuid@3.0.1
+484 silly idealTree +-- validate-npm-package-license@3.0.3
+484 silly idealTree +-- validate-npm-package-name@3.0.0
+484 silly idealTree +-- validator@9.4.1
+484 silly idealTree +-- vary@1.1.2
+484 silly idealTree +-- verror@1.10.0
+484 silly idealTree +-- websocket-driver@0.7.0
+484 silly idealTree +-- websocket-extensions@0.1.3
+484 silly idealTree +-- when@3.7.8
+484 silly idealTree +-- which-module@2.0.0
+484 silly idealTree +-- which@1.3.0
+484 silly idealTree +-- wide-align@1.1.2
+484 silly idealTree +-- window-size@0.1.4
+484 silly idealTree +-- winston@2.3.1
+484 silly idealTree | `-- async@1.0.0
+484 silly idealTree +-- wkx@0.4.4
+484 silly idealTree +-- wordwrap@0.0.3
+484 silly idealTree +-- wrap-ansi@2.1.0
+484 silly idealTree +-- wrappy@1.0.2
+484 silly idealTree +-- ws@5.1.1
+484 silly idealTree +-- wtf-8@1.0.0
+484 silly idealTree +-- x-xss-protection@1.1.0
+484 silly idealTree +-- xmlhttprequest-ssl@1.5.3
+484 silly idealTree +-- xregexp@2.0.0
+484 silly idealTree +-- xtend@4.0.1
+484 silly idealTree +-- y18n@3.2.1
+484 silly idealTree +-- yallist@2.1.2
+484 silly idealTree +-- yargs-parser@8.1.0
+484 silly idealTree | `-- camelcase@4.1.0
+484 silly idealTree +-- yargs@3.32.0
+484 silly idealTree `-- yeast@0.1.2
+485 silly generateActionsToTake Starting
+486 silly install generateActionsToTake
+487 silly generateActionsToTake Finishing
+488 silly diffTrees action count 12
+489 silly diffTrees add ansi-regex@3.0.0
+490 silly diffTrees add is-fullwidth-code-point@2.0.0
+491 silly diffTrees add os-locale@2.1.0
+492 silly diffTrees add strip-ansi@4.0.0
+493 silly diffTrees add string-width@2.1.1
+494 silly diffTrees add fs-extra@0.30.0
+495 silly diffTrees add jsrsasign@6.2.2
+496 silly diffTrees add pkcs11js@1.0.15
+497 silly diffTrees add fabric-client@1.0.5
+498 silly diffTrees add composer-connector-hlfv1@0.16.6
+499 silly diffTrees add yargs@10.0.3
+500 silly diffTrees add composer-connector-server@0.16.6
+501 silly decomposeActions action count 96
+502 silly decomposeActions fetch ansi-regex@3.0.0
+503 silly decomposeActions extract ansi-regex@3.0.0
+504 silly decomposeActions test ansi-regex@3.0.0
+505 silly decomposeActions preinstall ansi-regex@3.0.0
+506 silly decomposeActions build ansi-regex@3.0.0
+507 silly decomposeActions install ansi-regex@3.0.0
+508 silly decomposeActions postinstall ansi-regex@3.0.0
+509 silly decomposeActions finalize ansi-regex@3.0.0
+510 silly decomposeActions fetch is-fullwidth-code-point@2.0.0
+511 silly decomposeActions extract is-fullwidth-code-point@2.0.0
+512 silly decomposeActions test is-fullwidth-code-point@2.0.0
+513 silly decomposeActions preinstall is-fullwidth-code-point@2.0.0
+514 silly decomposeActions build is-fullwidth-code-point@2.0.0
+515 silly decomposeActions install is-fullwidth-code-point@2.0.0
+516 silly decomposeActions postinstall is-fullwidth-code-point@2.0.0
+517 silly decomposeActions finalize is-fullwidth-code-point@2.0.0
+518 silly decomposeActions fetch os-locale@2.1.0
+519 silly decomposeActions extract os-locale@2.1.0
+520 silly decomposeActions test os-locale@2.1.0
+521 silly decomposeActions preinstall os-locale@2.1.0
+522 silly decomposeActions build os-locale@2.1.0
+523 silly decomposeActions install os-locale@2.1.0
+524 silly decomposeActions postinstall os-locale@2.1.0
+525 silly decomposeActions finalize os-locale@2.1.0
+526 silly decomposeActions fetch strip-ansi@4.0.0
+527 silly decomposeActions extract strip-ansi@4.0.0
+528 silly decomposeActions test strip-ansi@4.0.0
+529 silly decomposeActions preinstall strip-ansi@4.0.0
+530 silly decomposeActions build strip-ansi@4.0.0
+531 silly decomposeActions install strip-ansi@4.0.0
+532 silly decomposeActions postinstall strip-ansi@4.0.0
+533 silly decomposeActions finalize strip-ansi@4.0.0
+534 silly decomposeActions fetch string-width@2.1.1
+535 silly decomposeActions extract string-width@2.1.1
+536 silly decomposeActions test string-width@2.1.1
+537 silly decomposeActions preinstall string-width@2.1.1
+538 silly decomposeActions build string-width@2.1.1
+539 silly decomposeActions install string-width@2.1.1
+540 silly decomposeActions postinstall string-width@2.1.1
+541 silly decomposeActions finalize string-width@2.1.1
+542 silly decomposeActions fetch fs-extra@0.30.0
+543 silly decomposeActions extract fs-extra@0.30.0
+544 silly decomposeActions test fs-extra@0.30.0
+545 silly decomposeActions preinstall fs-extra@0.30.0
+546 silly decomposeActions build fs-extra@0.30.0
+547 silly decomposeActions install fs-extra@0.30.0
+548 silly decomposeActions postinstall fs-extra@0.30.0
+549 silly decomposeActions finalize fs-extra@0.30.0
+550 silly decomposeActions fetch jsrsasign@6.2.2
+551 silly decomposeActions extract jsrsasign@6.2.2
+552 silly decomposeActions test jsrsasign@6.2.2
+553 silly decomposeActions preinstall jsrsasign@6.2.2
+554 silly decomposeActions build jsrsasign@6.2.2
+555 silly decomposeActions install jsrsasign@6.2.2
+556 silly decomposeActions postinstall jsrsasign@6.2.2
+557 silly decomposeActions finalize jsrsasign@6.2.2
+558 silly decomposeActions fetch pkcs11js@1.0.15
+559 silly decomposeActions extract pkcs11js@1.0.15
+560 silly decomposeActions test pkcs11js@1.0.15
+561 silly decomposeActions preinstall pkcs11js@1.0.15
+562 silly decomposeActions build pkcs11js@1.0.15
+563 silly decomposeActions install pkcs11js@1.0.15
+564 silly decomposeActions postinstall pkcs11js@1.0.15
+565 silly decomposeActions finalize pkcs11js@1.0.15
+566 silly decomposeActions fetch fabric-client@1.0.5
+567 silly decomposeActions extract fabric-client@1.0.5
+568 silly decomposeActions test fabric-client@1.0.5
+569 silly decomposeActions preinstall fabric-client@1.0.5
+570 silly decomposeActions build fabric-client@1.0.5
+571 silly decomposeActions install fabric-client@1.0.5
+572 silly decomposeActions postinstall fabric-client@1.0.5
+573 silly decomposeActions finalize fabric-client@1.0.5
+574 silly decomposeActions fetch composer-connector-hlfv1@0.16.6
+575 silly decomposeActions extract composer-connector-hlfv1@0.16.6
+576 silly decomposeActions test composer-connector-hlfv1@0.16.6
+577 silly decomposeActions preinstall composer-connector-hlfv1@0.16.6
+578 silly decomposeActions build composer-connector-hlfv1@0.16.6
+579 silly decomposeActions install composer-connector-hlfv1@0.16.6
+580 silly decomposeActions postinstall composer-connector-hlfv1@0.16.6
+581 silly decomposeActions finalize composer-connector-hlfv1@0.16.6
+582 silly decomposeActions fetch yargs@10.0.3
+583 silly decomposeActions extract yargs@10.0.3
+584 silly decomposeActions test yargs@10.0.3
+585 silly decomposeActions preinstall yargs@10.0.3
+586 silly decomposeActions build yargs@10.0.3
+587 silly decomposeActions install yargs@10.0.3
+588 silly decomposeActions postinstall yargs@10.0.3
+589 silly decomposeActions finalize yargs@10.0.3
+590 silly decomposeActions fetch composer-connector-server@0.16.6
+591 silly decomposeActions extract composer-connector-server@0.16.6
+592 silly decomposeActions test composer-connector-server@0.16.6
+593 silly decomposeActions preinstall composer-connector-server@0.16.6
+594 silly decomposeActions build composer-connector-server@0.16.6
+595 silly decomposeActions install composer-connector-server@0.16.6
+596 silly decomposeActions postinstall composer-connector-server@0.16.6
+597 silly decomposeActions finalize composer-connector-server@0.16.6
+598 silly runTopLevelLifecycles Starting
+599 silly executeActions Starting
+600 silly install executeActions
+601 silly doSerial global-install 0
+602 silly doParallel fetch 12
+603 verbose correctMkdir C:\Users\domst\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+604 verbose lock using C:\Users\domst\AppData\Roaming\npm-cache\_locks\staging-781b31d3efbca747.lock for C:\crm-network\node_modules\.staging
+605 silly doParallel extract 12
+606 silly extract ansi-regex@3.0.0
+607 silly extract is-fullwidth-code-point@2.0.0
+608 silly extract os-locale@2.1.0
+609 silly extract strip-ansi@4.0.0
+610 silly extract string-width@2.1.1
+611 silly extract fs-extra@0.30.0
+612 silly extract jsrsasign@6.2.2
+613 silly extract pkcs11js@1.0.15
+614 silly extract fabric-client@1.0.5
+615 silly extract composer-connector-hlfv1@0.16.6
+616 silly extract yargs@10.0.3
+617 silly extract composer-connector-server@0.16.6
+618 verbose unbuild node_modules\.staging\ansi-regex-afa5d2d3
+619 verbose unbuild node_modules\.staging\is-fullwidth-code-point-6a499d29
+620 verbose unbuild node_modules\.staging\os-locale-50c9a63a
+621 verbose unbuild node_modules\.staging\strip-ansi-89cd586a
+622 verbose unbuild node_modules\.staging\fs-extra-ff04a959
+623 verbose unbuild node_modules\.staging\string-width-b3878b38
+624 verbose unbuild node_modules\.staging\jsrsasign-3d715338
+625 verbose unbuild node_modules\.staging\pkcs11js-ee1f07f8
+626 verbose unbuild node_modules\.staging\fabric-client-29fc590a
+627 verbose unbuild node_modules\.staging\composer-connector-hlfv1-bef78d08
+628 verbose unbuild node_modules\.staging\yargs-6469851e
+629 verbose unbuild node_modules\.staging\composer-connector-server-026bf2ff
+630 silly gentlyRm C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3 is being purged from base C:\crm-network
+631 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3
+632 silly gentlyRm C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29 is being purged from base C:\crm-network
+633 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29
+634 silly gentlyRm C:\crm-network\node_modules\.staging\os-locale-50c9a63a is being purged from base C:\crm-network
+635 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\os-locale-50c9a63a
+636 silly gentlyRm C:\crm-network\node_modules\.staging\strip-ansi-89cd586a is being purged from base C:\crm-network
+637 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\strip-ansi-89cd586a
+638 silly gentlyRm C:\crm-network\node_modules\.staging\fs-extra-ff04a959 is being purged from base C:\crm-network
+639 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\fs-extra-ff04a959
+640 silly gentlyRm C:\crm-network\node_modules\.staging\string-width-b3878b38 is being purged from base C:\crm-network
+641 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\string-width-b3878b38
+642 silly gentlyRm C:\crm-network\node_modules\.staging\jsrsasign-3d715338 is being purged from base C:\crm-network
+643 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\jsrsasign-3d715338
+644 silly gentlyRm C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8 is being purged from base C:\crm-network
+645 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8
+646 silly gentlyRm C:\crm-network\node_modules\.staging\fabric-client-29fc590a is being purged from base C:\crm-network
+647 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\fabric-client-29fc590a
+648 silly gentlyRm C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08 is being purged from base C:\crm-network
+649 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08
+650 silly gentlyRm C:\crm-network\node_modules\.staging\yargs-6469851e is being purged from base C:\crm-network
+651 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\yargs-6469851e
+652 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\ansi-regex\3.0.0\package.tgz
+653 verbose tar unpacking to C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3
+654 silly gentlyRm C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3 is being purged
+655 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3
+656 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\is-fullwidth-code-point\2.0.0\package.tgz
+657 verbose tar unpacking to C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29
+658 silly gentlyRm C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29 is being purged
+659 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29
+660 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\os-locale\2.1.0\package.tgz
+661 verbose tar unpacking to C:\crm-network\node_modules\.staging\os-locale-50c9a63a
+662 silly gentlyRm C:\crm-network\node_modules\.staging\os-locale-50c9a63a is being purged
+663 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\os-locale-50c9a63a
+664 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\strip-ansi\4.0.0\package.tgz
+665 verbose tar unpacking to C:\crm-network\node_modules\.staging\strip-ansi-89cd586a
+666 silly gentlyRm C:\crm-network\node_modules\.staging\strip-ansi-89cd586a is being purged
+667 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\strip-ansi-89cd586a
+668 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\fs-extra\0.30.0\package.tgz
+669 verbose tar unpacking to C:\crm-network\node_modules\.staging\fs-extra-ff04a959
+670 silly gentlyRm C:\crm-network\node_modules\.staging\fs-extra-ff04a959 is being purged
+671 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\fs-extra-ff04a959
+672 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\string-width\2.1.1\package.tgz
+673 verbose tar unpacking to C:\crm-network\node_modules\.staging\string-width-b3878b38
+674 silly gentlyRm C:\crm-network\node_modules\.staging\string-width-b3878b38 is being purged
+675 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\string-width-b3878b38
+676 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\jsrsasign\6.2.2\package.tgz
+677 verbose tar unpacking to C:\crm-network\node_modules\.staging\jsrsasign-3d715338
+678 silly gentlyRm C:\crm-network\node_modules\.staging\jsrsasign-3d715338 is being purged
+679 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\jsrsasign-3d715338
+680 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\pkcs11js\1.0.15\package.tgz
+681 verbose tar unpacking to C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8
+682 silly gentlyRm C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8 is being purged
+683 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8
+684 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\fabric-client\1.0.5\package.tgz
+685 verbose tar unpacking to C:\crm-network\node_modules\.staging\fabric-client-29fc590a
+686 silly gentlyRm C:\crm-network\node_modules\.staging\fabric-client-29fc590a is being purged
+687 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\fabric-client-29fc590a
+688 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\composer-connector-hlfv1\0.16.6\package.tgz
+689 verbose tar unpacking to C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08
+690 silly gentlyRm C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08 is being purged
+691 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08
+692 silly gentlyRm C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff is being purged from base C:\crm-network
+693 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff
+694 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\yargs\10.0.3\package.tgz
+695 verbose tar unpacking to C:\crm-network\node_modules\.staging\yargs-6469851e
+696 silly gentlyRm C:\crm-network\node_modules\.staging\yargs-6469851e is being purged
+697 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\yargs-6469851e
+698 silly gunzTarPerm modes [ '777', '666' ]
+699 silly gunzTarPerm modes [ '777', '666' ]
+700 silly gunzTarPerm modes [ '777', '666' ]
+701 silly gunzTarPerm modes [ '777', '666' ]
+702 silly gunzTarPerm modes [ '777', '666' ]
+703 silly gunzTarPerm modes [ '777', '666' ]
+704 silly gunzTarPerm modes [ '777', '666' ]
+705 silly gunzTarPerm modes [ '777', '666' ]
+706 silly gunzTarPerm modes [ '777', '666' ]
+707 silly gunzTarPerm modes [ '777', '666' ]
+708 verbose tar unpack C:\Users\domst\AppData\Roaming\npm-cache\composer-connector-server\0.16.6\package.tgz
+709 verbose tar unpacking to C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff
+710 silly gentlyRm C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff is being purged
+711 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff
+712 silly gunzTarPerm modes [ '777', '666' ]
+713 silly gunzTarPerm modes [ '777', '666' ]
+714 silly gunzTarPerm extractEntry package.json
+715 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+716 silly gunzTarPerm extractEntry package.json
+717 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+718 silly gunzTarPerm extractEntry package.json
+719 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+720 silly gunzTarPerm extractEntry package.json
+721 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+722 silly gunzTarPerm extractEntry package.json
+723 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+724 silly gunzTarPerm extractEntry package.json
+725 silly gunzTarPerm modified mode [ 'package.json', 493, 511 ]
+726 silly gunzTarPerm extractEntry package.json
+727 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+728 silly gunzTarPerm extractEntry package.json
+729 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+730 silly gunzTarPerm extractEntry package.json
+731 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+732 silly gunzTarPerm extractEntry package.json
+733 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+734 silly gunzTarPerm extractEntry package.json
+735 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+736 silly gunzTarPerm extractEntry package.json
+737 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+738 silly gunzTarPerm extractEntry index.js
+739 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+740 silly gunzTarPerm extractEntry license
+741 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+742 silly gunzTarPerm extractEntry index.js
+743 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+744 silly gunzTarPerm extractEntry license
+745 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+746 silly gunzTarPerm extractEntry index.js
+747 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+748 silly gunzTarPerm extractEntry license
+749 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+750 silly gunzTarPerm extractEntry index.js
+751 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+752 silly gunzTarPerm extractEntry license
+753 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+754 silly gunzTarPerm extractEntry .npmignore
+755 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+756 silly gunzTarPerm extractEntry README.md
+757 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+758 silly gunzTarPerm extractEntry README.md
+759 silly gunzTarPerm modified mode [ 'README.md', 493, 511 ]
+760 silly gunzTarPerm extractEntry Makefile
+761 silly gunzTarPerm modified mode [ 'Makefile', 493, 511 ]
+762 silly gunzTarPerm extractEntry index.js
+763 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+764 silly gunzTarPerm extractEntry license
+765 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+766 silly gunzTarPerm extractEntry binding.gyp
+767 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+768 silly gunzTarPerm extractEntry index.d.ts
+769 silly gunzTarPerm modified mode [ 'index.d.ts', 420, 438 ]
+770 silly gunzTarPerm extractEntry index.js
+771 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+772 silly gunzTarPerm extractEntry README.md
+773 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+774 silly gunzTarPerm extractEntry .editorconfig
+775 silly gunzTarPerm modified mode [ '.editorconfig', 436, 438 ]
+776 silly gunzTarPerm extractEntry .eslintignore
+777 silly gunzTarPerm modified mode [ '.eslintignore', 436, 438 ]
+778 silly gunzTarPerm extractEntry CHANGELOG.md
+779 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+780 silly gunzTarPerm extractEntry completion.sh.hbs
+781 silly gunzTarPerm modified mode [ 'completion.sh.hbs', 420, 438 ]
+782 silly gunzTarPerm extractEntry .editorconfig
+783 silly gunzTarPerm modified mode [ '.editorconfig', 436, 438 ]
+784 silly gunzTarPerm extractEntry .eslintignore
+785 silly gunzTarPerm modified mode [ '.eslintignore', 436, 438 ]
+786 silly gunzTarPerm extractEntry readme.md
+787 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+788 silly gunzTarPerm extractEntry readme.md
+789 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+790 silly gunzTarPerm extractEntry readme.md
+791 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+792 silly gunzTarPerm extractEntry readme.md
+793 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+794 silly gunzTarPerm extractEntry LICENSE
+795 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+796 silly gunzTarPerm extractEntry readme.md
+797 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+798 silly gunzTarPerm extractEntry index.js
+799 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+800 silly gunzTarPerm extractEntry config/default.json
+801 silly gunzTarPerm modified mode [ 'config/default.json', 436, 438 ]
+802 silly gunzTarPerm extractEntry lib/api.js
+803 silly gunzTarPerm modified mode [ 'lib/api.js', 509, 511 ]
+804 silly gunzTarPerm extractEntry .eslintrc.yml
+805 silly gunzTarPerm modified mode [ '.eslintrc.yml', 436, 438 ]
+806 silly gunzTarPerm extractEntry .tern-project
+807 silly gunzTarPerm modified mode [ '.tern-project', 436, 438 ]
+808 silly gunzTarPerm extractEntry index.js
+809 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+810 silly gunzTarPerm extractEntry LICENSE
+811 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+812 silly gunzTarPerm extractEntry README.md
+813 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+814 silly gunzTarPerm extractEntry lib/footer.js
+815 silly gunzTarPerm modified mode [ 'lib/footer.js', 493, 511 ]
+816 silly gunzTarPerm extractEntry lib/header.js
+817 silly gunzTarPerm modified mode [ 'lib/header.js', 493, 511 ]
+818 silly gunzTarPerm extractEntry .eslintrc.yml
+819 silly gunzTarPerm modified mode [ '.eslintrc.yml', 436, 438 ]
+820 silly gunzTarPerm extractEntry .tern-project
+821 silly gunzTarPerm modified mode [ '.tern-project', 436, 438 ]
+822 silly gunzTarPerm extractEntry yargs.js
+823 silly gunzTarPerm modified mode [ 'yargs.js', 420, 438 ]
+824 silly gunzTarPerm extractEntry lib/apply-extends.js
+825 silly gunzTarPerm modified mode [ 'lib/apply-extends.js', 420, 438 ]
+826 silly gunzTarPerm extractEntry lib/argsert.js
+827 silly gunzTarPerm modified mode [ 'lib/argsert.js', 420, 438 ]
+828 silly gunzTarPerm extractEntry CHANGELOG.md
+829 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+830 silly gunzTarPerm extractEntry lib/index.js
+831 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+832 silly gunzTarPerm extractEntry lib/json/index.js
+833 silly gunzTarPerm modified mode [ 'lib/json/index.js', 420, 438 ]
+834 silly gunzTarPerm extractEntry header.txt
+835 silly gunzTarPerm modified mode [ 'header.txt', 436, 438 ]
+836 silly gunzTarPerm extractEntry index.js
+837 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+838 silly gunzTarPerm extractEntry LICENSE
+839 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+840 silly gunzTarPerm extractEntry README.md
+841 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+842 silly gunzTarPerm extractEntry includes/pkcs11/pkcs11.h
+843 silly gunzTarPerm modified mode [ 'includes/pkcs11/pkcs11.h', 420, 438 ]
+844 silly gunzTarPerm extractEntry lib/BaseClient.js
+845 silly gunzTarPerm modified mode [ 'lib/BaseClient.js', 436, 438 ]
+846 silly gunzTarPerm extractEntry lib/command.js
+847 silly gunzTarPerm modified mode [ 'lib/command.js', 420, 438 ]
+848 silly gunzTarPerm extractEntry cli.js
+849 silly gunzTarPerm modified mode [ 'cli.js', 509, 511 ]
+850 silly gunzTarPerm extractEntry header.txt
+851 silly gunzTarPerm modified mode [ 'header.txt', 436, 438 ]
+852 silly gunzTarPerm extractEntry lib/jsrsasign.js
+853 silly gunzTarPerm modified mode [ 'lib/jsrsasign.js', 493, 511 ]
+854 silly gunzTarPerm extractEntry includes/pkcs11/pkcs11f.h
+855 silly gunzTarPerm modified mode [ 'includes/pkcs11/pkcs11f.h', 420, 438 ]
+856 silly gunzTarPerm extractEntry includes/pkcs11/pkcs11t.h
+857 silly gunzTarPerm modified mode [ 'includes/pkcs11/pkcs11t.h', 420, 438 ]
+858 silly gunzTarPerm extractEntry lib/lib.js
+859 silly gunzTarPerm modified mode [ 'lib/lib.js', 493, 511 ]
+860 silly gunzTarPerm extractEntry jsdoc.json
+861 silly gunzTarPerm modified mode [ 'jsdoc.json', 436, 438 ]
+862 silly gunzTarPerm extractEntry LICENSE.txt
+863 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 438 ]
+864 silly gunzTarPerm extractEntry lib/json/jsonfile.js
+865 silly gunzTarPerm modified mode [ 'lib/json/jsonfile.js', 420, 438 ]
+866 silly gunzTarPerm extractEntry lib/json/output-json-sync.js
+867 silly gunzTarPerm modified mode [ 'lib/json/output-json-sync.js', 420, 438 ]
+868 silly gunzTarPerm extractEntry lib/BlockDecoder.js
+869 silly gunzTarPerm modified mode [ 'lib/BlockDecoder.js', 436, 438 ]
+870 silly gunzTarPerm extractEntry lib/Channel.js
+871 silly gunzTarPerm modified mode [ 'lib/Channel.js', 509, 511 ]
+872 silly gunzTarPerm extractEntry index.js
+873 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+874 silly gunzTarPerm extractEntry jsdoc.json
+875 silly gunzTarPerm modified mode [ 'jsdoc.json', 436, 438 ]
+876 silly gunzTarPerm extractEntry lib/completion.js
+877 silly gunzTarPerm modified mode [ 'lib/completion.js', 420, 438 ]
+878 silly gunzTarPerm extractEntry lib/levenshtein.js
+879 silly gunzTarPerm modified mode [ 'lib/levenshtein.js', 420, 438 ]
+880 silly gunzTarPerm extractEntry lib/obj-filter.js
+881 silly gunzTarPerm modified mode [ 'lib/obj-filter.js', 420, 438 ]
+882 silly gunzTarPerm extractEntry lib/usage.js
+883 silly gunzTarPerm modified mode [ 'lib/usage.js', 420, 438 ]
+884 silly gunzTarPerm extractEntry lib/validation.js
+885 silly gunzTarPerm modified mode [ 'lib/validation.js', 420, 438 ]
+886 silly gunzTarPerm extractEntry lib/yerror.js
+887 silly gunzTarPerm modified mode [ 'lib/yerror.js', 420, 438 ]
+888 silly gunzTarPerm extractEntry locales/be.json
+889 silly gunzTarPerm modified mode [ 'locales/be.json', 420, 438 ]
+890 silly gunzTarPerm extractEntry locales/de.json
+891 silly gunzTarPerm modified mode [ 'locales/de.json', 420, 438 ]
+892 silly gunzTarPerm extractEntry locales/en.json
+893 silly gunzTarPerm modified mode [ 'locales/en.json', 420, 438 ]
+894 silly gunzTarPerm extractEntry locales/es.json
+895 silly gunzTarPerm modified mode [ 'locales/es.json', 420, 438 ]
+896 silly gunzTarPerm extractEntry locales/fr.json
+897 silly gunzTarPerm modified mode [ 'locales/fr.json', 420, 438 ]
+898 silly gunzTarPerm extractEntry locales/hi.json
+899 silly gunzTarPerm modified mode [ 'locales/hi.json', 420, 438 ]
+900 silly gunzTarPerm extractEntry locales/hu.json
+901 silly gunzTarPerm modified mode [ 'locales/hu.json', 420, 438 ]
+902 silly gunzTarPerm extractEntry locales/id.json
+903 silly gunzTarPerm modified mode [ 'locales/id.json', 420, 438 ]
+904 silly gunzTarPerm extractEntry locales/it.json
+905 silly gunzTarPerm modified mode [ 'locales/it.json', 420, 438 ]
+906 silly gunzTarPerm extractEntry locales/ja.json
+907 silly gunzTarPerm modified mode [ 'locales/ja.json', 420, 438 ]
+908 silly gunzTarPerm extractEntry locales/ko.json
+909 silly gunzTarPerm modified mode [ 'locales/ko.json', 420, 438 ]
+910 silly gunzTarPerm extractEntry locales/nb.json
+911 silly gunzTarPerm modified mode [ 'locales/nb.json', 420, 438 ]
+912 silly gunzTarPerm extractEntry locales/nl.json
+913 silly gunzTarPerm modified mode [ 'locales/nl.json', 420, 438 ]
+914 silly gunzTarPerm extractEntry locales/pirate.json
+915 silly gunzTarPerm modified mode [ 'locales/pirate.json', 420, 438 ]
+916 silly gunzTarPerm extractEntry locales/pl.json
+917 silly gunzTarPerm modified mode [ 'locales/pl.json', 420, 438 ]
+918 silly gunzTarPerm extractEntry locales/pt_BR.json
+919 silly gunzTarPerm modified mode [ 'locales/pt_BR.json', 420, 438 ]
+920 silly gunzTarPerm extractEntry locales/pt.json
+921 silly gunzTarPerm modified mode [ 'locales/pt.json', 420, 438 ]
+922 silly gunzTarPerm extractEntry locales/ru.json
+923 silly gunzTarPerm modified mode [ 'locales/ru.json', 420, 438 ]
+924 silly gunzTarPerm extractEntry locales/th.json
+925 silly gunzTarPerm modified mode [ 'locales/th.json', 420, 438 ]
+926 silly gunzTarPerm extractEntry locales/tr.json
+927 silly gunzTarPerm modified mode [ 'locales/tr.json', 420, 438 ]
+928 silly gunzTarPerm extractEntry locales/zh_CN.json
+929 silly gunzTarPerm modified mode [ 'locales/zh_CN.json', 420, 438 ]
+930 silly gunzTarPerm extractEntry locales/zh_TW.json
+931 silly gunzTarPerm modified mode [ 'locales/zh_TW.json', 420, 438 ]
+932 silly gunzTarPerm extractEntry src/async.cpp
+933 silly gunzTarPerm modified mode [ 'src/async.cpp', 420, 438 ]
+934 silly gunzTarPerm extractEntry src/async.h
+935 silly gunzTarPerm modified mode [ 'src/async.h', 420, 438 ]
+936 silly gunzTarPerm extractEntry README.md
+937 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+938 silly gunzTarPerm extractEntry lib/hlfconnection.js
+939 silly gunzTarPerm modified mode [ 'lib/hlfconnection.js', 436, 438 ]
+940 silly gunzTarPerm extractEntry lib/json/output-json.js
+941 silly gunzTarPerm modified mode [ 'lib/json/output-json.js', 420, 438 ]
+942 silly gunzTarPerm extractEntry lib/copy-sync/copy-file-sync.js
+943 silly gunzTarPerm modified mode [ 'lib/copy-sync/copy-file-sync.js', 420, 438 ]
+944 silly gunzTarPerm extractEntry lib/copy-sync/copy-sync.js
+945 silly gunzTarPerm modified mode [ 'lib/copy-sync/copy-sync.js', 420, 438 ]
+946 silly gunzTarPerm extractEntry LICENSE.txt
+947 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 438 ]
+948 silly gunzTarPerm extractEntry README.md
+949 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+950 silly gunzTarPerm extractEntry lib/client-utils.js
+951 silly gunzTarPerm modified mode [ 'lib/client-utils.js', 436, 438 ]
+952 silly gunzTarPerm extractEntry lib/Client.js
+953 silly gunzTarPerm modified mode [ 'lib/Client.js', 436, 438 ]
+954 silly gunzTarPerm extractEntry lib/copy-sync/index.js
+955 silly gunzTarPerm modified mode [ 'lib/copy-sync/index.js', 420, 438 ]
+956 silly gunzTarPerm extractEntry lib/empty/index.js
+957 silly gunzTarPerm modified mode [ 'lib/empty/index.js', 420, 438 ]
+958 silly gunzTarPerm extractEntry src/const.cpp
+959 silly gunzTarPerm modified mode [ 'src/const.cpp', 420, 438 ]
+960 silly gunzTarPerm extractEntry src/const.h
+961 silly gunzTarPerm modified mode [ 'src/const.h', 420, 438 ]
+962 silly gunzTarPerm extractEntry lib/connectorserver.js
+963 silly gunzTarPerm modified mode [ 'lib/connectorserver.js', 436, 438 ]
+964 silly gunzTarPerm extractEntry lib/hlfconnectionmanager.js
+965 silly gunzTarPerm modified mode [ 'lib/hlfconnectionmanager.js', 436, 438 ]
+966 silly gunzTarPerm extractEntry lib/ensure/file.js
+967 silly gunzTarPerm modified mode [ 'lib/ensure/file.js', 420, 438 ]
+968 silly gunzTarPerm extractEntry lib/ensure/index.js
+969 silly gunzTarPerm modified mode [ 'lib/ensure/index.js', 420, 438 ]
+970 silly gentlyRm C:\crm-network\node_modules\.staging\strip-ansi-89cd586a\node_modules is being purged
+971 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\strip-ansi-89cd586a\node_modules
+972 silly gunzTarPerm extractEntry src/dl.cpp
+973 silly gunzTarPerm modified mode [ 'src/dl.cpp', 420, 438 ]
+974 silly gunzTarPerm extractEntry src/dl.h
+975 silly gunzTarPerm modified mode [ 'src/dl.h', 420, 438 ]
+976 silly gentlyRm C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3\node_modules is being purged
+977 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3\node_modules
+978 silly gunzTarPerm extractEntry lib/Config.js
+979 silly gunzTarPerm modified mode [ 'lib/Config.js', 436, 438 ]
+980 silly gunzTarPerm extractEntry lib/Constants.js
+981 silly gunzTarPerm modified mode [ 'lib/Constants.js', 509, 511 ]
+982 silly gentlyRm C:\crm-network\node_modules\.staging\os-locale-50c9a63a\node_modules is being purged
+983 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\os-locale-50c9a63a\node_modules
+984 silly gentlyRm C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29\node_modules is being purged
+985 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29\node_modules
+986 silly gentlyRm C:\crm-network\node_modules\.staging\string-width-b3878b38\node_modules is being purged
+987 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\string-width-b3878b38\node_modules
+988 silly gunzTarPerm extractEntry lib/hlfsecuritycontext.js
+989 silly gunzTarPerm modified mode [ 'lib/hlfsecuritycontext.js', 436, 438 ]
+990 silly gunzTarPerm extractEntry lib/hlftxeventhandler.js
+991 silly gunzTarPerm modified mode [ 'lib/hlftxeventhandler.js', 436, 438 ]
+992 silly gunzTarPerm extractEntry test/cli.js
+993 silly gunzTarPerm modified mode [ 'test/cli.js', 436, 438 ]
+994 silly gunzTarPerm extractEntry test/connectorserver.js
+995 silly gunzTarPerm modified mode [ 'test/connectorserver.js', 436, 438 ]
+996 silly gunzTarPerm extractEntry lib/ensure/link.js
+997 silly gunzTarPerm modified mode [ 'lib/ensure/link.js', 420, 438 ]
+998 silly gunzTarPerm extractEntry lib/ensure/symlink-paths.js
+999 silly gunzTarPerm modified mode [ 'lib/ensure/symlink-paths.js', 420, 438 ]
+1000 silly gunzTarPerm extractEntry lib/EventHub.js
+1001 silly gunzTarPerm modified mode [ 'lib/EventHub.js', 436, 438 ]
+1002 silly gunzTarPerm extractEntry lib/hash.js
+1003 silly gunzTarPerm modified mode [ 'lib/hash.js', 436, 438 ]
+1004 silly gunzTarPerm extractEntry lib/impl/aes/pkcs11_key.js
+1005 silly gunzTarPerm modified mode [ 'lib/impl/aes/pkcs11_key.js', 436, 438 ]
+1006 silly gunzTarPerm extractEntry src/main.cpp
+1007 silly gunzTarPerm modified mode [ 'src/main.cpp', 420, 438 ]
+1008 silly gunzTarPerm extractEntry src/node.cpp
+1009 silly gunzTarPerm modified mode [ 'src/node.cpp', 420, 438 ]
+1010 silly gunzTarPerm extractEntry lib/impl/bccsp_pkcs11.js
+1011 silly gunzTarPerm modified mode [ 'lib/impl/bccsp_pkcs11.js', 436, 438 ]
+1012 silly gunzTarPerm extractEntry lib/hlfutil.js
+1013 silly gunzTarPerm modified mode [ 'lib/hlfutil.js', 436, 438 ]
+1014 silly gunzTarPerm extractEntry lib/hlfwalletproxy.js
+1015 silly gunzTarPerm modified mode [ 'lib/hlfwalletproxy.js', 436, 438 ]
+1016 silly gunzTarPerm extractEntry lib/impl/CouchDBKeyValueStore.js
+1017 silly gunzTarPerm modified mode [ 'lib/impl/CouchDBKeyValueStore.js', 436, 438 ]
+1018 silly gunzTarPerm extractEntry lib/ensure/symlink-type.js
+1019 silly gunzTarPerm modified mode [ 'lib/ensure/symlink-type.js', 420, 438 ]
+1020 silly gunzTarPerm extractEntry lib/ensure/symlink.js
+1021 silly gunzTarPerm modified mode [ 'lib/ensure/symlink.js', 420, 438 ]
+1022 silly gunzTarPerm extractEntry test/hlfconnection.js
+1023 silly gunzTarPerm modified mode [ 'test/hlfconnection.js', 436, 438 ]
+1024 silly gunzTarPerm extractEntry test/hlfconnectionmanager.js
+1025 silly gunzTarPerm modified mode [ 'test/hlfconnectionmanager.js', 436, 438 ]
+1026 silly gunzTarPerm extractEntry lib/impl/CryptoKeyStore.js
+1027 silly gunzTarPerm modified mode [ 'lib/impl/CryptoKeyStore.js', 436, 438 ]
+1028 silly gunzTarPerm extractEntry lib/impl/CryptoSuite_ECDSA_AES.js
+1029 silly gunzTarPerm modified mode [ 'lib/impl/CryptoSuite_ECDSA_AES.js', 509, 511 ]
+1030 silly gunzTarPerm extractEntry src/node.h
+1031 silly gunzTarPerm modified mode [ 'src/node.h', 420, 438 ]
+1032 silly gunzTarPerm extractEntry src/pkcs11/core.h
+1033 silly gunzTarPerm modified mode [ 'src/pkcs11/core.h', 420, 438 ]
+1034 silly gunzTarPerm extractEntry src/pkcs11/error.cpp
+1035 silly gunzTarPerm modified mode [ 'src/pkcs11/error.cpp', 420, 438 ]
+1036 silly gunzTarPerm extractEntry lib/impl/ecdsa/key.js
+1037 silly gunzTarPerm modified mode [ 'lib/impl/ecdsa/key.js', 436, 438 ]
+1038 silly gunzTarPerm extractEntry src/pkcs11/error.h
+1039 silly gunzTarPerm modified mode [ 'src/pkcs11/error.h', 420, 438 ]
+1040 silly gunzTarPerm extractEntry lib/copy/copy.js
+1041 silly gunzTarPerm modified mode [ 'lib/copy/copy.js', 420, 438 ]
+1042 silly gunzTarPerm extractEntry lib/copy/index.js
+1043 silly gunzTarPerm modified mode [ 'lib/copy/index.js', 420, 438 ]
+1044 silly gunzTarPerm extractEntry lib/impl/ecdsa/pkcs11_key.js
+1045 silly gunzTarPerm modified mode [ 'lib/impl/ecdsa/pkcs11_key.js', 436, 438 ]
+1046 silly gunzTarPerm extractEntry lib/impl/FileKeyValueStore.js
+1047 silly gunzTarPerm modified mode [ 'lib/impl/FileKeyValueStore.js', 436, 438 ]
+1048 silly gunzTarPerm extractEntry test/hlfsecuritycontext.js
+1049 silly gunzTarPerm modified mode [ 'test/hlfsecuritycontext.js', 436, 438 ]
+1050 silly gunzTarPerm extractEntry test/hlftxeventhandler.js
+1051 silly gunzTarPerm modified mode [ 'test/hlftxeventhandler.js', 436, 438 ]
+1052 silly gunzTarPerm extractEntry lib/msp/identity.js
+1053 silly gunzTarPerm modified mode [ 'lib/msp/identity.js', 509, 511 ]
+1054 silly gunzTarPerm extractEntry lib/copy/ncp.js
+1055 silly gunzTarPerm modified mode [ 'lib/copy/ncp.js', 420, 438 ]
+1056 silly gunzTarPerm extractEntry lib/mkdirs/index.js
+1057 silly gunzTarPerm modified mode [ 'lib/mkdirs/index.js', 420, 438 ]
+1058 silly gunzTarPerm extractEntry src/pkcs11/mech.cpp
+1059 silly gunzTarPerm modified mode [ 'src/pkcs11/mech.cpp', 420, 438 ]
+1060 silly gunzTarPerm extractEntry src/pkcs11/mech.h
+1061 silly gunzTarPerm modified mode [ 'src/pkcs11/mech.h', 420, 438 ]
+1062 silly gunzTarPerm extractEntry src/pkcs11/param_aes.cpp
+1063 silly gunzTarPerm modified mode [ 'src/pkcs11/param_aes.cpp', 420, 438 ]
+1064 silly gunzTarPerm extractEntry test/hlfutil.js
+1065 silly gunzTarPerm modified mode [ 'test/hlfutil.js', 436, 438 ]
+1066 silly gunzTarPerm extractEntry test/hlfwalletproxy.js
+1067 silly gunzTarPerm modified mode [ 'test/hlfwalletproxy.js', 436, 438 ]
+1068 silly gunzTarPerm extractEntry src/pkcs11/param_ecdh.cpp
+1069 silly gunzTarPerm modified mode [ 'src/pkcs11/param_ecdh.cpp', 420, 438 ]
+1070 silly gunzTarPerm extractEntry src/pkcs11/param_rsa.cpp
+1071 silly gunzTarPerm modified mode [ 'src/pkcs11/param_rsa.cpp', 420, 438 ]
+1072 silly gunzTarPerm extractEntry src/pkcs11/param.cpp
+1073 silly gunzTarPerm modified mode [ 'src/pkcs11/param.cpp', 420, 438 ]
+1074 silly gunzTarPerm extractEntry lib/mkdirs/mkdirs-sync.js
+1075 silly gunzTarPerm modified mode [ 'lib/mkdirs/mkdirs-sync.js', 420, 438 ]
+1076 silly gunzTarPerm extractEntry lib/mkdirs/mkdirs.js
+1077 silly gunzTarPerm modified mode [ 'lib/mkdirs/mkdirs.js', 420, 438 ]
+1078 silly gunzTarPerm extractEntry lib/msp/msp-manager.js
+1079 silly gunzTarPerm modified mode [ 'lib/msp/msp-manager.js', 509, 511 ]
+1080 silly gunzTarPerm extractEntry lib/msp/msp.js
+1081 silly gunzTarPerm modified mode [ 'lib/msp/msp.js', 509, 511 ]
+1082 silly gunzTarPerm extractEntry src/pkcs11/param.h
+1083 silly gunzTarPerm modified mode [ 'src/pkcs11/param.h', 420, 438 ]
+1084 silly gunzTarPerm extractEntry lib/Orderer.js
+1085 silly gunzTarPerm modified mode [ 'lib/Orderer.js', 436, 438 ]
+1086 silly gunzTarPerm extractEntry lib/Packager.js
+1087 silly gunzTarPerm modified mode [ 'lib/Packager.js', 436, 438 ]
+1088 silly gunzTarPerm extractEntry lib/packager/Car.js
+1089 silly gunzTarPerm modified mode [ 'lib/packager/Car.js', 436, 438 ]
+1090 silly gunzTarPerm extractEntry lib/mkdirs/win32.js
+1091 silly gunzTarPerm modified mode [ 'lib/mkdirs/win32.js', 420, 438 ]
+1092 silly gunzTarPerm extractEntry lib/move/index.js
+1093 silly gunzTarPerm modified mode [ 'lib/move/index.js', 420, 438 ]
+1094 silly gunzTarPerm extractEntry lib/packager/Golang.js
+1095 silly gunzTarPerm modified mode [ 'lib/packager/Golang.js', 436, 438 ]
+1096 silly gunzTarPerm extractEntry lib/Peer.js
+1097 silly gunzTarPerm modified mode [ 'lib/Peer.js', 436, 438 ]
+1098 silly gunzTarPerm extractEntry src/pkcs11/pkcs11.cpp
+1099 silly gunzTarPerm modified mode [ 'src/pkcs11/pkcs11.cpp', 420, 438 ]
+1100 silly gunzTarPerm extractEntry src/pkcs11/pkcs11.h
+1101 silly gunzTarPerm modified mode [ 'src/pkcs11/pkcs11.h', 420, 438 ]
+1102 silly gunzTarPerm extractEntry lib/output/index.js
+1103 silly gunzTarPerm modified mode [ 'lib/output/index.js', 420, 438 ]
+1104 silly gunzTarPerm extractEntry lib/remove/index.js
+1105 silly gunzTarPerm modified mode [ 'lib/remove/index.js', 420, 438 ]
+1106 silly gunzTarPerm extractEntry lib/Policy.js
+1107 silly gunzTarPerm modified mode [ 'lib/Policy.js', 436, 438 ]
+1108 silly gunzTarPerm extractEntry lib/protos/.protoroot
+1109 silly gunzTarPerm modified mode [ 'lib/protos/.protoroot', 436, 438 ]
+1110 silly gentlyRm C:\crm-network\node_modules\.staging\jsrsasign-3d715338\node_modules is being purged
+1111 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\jsrsasign-3d715338\node_modules
+1112 silly gunzTarPerm extractEntry src/pkcs11/scope.h
+1113 silly gunzTarPerm modified mode [ 'src/pkcs11/scope.h', 420, 438 ]
+1114 silly gunzTarPerm extractEntry src/pkcs11/strings.h
+1115 silly gunzTarPerm modified mode [ 'src/pkcs11/strings.h', 420, 438 ]
+1116 silly gunzTarPerm extractEntry src/pkcs11/template.cpp
+1117 silly gunzTarPerm modified mode [ 'src/pkcs11/template.cpp', 420, 438 ]
+1118 silly gunzTarPerm extractEntry src/pkcs11/template.h
+1119 silly gunzTarPerm modified mode [ 'src/pkcs11/template.h', 420, 438 ]
+1120 silly gunzTarPerm extractEntry lib/util/assign.js
+1121 silly gunzTarPerm modified mode [ 'lib/util/assign.js', 420, 438 ]
+1122 silly gunzTarPerm extractEntry lib/util/utimes.js
+1123 silly gunzTarPerm modified mode [ 'lib/util/utimes.js', 420, 438 ]
+1124 silly gunzTarPerm extractEntry lib/protos/common/common.proto
+1125 silly gunzTarPerm modified mode [ 'lib/protos/common/common.proto', 436, 438 ]
+1126 silly gunzTarPerm extractEntry lib/protos/common/configtx.proto
+1127 silly gunzTarPerm modified mode [ 'lib/protos/common/configtx.proto', 436, 438 ]
+1128 silly gunzTarPerm extractEntry src/pkcs11/v8_convert.cpp
+1129 silly gunzTarPerm modified mode [ 'src/pkcs11/v8_convert.cpp', 420, 438 ]
+1130 silly gunzTarPerm extractEntry src/pkcs11/v8_convert.h
+1131 silly gunzTarPerm modified mode [ 'src/pkcs11/v8_convert.h', 420, 438 ]
+1132 silly gunzTarPerm extractEntry lib/walk/index.js
+1133 silly gunzTarPerm modified mode [ 'lib/walk/index.js', 420, 438 ]
+1134 silly gunzTarPerm extractEntry lib/protos/common/configuration.proto
+1135 silly gunzTarPerm modified mode [ 'lib/protos/common/configuration.proto', 436, 438 ]
+1136 silly gunzTarPerm extractEntry lib/protos/common/ledger.proto
+1137 silly gunzTarPerm modified mode [ 'lib/protos/common/ledger.proto', 436, 438 ]
+1138 silly gunzTarPerm extractEntry lib/protos/common/policies.proto
+1139 silly gunzTarPerm modified mode [ 'lib/protos/common/policies.proto', 436, 438 ]
+1140 silly gunzTarPerm extractEntry lib/protos/google/protobuf/empty.proto
+1141 silly gunzTarPerm modified mode [ 'lib/protos/google/protobuf/empty.proto', 436, 438 ]
+1142 silly gunzTarPerm extractEntry lib/protos/google/protobuf/timestamp.proto
+1143 silly gunzTarPerm modified mode [ 'lib/protos/google/protobuf/timestamp.proto', 436, 438 ]
+1144 silly gunzTarPerm extractEntry lib/protos/ledger/queryresult/kv_query_result.proto
+1145 silly gunzTarPerm modified mode [ 'lib/protos/ledger/queryresult/kv_query_result.proto',
+1145 silly gunzTarPerm   436,
+1145 silly gunzTarPerm   438 ]
+1146 silly gentlyRm C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff\node_modules is being purged
+1147 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff\node_modules
+1148 silly gunzTarPerm extractEntry lib/protos/ledger/rwset/kvrwset/kv_rwset.proto
+1149 silly gunzTarPerm modified mode [ 'lib/protos/ledger/rwset/kvrwset/kv_rwset.proto', 436, 438 ]
+1150 silly gunzTarPerm extractEntry lib/protos/ledger/rwset/rwset.proto
+1151 silly gunzTarPerm modified mode [ 'lib/protos/ledger/rwset/rwset.proto', 436, 438 ]
+1152 silly gunzTarPerm extractEntry lib/protos/msp/identities.proto
+1153 silly gunzTarPerm modified mode [ 'lib/protos/msp/identities.proto', 436, 438 ]
+1154 silly gunzTarPerm extractEntry lib/protos/msp/msp_config.proto
+1155 silly gunzTarPerm modified mode [ 'lib/protos/msp/msp_config.proto', 436, 438 ]
+1156 silly gunzTarPerm extractEntry lib/protos/msp/msp_principal.proto
+1157 silly gunzTarPerm modified mode [ 'lib/protos/msp/msp_principal.proto', 436, 438 ]
+1158 silly gunzTarPerm extractEntry lib/protos/orderer/ab.proto
+1159 silly gunzTarPerm modified mode [ 'lib/protos/orderer/ab.proto', 436, 438 ]
+1160 silly gunzTarPerm extractEntry lib/protos/orderer/configuration.proto
+1161 silly gunzTarPerm modified mode [ 'lib/protos/orderer/configuration.proto', 436, 438 ]
+1162 silly gunzTarPerm extractEntry lib/protos/peer/admin.proto
+1163 silly gunzTarPerm modified mode [ 'lib/protos/peer/admin.proto', 436, 438 ]
+1164 silly gunzTarPerm extractEntry lib/protos/peer/chaincode_event.proto
+1165 silly gunzTarPerm modified mode [ 'lib/protos/peer/chaincode_event.proto', 436, 438 ]
+1166 silly gunzTarPerm extractEntry lib/protos/peer/chaincode_shim.proto
+1167 silly gunzTarPerm modified mode [ 'lib/protos/peer/chaincode_shim.proto', 436, 438 ]
+1168 silly gunzTarPerm extractEntry lib/protos/peer/chaincode.proto
+1169 silly gunzTarPerm modified mode [ 'lib/protos/peer/chaincode.proto', 436, 438 ]
+1170 silly gunzTarPerm extractEntry lib/protos/peer/configuration.proto
+1171 silly gunzTarPerm modified mode [ 'lib/protos/peer/configuration.proto', 436, 438 ]
+1172 silly gunzTarPerm extractEntry lib/protos/peer/events.proto
+1173 silly gunzTarPerm modified mode [ 'lib/protos/peer/events.proto', 436, 438 ]
+1174 silly gunzTarPerm extractEntry lib/protos/peer/peer.proto
+1175 silly gunzTarPerm modified mode [ 'lib/protos/peer/peer.proto', 436, 438 ]
+1176 silly gunzTarPerm extractEntry lib/protos/peer/proposal_response.proto
+1177 silly gunzTarPerm modified mode [ 'lib/protos/peer/proposal_response.proto', 436, 438 ]
+1178 silly gunzTarPerm extractEntry lib/protos/peer/proposal.proto
+1179 silly gunzTarPerm modified mode [ 'lib/protos/peer/proposal.proto', 436, 438 ]
+1180 silly gunzTarPerm extractEntry lib/protos/peer/query.proto
+1181 silly gunzTarPerm modified mode [ 'lib/protos/peer/query.proto', 436, 438 ]
+1182 silly gunzTarPerm extractEntry lib/protos/peer/signed_cc_dep_spec.proto
+1183 silly gunzTarPerm modified mode [ 'lib/protos/peer/signed_cc_dep_spec.proto', 436, 438 ]
+1184 silly gunzTarPerm extractEntry lib/protos/peer/transaction.proto
+1185 silly gunzTarPerm modified mode [ 'lib/protos/peer/transaction.proto', 436, 438 ]
+1186 silly gunzTarPerm extractEntry lib/Remote.js
+1187 silly gunzTarPerm modified mode [ 'lib/Remote.js', 436, 438 ]
+1188 silly gunzTarPerm extractEntry lib/TransactionID.js
+1189 silly gunzTarPerm modified mode [ 'lib/TransactionID.js', 436, 438 ]
+1190 silly gentlyRm C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08\node_modules is being purged
+1191 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08\node_modules
+1192 silly gunzTarPerm extractEntry lib/User.js
+1193 silly gunzTarPerm modified mode [ 'lib/User.js', 436, 438 ]
+1194 silly gunzTarPerm extractEntry lib/utils.js
+1195 silly gunzTarPerm modified mode [ 'lib/utils.js', 436, 438 ]
+1196 silly gentlyRm C:\crm-network\node_modules\.staging\fs-extra-ff04a959\node_modules is being purged
+1197 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\fs-extra-ff04a959\node_modules
+1198 silly gentlyRm C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8\node_modules is being purged
+1199 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8\node_modules
+1200 silly gentlyRm C:\crm-network\node_modules\.staging\yargs-6469851e\node_modules is being purged
+1201 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\yargs-6469851e\node_modules
+1202 silly gentlyRm C:\crm-network\node_modules\.staging\fabric-client-29fc590a\node_modules is being purged
+1203 verbose gentlyRm don't care about contents; nuking C:\crm-network\node_modules\.staging\fabric-client-29fc590a\node_modules
+1204 silly doParallel preinstall 12
+1205 silly preinstall ansi-regex@3.0.0 C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3
+1206 info lifecycle ansi-regex@3.0.0~preinstall: ansi-regex@3.0.0
+1207 silly preinstall is-fullwidth-code-point@2.0.0 C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29
+1208 info lifecycle is-fullwidth-code-point@2.0.0~preinstall: is-fullwidth-code-point@2.0.0
+1209 silly preinstall os-locale@2.1.0 C:\crm-network\node_modules\.staging\os-locale-50c9a63a
+1210 info lifecycle os-locale@2.1.0~preinstall: os-locale@2.1.0
+1211 silly preinstall strip-ansi@4.0.0 C:\crm-network\node_modules\.staging\strip-ansi-89cd586a
+1212 info lifecycle strip-ansi@4.0.0~preinstall: strip-ansi@4.0.0
+1213 silly preinstall string-width@2.1.1 C:\crm-network\node_modules\.staging\string-width-b3878b38
+1214 info lifecycle string-width@2.1.1~preinstall: string-width@2.1.1
+1215 silly preinstall fs-extra@0.30.0 C:\crm-network\node_modules\.staging\fs-extra-ff04a959
+1216 info lifecycle fs-extra@0.30.0~preinstall: fs-extra@0.30.0
+1217 silly preinstall jsrsasign@6.2.2 C:\crm-network\node_modules\.staging\jsrsasign-3d715338
+1218 info lifecycle jsrsasign@6.2.2~preinstall: jsrsasign@6.2.2
+1219 silly preinstall pkcs11js@1.0.15 C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8
+1220 info lifecycle pkcs11js@1.0.15~preinstall: pkcs11js@1.0.15
+1221 silly preinstall fabric-client@1.0.5 C:\crm-network\node_modules\.staging\fabric-client-29fc590a
+1222 info lifecycle fabric-client@1.0.5~preinstall: fabric-client@1.0.5
+1223 silly preinstall composer-connector-hlfv1@0.16.6 C:\crm-network\node_modules\.staging\composer-connector-hlfv1-bef78d08
+1224 info lifecycle composer-connector-hlfv1@0.16.6~preinstall: composer-connector-hlfv1@0.16.6
+1225 silly preinstall yargs@10.0.3 C:\crm-network\node_modules\.staging\yargs-6469851e
+1226 info lifecycle yargs@10.0.3~preinstall: yargs@10.0.3
+1227 silly preinstall composer-connector-server@0.16.6 C:\crm-network\node_modules\.staging\composer-connector-server-026bf2ff
+1228 info lifecycle composer-connector-server@0.16.6~preinstall: composer-connector-server@0.16.6
+1229 silly lifecycle ansi-regex@3.0.0~preinstall: no script for preinstall, continuing
+1230 silly lifecycle is-fullwidth-code-point@2.0.0~preinstall: no script for preinstall, continuing
+1231 silly lifecycle os-locale@2.1.0~preinstall: no script for preinstall, continuing
+1232 silly lifecycle strip-ansi@4.0.0~preinstall: no script for preinstall, continuing
+1233 silly lifecycle string-width@2.1.1~preinstall: no script for preinstall, continuing
+1234 silly lifecycle fs-extra@0.30.0~preinstall: no script for preinstall, continuing
+1235 silly lifecycle jsrsasign@6.2.2~preinstall: no script for preinstall, continuing
+1236 silly lifecycle pkcs11js@1.0.15~preinstall: no script for preinstall, continuing
+1237 silly lifecycle fabric-client@1.0.5~preinstall: no script for preinstall, continuing
+1238 silly lifecycle composer-connector-hlfv1@0.16.6~preinstall: no script for preinstall, continuing
+1239 silly lifecycle yargs@10.0.3~preinstall: no script for preinstall, continuing
+1240 silly lifecycle composer-connector-server@0.16.6~preinstall: no script for preinstall, continuing
+1241 silly doReverseSerial remove 0
+1242 silly doSerial move 0
+1243 silly doSerial finalize 12
+1244 silly finalize C:\crm-network\node_modules\composer-connector-server\node_modules\ansi-regex
+1245 silly finalize C:\crm-network\node_modules\composer-connector-server\node_modules\is-fullwidth-code-point
+1246 silly finalize C:\crm-network\node_modules\composer-connector-server\node_modules\os-locale
+1247 silly finalize C:\crm-network\node_modules\composer-connector-server\node_modules\strip-ansi
+1248 silly finalize C:\crm-network\node_modules\composer-connector-server\node_modules\string-width
+1249 silly finalize C:\crm-network\node_modules\fabric-client\node_modules\fs-extra
+1250 silly finalize C:\crm-network\node_modules\fabric-client\node_modules\jsrsasign
+1251 silly finalize C:\crm-network\node_modules\pkcs11js
+1252 silly finalize C:\crm-network\node_modules\fabric-client
+1253 silly finalize C:\crm-network\node_modules\composer-connector-hlfv1
+1254 silly finalize C:\crm-network\node_modules\composer-connector-server\node_modules\yargs
+1255 silly finalize C:\crm-network\node_modules\composer-connector-server
+1256 silly doSerial build 12
+1257 silly build ansi-regex@3.0.0
+1258 info linkStuff ansi-regex@3.0.0
+1259 silly linkStuff ansi-regex@3.0.0 has C:\crm-network\node_modules\composer-connector-server\node_modules as its parent node_modules
+1260 verbose linkBins ansi-regex@3.0.0
+1261 verbose linkMans ansi-regex@3.0.0
+1262 silly build is-fullwidth-code-point@2.0.0
+1263 info linkStuff is-fullwidth-code-point@2.0.0
+1264 silly linkStuff is-fullwidth-code-point@2.0.0 has C:\crm-network\node_modules\composer-connector-server\node_modules as its parent node_modules
+1265 verbose linkBins is-fullwidth-code-point@2.0.0
+1266 verbose linkMans is-fullwidth-code-point@2.0.0
+1267 silly build os-locale@2.1.0
+1268 info linkStuff os-locale@2.1.0
+1269 silly linkStuff os-locale@2.1.0 has C:\crm-network\node_modules\composer-connector-server\node_modules as its parent node_modules
+1270 verbose linkBins os-locale@2.1.0
+1271 verbose linkMans os-locale@2.1.0
+1272 silly build strip-ansi@4.0.0
+1273 info linkStuff strip-ansi@4.0.0
+1274 silly linkStuff strip-ansi@4.0.0 has C:\crm-network\node_modules\composer-connector-server\node_modules as its parent node_modules
+1275 verbose linkBins strip-ansi@4.0.0
+1276 verbose linkMans strip-ansi@4.0.0
+1277 silly build string-width@2.1.1
+1278 info linkStuff string-width@2.1.1
+1279 silly linkStuff string-width@2.1.1 has C:\crm-network\node_modules\composer-connector-server\node_modules as its parent node_modules
+1280 verbose linkBins string-width@2.1.1
+1281 verbose linkMans string-width@2.1.1
+1282 silly build fs-extra@0.30.0
+1283 info linkStuff fs-extra@0.30.0
+1284 silly linkStuff fs-extra@0.30.0 has C:\crm-network\node_modules\fabric-client\node_modules as its parent node_modules
+1285 verbose linkBins fs-extra@0.30.0
+1286 verbose linkMans fs-extra@0.30.0
+1287 silly build jsrsasign@6.2.2
+1288 info linkStuff jsrsasign@6.2.2
+1289 silly linkStuff jsrsasign@6.2.2 has C:\crm-network\node_modules\fabric-client\node_modules as its parent node_modules
+1290 verbose linkBins jsrsasign@6.2.2
+1291 verbose linkMans jsrsasign@6.2.2
+1292 silly build pkcs11js@1.0.15
+1293 info linkStuff pkcs11js@1.0.15
+1294 silly linkStuff pkcs11js@1.0.15 has C:\crm-network\node_modules as its parent node_modules
+1295 verbose linkBins pkcs11js@1.0.15
+1296 verbose linkMans pkcs11js@1.0.15
+1297 silly build fabric-client@1.0.5
+1298 info linkStuff fabric-client@1.0.5
+1299 silly linkStuff fabric-client@1.0.5 has C:\crm-network\node_modules as its parent node_modules
+1300 verbose linkBins fabric-client@1.0.5
+1301 verbose linkMans fabric-client@1.0.5
+1302 silly build composer-connector-hlfv1@0.16.6
+1303 info linkStuff composer-connector-hlfv1@0.16.6
+1304 silly linkStuff composer-connector-hlfv1@0.16.6 has C:\crm-network\node_modules as its parent node_modules
+1305 verbose linkBins composer-connector-hlfv1@0.16.6
+1306 verbose linkMans composer-connector-hlfv1@0.16.6
+1307 silly build yargs@10.0.3
+1308 info linkStuff yargs@10.0.3
+1309 silly linkStuff yargs@10.0.3 has C:\crm-network\node_modules\composer-connector-server\node_modules as its parent node_modules
+1310 verbose linkBins yargs@10.0.3
+1311 verbose linkMans yargs@10.0.3
+1312 silly build composer-connector-server@0.16.6
+1313 info linkStuff composer-connector-server@0.16.6
+1314 silly linkStuff composer-connector-server@0.16.6 has C:\crm-network\node_modules as its parent node_modules
+1315 verbose linkBins composer-connector-server@0.16.6
+1316 verbose link bins [ { 'composer-connector-server': 'cli.js' },
+1316 verbose link bins   'C:\\crm-network\\node_modules\\.bin',
+1316 verbose link bins   false ]
+1317 verbose linkMans composer-connector-server@0.16.6
+1318 silly doSerial global-link 0
+1319 silly doParallel update-linked 0
+1320 silly doSerial install 12
+1321 silly install ansi-regex@3.0.0 C:\crm-network\node_modules\.staging\ansi-regex-afa5d2d3
+1322 info lifecycle ansi-regex@3.0.0~install: ansi-regex@3.0.0
+1323 silly lifecycle ansi-regex@3.0.0~install: no script for install, continuing
+1324 silly install is-fullwidth-code-point@2.0.0 C:\crm-network\node_modules\.staging\is-fullwidth-code-point-6a499d29
+1325 info lifecycle is-fullwidth-code-point@2.0.0~install: is-fullwidth-code-point@2.0.0
+1326 silly lifecycle is-fullwidth-code-point@2.0.0~install: no script for install, continuing
+1327 silly install os-locale@2.1.0 C:\crm-network\node_modules\.staging\os-locale-50c9a63a
+1328 info lifecycle os-locale@2.1.0~install: os-locale@2.1.0
+1329 silly lifecycle os-locale@2.1.0~install: no script for install, continuing
+1330 silly install strip-ansi@4.0.0 C:\crm-network\node_modules\.staging\strip-ansi-89cd586a
+1331 info lifecycle strip-ansi@4.0.0~install: strip-ansi@4.0.0
+1332 silly lifecycle strip-ansi@4.0.0~install: no script for install, continuing
+1333 silly install string-width@2.1.1 C:\crm-network\node_modules\.staging\string-width-b3878b38
+1334 info lifecycle string-width@2.1.1~install: string-width@2.1.1
+1335 silly lifecycle string-width@2.1.1~install: no script for install, continuing
+1336 silly install fs-extra@0.30.0 C:\crm-network\node_modules\.staging\fs-extra-ff04a959
+1337 info lifecycle fs-extra@0.30.0~install: fs-extra@0.30.0
+1338 silly lifecycle fs-extra@0.30.0~install: no script for install, continuing
+1339 silly install jsrsasign@6.2.2 C:\crm-network\node_modules\.staging\jsrsasign-3d715338
+1340 info lifecycle jsrsasign@6.2.2~install: jsrsasign@6.2.2
+1341 silly lifecycle jsrsasign@6.2.2~install: no script for install, continuing
+1342 silly install pkcs11js@1.0.15 C:\crm-network\node_modules\.staging\pkcs11js-ee1f07f8
+1343 info lifecycle pkcs11js@1.0.15~install: pkcs11js@1.0.15
+1344 verbose lifecycle pkcs11js@1.0.15~install: unsafe-perm in lifecycle true
+1345 verbose lifecycle pkcs11js@1.0.15~install: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\crm-network\node_modules\pkcs11js\node_modules\.bin;C:\crm-network\node_modules\.bin;C:\Users\domst\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\domst\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\OpenSSH\bin;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs;C:\Program Files\Amazon\AWSCLI;C:\Users\domst\Anaconda3;C:\Users\domst\Anaconda3\Scripts;C:\Users\domst\Anaconda3\Library\bin;C:\Ruby22-x64\bin;C:\Users\domst\.cargo\bin;C:\Users\domst\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Heroku\bin;C:\Go\bin;C:\ipfs;C:\Program Files\Docker Toolbox;C:\Program Files\nodejs;C:\Users\domst\AppData\Local\atom\bin;C:\Program Files\sfdx\bin;C:\Users\domst\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Nmap;C:\Users\domst\serverless;C:\Users\domst\claudia;C:\Users\domst\AppData\Roaming\npm;C:\Users\domst\.npm-global;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+1346 verbose lifecycle pkcs11js@1.0.15~install: CWD: C:\crm-network\node_modules\pkcs11js
+1347 silly lifecycle pkcs11js@1.0.15~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+1348 silly lifecycle pkcs11js@1.0.15~install: Returned: code: 1  signal: null
+1349 info lifecycle pkcs11js@1.0.15~install: Failed to exec install script
+1350 verbose unlock done using C:\Users\domst\AppData\Roaming\npm-cache\_locks\staging-781b31d3efbca747.lock for C:\crm-network\node_modules\.staging
+1351 silly rollbackFailedOptional Starting
+1352 silly rollbackFailedOptional Finishing
+1353 silly runTopLevelLifecycles Finishing
+1354 silly install printInstalled
+1355 verbose stack Error: pkcs11js@1.0.15 install: `node-gyp rebuild`
+1355 verbose stack Exit status 1
+1355 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+1355 verbose stack     at emitTwo (events.js:106:13)
+1355 verbose stack     at EventEmitter.emit (events.js:191:7)
+1355 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+1355 verbose stack     at emitTwo (events.js:106:13)
+1355 verbose stack     at ChildProcess.emit (events.js:191:7)
+1355 verbose stack     at maybeClose (internal/child_process.js:877:16)
+1355 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+1356 verbose pkgid pkcs11js@1.0.15
+1357 verbose cwd C:\crm-network
+1358 error Windows_NT 10.0.16299
+1359 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "composer-connector-server" "--save"
+1360 error node v6.10.0
+1361 error npm  v3.10.10
+1362 error code ELIFECYCLE
+1363 error pkcs11js@1.0.15 install: `node-gyp rebuild`
+1363 error Exit status 1
+1364 error Failed at the pkcs11js@1.0.15 install script 'node-gyp rebuild'.
+1364 error Make sure you have the latest version of node.js and npm installed.
+1364 error If you do, this is most likely a problem with the pkcs11js package,
+1364 error not with npm itself.
+1364 error Tell the author that this fails on your system:
+1364 error     node-gyp rebuild
+1364 error You can get information on how to open an issue for this project with:
+1364 error     npm bugs pkcs11js
+1364 error Or if that isn't available, you can get their info via:
+1364 error     npm owner ls pkcs11js
+1364 error There is likely additional logging output above.
+1365 verbose exit [ 1, true ]

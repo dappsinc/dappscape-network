@@ -1,0 +1,39 @@
+{
+  "name": "dappscape-network",
+  "version": "1.0.0",
+  "description": "Dappscape Network",
+  "main": "app.js",
+  "dependencies": {
+    "auth0-js": "^9.7.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.17.2",
+    "claudia-api-builder": "^3.0.1",
+    "composer-admin": "^0.16.1",
+    "composer-client": "^0.20.0",
+    "composer-common": "^0.20.0",
+    "composer-connector-server": "^0.20.0",
+    "composer-playground-api": "^0.16.3",
+    "cors": "^2.8.4",
+    "express": "^4.15.5",
+    "express-fileupload": "^0.4.0",
+    "file-saver": "1.3.3",
+    "helmet": "^3.15.0",
+    "http": "^0.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "log4js": "^3.0.6",
+    "nforce": "^1.7.0",
+    "sequelize": "^4.41.2",
+    "tedious": "^3.0.1",
+    "ws": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dominicsteil@bitbucket.org/dominicsteil/crm-network.git"
+  },
+  "author": "dom steil",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dominicsteil/crm-network#readme"
+}

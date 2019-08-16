@@ -1,0 +1,28 @@
+/** 
+
+Salesforce Blockchain Queries by Dapps Inc.
+Author: Dom Steil
+
+*/
+
+
+query selectAccounts {
+  description: "Select all Accounts"
+  statement:
+      SELECT dapps.salesforce.crm.Accounts
+}
+
+
+query selectContacts {
+  description: "Select all Contacts"
+  statement:
+      SELECT dapps.salesforce.crm.Contacts
+}
+
+
+query selectLeads {
+  description: "Select all Accounts"
+  statement:
+      SELECT dapps.salesforce.crm.Leads
+
+}

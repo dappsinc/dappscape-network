@@ -1,0 +1,1217 @@
+/**
+ *
+ * Dappscape Network
+ *
+ * Dapps Incorporated. 2020. All rights reserved.
+ *
+ */
+
+namespace dapps.salesforce.crm
+
+participant User identified by email {
+  o String userId
+  o String orgId optional
+  o String firstName optional
+  o String lastName optional
+  o String email 
+  o String title optional 
+  o String organization optional
+  
+}
+
+
+enum LeadStatus {
+  
+  o NEW
+  o CONTACTED
+  o NURTURING
+  o UNQUALIFIED
+  o CONVERTED
+  
+}
+
+
+// CRM Assets
+
+// Accounts
+
+asset Account identified by blockchainId {
+  o String accountId optional
+  o String accountName optional
+  o String type optional
+  o String phone optional 
+  o String industry optional
+  o String blockchainId
+  --> User accountOwner optional
+
+}
+
+// Contacts
+
+asset Contact identified by blockchainId {
+  o String contactId optional
+  o	String firstName optional
+  o String lastName optional
+  o String phone optional
+  o String email optional
+  o String blockchainId
+  --> User contactOwner optional
+
+}
+
+
+// Leads
+
+
+asset Lead identified by blockchainId {
+  o String leadId optional
+  o	String firstName optional
+  o String lastName optional
+  o String phone optional
+  o String email optional
+  o LeadStatus leadStatus optional
+  o String blockchainId
+  --> Account account optional
+  --> User leadOwner optional
+
+}
+
+
+// Events
+
+
+// Account Event
+
+event AccountTransferEvent {
+  --> Account account
+  --> User newOwner
+}
+
+
+// Contact Event
+
+
+event ContactTransferEvent {
+  --> Contact contact
+  --> User newOwner
+}
+
+// Lead Event 
+
+event LeadTransferEvent {
+  
+  --> Lead lead
+  --> User newOwner
+
+}
+
+
+transaction TransferAccount {
+  --> Account account
+  --> User newOwner
+}
+
+
+transaction TransferLead {
+  --> Lead lead
+  --> User newOwner
+}
+
+
+transaction TransferContact {
+  --> Contact contact
+  --> User newOwner
+}
+
+  
+
+abstract transaction addNewAccount {
+  
+}
+
+
+abstract transaction addNewContact {
+  
+}
+
+
+abstract transaction addNewLead {
+  
+}
+
+
+
+/**
+ * The type of the product being shipped
+ */
+
+enum ProductType {
+  o ALCOHOL
+  o DRINKS
+  o AVOCADOS
+  o VEGETABLES
+  o FRUITS
+  o WIDGETS
+  o SATINLACEGOWN
+  o CLOTHING
+  o COSMETICS
+  o ICECREAM
+  o BANANAS
+  o PALLETS
+  o SOFAS
+  o COFFEETABLE
+  o PALLET
+  
+  
+}
+
+
+/**
+ * The brand of the product being shipped
+ */
+
+enum Brand {
+  o LVMH
+  o GUCCI
+  o DOLCECABANA
+  o DIOR
+  o VERSACE
+  o CHANEL
+  o FENDI
+  o ROLEX
+  o HUGOBOSS
+  o TODS
+  o SALVADORFERRAGAMO
+
+}
+
+
+
+/**
+ * The size of the product being shipped
+ */
+
+enum ProductClassification {
+  o HIGHFREQUENCY
+  o COSMETIC
+  o CLOTHING
+  o FINEJEWLERY
+  o SHOES
+  o ACCESSORIES
+  
+}
+
+
+enum CollectionName{
+
+
+}
+
+
+
+enum ClothingType {
+
+  o SHIRT
+  o PANTS
+  o SUIT
+  o BELTS
+  o SLACKS
+
+
+}
+
+
+enum InventoryStatus {
+  
+  o INSTOCK
+  o OUTOFSTOCK
+  o ARCHIVED
+  
+}
+
+/**
+ * The size of the product being shipped
+ */
+
+enum Size {
+  o NOSIZE
+  o XXLarge
+  o XLarge
+  o Large
+  o Medium
+  o Small
+}
+
+
+
+enum Year {
+  o y2015
+  o y2016
+  o y2017
+  o y2018
+}
+
+
+/**
+ * The color of the product being shipped
+ */
+
+enum Color {
+  
+  o NOCOLOR
+  o RED
+  o BLUE
+  o YELLOW
+  o GREEN
+  o ORANGE
+  o PURPLE
+  o BLACK
+  o BROWN
+  o TAN
+  o SILVER
+  o WHITE
+
+  
+}
+
+/**
+ * The color code of the product being shipped
+ */
+
+enum NRFColorCode {
+
+  o RC000
+  o RC100
+  o RC200
+  o RC300
+  o RC400
+  o RC500
+  o RC600  // Red
+  o RC700
+  o RC800
+  o RC900
+  o RC1000
+
+}
+
+
+/**
+ * The nrf size code of the product being shipped
+ */
+
+enum NRFSizeCodeCategory {
+
+  o SizeTable1
+  o SizeTable2
+  o SizeTable3
+  o SizeTable4
+  o SizeTable5
+  o SizeTable6
+  o SizeTable7
+
+
+}
+
+
+
+enum ReturnPolicy {
+
+  o DFC
+  o RFC
+  o HFI
+  
+}
+
+/**
+ * The season of the product being shipped
+ */
+
+enum Season {
+  o SPRING
+  o FALL
+  o SUMMER
+  o HOLIDAY
+  o TRANSITIONAL
+  o CONTINUOUS
+
+}
+
+  
+
+/**
+ * The color of the sofa being shipped
+ */
+
+enum SofaColor {
+  o CIGAR
+  o GRAPHITE
+  
+}
+
+
+/**
+ * The status of a contract
+ */
+enum ContractStatus {
+  o REQUEST
+  o APPROVALREQUIRED
+  o APPROVED
+  o INEFFECT
+  o CANCELLED
+  
+}
+
+/**
+ * The status of a shipment
+ */
+enum ShipmentStatus {
+  
+  o CREATED
+  o ASSIGNED
+  o ACCEPTED
+  o INTRANSIT
+  o DISRUPTED
+  o ARRIVED
+  o DELIVERED
+}
+
+/**
+ * The status of a order
+ */
+enum OrderStatus {
+  
+  o SUBMITTED
+  o ACCEPTED
+  o ACTIVATED
+  o PENDING
+  o FULFILLED
+  o REJECTED
+  
+}
+
+/**
+ * The status of an invoice
+ */
+
+enum InvoiceStatus {
+  
+  o PAID
+  o UNPAID
+  o REJECTED
+  o CANCELLED
+
+}
+
+
+/**
+ * The vendor purchase method
+ */
+
+enum PurchaseMethod {
+
+  o DIRECT
+  o INDIRECT
+  o DIVERTED
+  o DOMESTIC
+
+}
+
+
+
+/**
+ * An abstract transaction that is related to a Shipment
+ */
+abstract transaction ShipmentTransaction {
+    --> Shipment shipment
+}
+
+
+/** Product Ordered
+*
+*/
+
+
+
+transaction ProductOrdered {
+  
+  --> Product product
+  --> Order order
+  
+}
+
+/**
+* Collection Replenished Transactions
+*/
+
+transaction CollectionReplenished {
+  
+  --> Product product
+  --> Collection collection
+  o Double quantity
+  
+
+}
+
+transaction Checkpoint extends ShipmentTransaction {
+  
+  o String Name   // Checkpoint Location
+  o String User optional
+  o String UUID   // Chainpoint Hash
+  o Double Longitude  
+  o Double Latitude
+  o DateTime TimeStamp  // Timestamp of the Scan
+  o String URL // URL to Picture
+
+}
+
+/**
+ * An temperature reading for a shipment. E.g. received from a
+ * device within a temperature controlled shipping container
+ */
+transaction TemperatureReading extends ShipmentTransaction {
+  o Double centigrade 
+  o String shipmentId 
+  o String orderId
+}
+
+
+/**
+ * A Humidity reading for a shipment. E.g. received from a
+ * device within a temperature controlled shipping container
+ */
+
+transaction HumidityReading extends ShipmentTransaction {
+  o Double relativeHumidity
+  o String shipmentId
+  o String orderId
+
+}
+
+
+/**
+ * An Light Exposure reading for a shipment. E.g. received from a
+ * device within a temperature controlled shipping container
+ */
+
+transaction LightReading extends ShipmentTransaction {
+  o Double exposure
+  o String shipmentId
+  o String orderId
+
+}
+
+
+/**
+ * A notification that a shipment has been received by the
+ * importer and that funds should be transferred from the importer
+ * to the grower to pay for the shipment.
+ */
+transaction ShipmentReceived extends ShipmentTransaction {
+  o String orderId optional
+  o String shipmentId optional
+  
+}
+
+
+/**
+ * An abstract transaction that is related to a Contract
+ */
+abstract transaction ContractTransaction {
+    --> Shipment shipment
+}
+
+/**
+ * An abstract transaction that is related to an Order
+ */
+abstract transaction OrderTransaction {
+    --> Shipment shipment
+}
+
+/**
+* A nofication that an order has been accepted
+*/
+
+transaction OrderAccepted extends OrderTransaction {
+}
+
+
+/**
+ * An Order being tracked as an asset on the ledger
+ */
+
+
+asset Order identified by blockchainId {
+  
+  o String OrderId
+  o String ShipmentId
+  o OrderStatus status
+  o Color color optional
+  --> Product product 
+  o Double quantity 
+  o ProductType type
+  o String blockchainId
+}
+
+
+asset Product identified by retailchainId {
+  
+  o String retailchainId
+  o String productId optional
+  o String SKU optional
+  o String ModelNumber optional
+  o String ProductName
+  o ProductType type optional
+  o ProductClassification classification optional
+  o InventoryStatus inventoryStatus
+  o Boolean seasonalAvailbility optional
+  o Season season optional
+  o ClothingType clothingType optional
+  o Brand brand optional
+  o Double inStock
+  o Double quantity optional
+  o Double quantityMin optional
+  o Double quantityMax optional
+  o Double msrp optional
+  o DateTime availableDate optional
+  o DateTime availableDateEnd optional
+  o Double cost optional
+  o DateTime costEffectiveDate optional
+  o DateTime costExpirationDate optional
+  o Double retailPrice
+  o Boolean Returnable optional
+  o ReturnPolicy returnPolicy optional
+  o DateTime discontinuedDate optional
+  o Year year
+  o Size size optional
+  o Color color optional
+  o Double styleNumber optional
+  o NRFColorCode colorcode optional
+  o NRFSizeCodeCategory sizecode optional
+  o Double leadTime optional
+  o PurchaseMethod purchaseMethod optional
+  o Boolean isPrivate optional
+  o Boolean onPromotion optional
+  o Double weight optional
+  o Double departmentCode optional
+  o Double transportDistributionMinimum optional
+  o Double transportDistributionMaximum optional
+  o Double transportMarketMinimum optional
+  o Double transportMarketMaximum optional
+  o Double transportStorageMimimum optional
+  o Double transportStorageMaximum optional
+  o Boolean recalled optional
+  --> Retailer privateRetailer optional
+  --> Retailer retailer optional
+  --> Vendor vendor optional
+  --> Manufacturer manufacturer optional
+
+}
+  
+
+
+asset Collection identified by retailchainId {
+
+  o String retailchainId
+  o String selectionCode optional
+  o String productCode optional
+  o String SKU optional
+  o String description optional
+  o Product[] products optional
+}
+  
+asset Catalogue identified by retailchainId {
+
+  o String retailchainId
+  o String selectionCode optional
+  o String productCode optional
+  o String SKU optional
+  o String description optional
+  o Product[] products optional
+
+}
+
+
+asset Assortment identified by retailchainId {
+
+  o String retailchainId
+  o String selectionCode optional
+  o String productCode optional
+  o String SKU optional
+  o String description optional
+  o Product[] products optional
+
+}
+
+
+/**
+ * A notification that a shipment has been assigned to a driver.
+ */
+transaction ShipmentAssigned extends ShipmentTransaction {
+}
+
+
+/**
+ * A notification that a shipment has been accepted by the
+ * driver
+ */
+
+transaction ShipmentAccepted extends ShipmentTransaction {
+  o String status optional
+  o String orderId optional
+  o String shipmentId optional
+  o String description optional
+  
+  
+}
+
+
+/**
+ * A notification that a shipment has been picked up by the
+ * driver at the distribution center.
+ */
+transaction ShipmentPickedUp extends ShipmentTransaction {
+  o String status optional
+  o String orderId optional
+  o String shipmentId optional
+  o String description optional
+  
+  
+}
+
+
+
+/**
+ * A notification that a shipment has been dropped off at the buyer. 
+ */
+transaction ShipmentDroppedOff extends ShipmentTransaction {
+  
+  o String status optional
+  o String orderId optional
+  o String shipmentId optional
+  o String description optional
+  
+}
+
+
+/**
+ * A notification that a shipment has been disrupted.
+ */
+
+
+transaction ShipmentDisrupted extends ShipmentTransaction {
+  o String status optional
+  o String orderId optional
+  o String shipmentId optional
+  o String description optional
+}
+
+
+asset Invoice identified by invoiceId {
+  o String invoiceId
+}
+
+/**
+ * A shipment being tracked as an asset on the ledger
+ */
+asset Shipment identified by blockchainId {
+  o String shipmentId optional
+  o String orderId optional
+  o ProductType type optional
+  o String vendor optional
+  o ShipmentStatus status
+  o Long unitCount 
+  o DateTime deliveryDate optional
+  o DateTime arrivalDateTime optional
+  o String store optional
+  o String location optional
+  o String storeNumber optional
+  o TemperatureReading[] temperatureReadings optional
+  o LightReading[] lightReadings optional
+  o HumidityReading[] humidityReadings optional
+  o Checkpoint[] checkPoints optional
+  o String blockchainId
+  --> Product product optional
+  --> Order order optional
+  --> Contract contract optional
+  --> Shipper shipper optional
+  --> Invoice invoice optional
+  --> Buyer buyer optional
+  --> Planner planner optional
+  --> Merchandiser merchandiser optional
+  --> Approver approver optional
+}
+
+
+asset Contract identified by blockchainId {
+  o String contractId optional
+  o ContractStatus status optional
+  --> Grower grower optional
+  --> Buyer buyer optional
+  --> Supplier supplier optional
+  --> Shipper shipper optional
+  --> Importer importer optional
+  --> Driver driver optional
+  --> Port port optional
+  --> Customs customs optional
+  --> Carrier carrier optional
+  --> Warehouse warehouse optional
+  --> Consignee consignee optional
+  --> FreightBroker freightBroker optional
+  o String blockchainId
+  o DateTime arrivalDateTime
+  o Double unitPrice
+  o Double minTemperature
+  o Double maxTemperature
+  o Double minPenaltyFactor
+  o Double maxPenaltyFactor
+}
+
+/**
+ * A concept for a simple street address
+ */
+
+concept Address {
+  o String city optional
+  o String country
+  o String street optional
+  o String zip optional
+}
+
+/**
+ * An abstract participant type in this business network
+ */
+abstract participant Business identified by AccountName {
+  o String AccountName
+  o String BusinessId optional
+  o String Email optional
+  o Address address
+  o Double bitcoinBalance
+  o String Phone optional
+  o String Fax optional
+  o String GLN optional
+  --> Contact contact optional
+}
+
+
+
+/**
+ * A Grower is a type of participant in the network
+ */
+participant Grower extends Business {
+}
+
+/**
+ * A Shipper is a type of participant in the network
+ */
+participant Shipper extends Business {
+}
+
+participant Retailer extends Business {
+
+
+}
+
+/**
+ * An Importer is a type of participant in the network
+ */
+participant Importer extends Business {
+}
+
+/**
+ * A Carrier is a type of participant in the network
+ */
+participant Carrier extends Business {
+}
+
+
+/**
+ * A Merchandiser is a type of participant in the network
+ */
+participant Merchandiser extends Business {
+}
+
+
+
+/**
+ * A Planner is a type of participant in the network
+ */
+participant Planner extends Business {
+  
+}
+
+
+/**
+ * A Consignee is a type of participant in the network
+ */
+participant Consignee extends Business {
+}
+
+
+
+
+participant Approver extends Business {
+  
+}
+
+
+/**
+ * A Buyer is a type of participant in the network
+ */
+participant Buyer extends Business {
+}
+
+
+/**
+ * A Supplier is a type of participant in the network
+ */
+participant Supplier extends Business {
+}
+
+/**
+ * A Warehouse is a type of participant in the network
+ */
+participant Warehouse extends Business {
+  
+}
+
+/**
+ * A SubSupplier is a type of participant in the network
+ */
+
+
+participant SubSupplier extends Business {
+  
+}
+
+/**
+ * A Consolidator is a type of participant in the network
+ */
+participant Consolidator extends Business {
+}
+
+
+/**
+ * Customs is a type of participant in the network
+ */
+participant Customs extends Business {
+}
+
+
+/**
+ * A Driver is a type of participant in the network
+ */
+participant Driver extends Business {
+}
+
+
+/**
+ * A FreightBroker is a type of participant in the network
+ */
+participant FreightBroker extends Business {
+}
+
+/**
+ * A FreightBroker is a type of participant in the network
+ */
+participant Railer extends Business {
+}
+
+
+/**
+ * A Port is a type of participant in the network
+ */
+participant Port extends Business {
+  
+}
+
+participant Insurance extends Business {
+  
+}
+
+
+participant LocalShipper extends Business {
+  
+}
+
+
+participant Manufacturer extends Business {
+  
+}
+
+
+participant Vendor extends Business {
+
+}
+
+/**
+ * JUST FOR INITIALIZING A DEMO
+ */
+transaction SetupSupplyChain {
+}
+
+
+
+/** 
+* STATUS UPDATE TRANSACTIONS
+*/
+
+transaction OrderConfirmed {
+  
+}
+
+
+transaction OrderChanged {
+  
+}
+
+event OrderConfirmedEvent {
+  
+}
+
+
+transaction ArrivedCustoms {
+  
+}
+
+transaction ShipmentDelayed {
+  
+}
+
+
+transaction InDrayage {
+  
+}
+
+
+transaction DeliveryDateChange {
+  
+}
+
+/** 
+* STATUS UPDATES EVENTS
+*/
+
+event InsuranceEvent {
+
+
+  --> Shipment Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+
+}
+
+event DrayageEvent {
+
+
+  --> Shipment Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+
+
+
+}
+
+
+event CustomsEvent {
+
+    --> Shipment Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+}
+
+
+
+
+transaction SetupNewShipment {
+  
+  
+  o String shipmentId
+  o String orderId optional
+  o ProductType type
+  o ShipmentStatus status
+  o Long unitCount
+  
+  
+}
+
+
+event ShipmentEvent {
+  
+    --> Shipment shipment optional
+  o ShipmentStatus status optional
+  
+}
+
+
+event NewShipmentEvent {
+  
+    --> Shipment Shipment__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o ProductType Type__c optional
+  o Long UnitCount__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o String Color__c optional
+  o String Store__c optional
+  o String Location__c optional
+  o String Store_Number__c optional
+  --> Contract contract optional
+  --> Shipper shipper optional
+  --> Buyer buyer optional
+  --> Supplier supplier optional
+}
+
+event NewOrderEvent {
+  
+  --> Order Order__c optional
+  o ProductType Type__c optional
+  o SofaColor Color__c optional
+  
+}
+
+event ShipmentReceivedEvent {
+  
+    --> Shipment Shipment__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o String ShipmentId__c optional
+  o String OrderId__c optional
+  o ProductType Type__c optional
+  o Long UnitCount__c optional
+  o DateTime arrivalDate optional
+  --> Product product optional
+  --> Contract Contract__c optional
+  --> Shipper shipper optional
+  --> Buyer buyer optional
+  --> Supplier supplier optional
+}
+
+
+transaction ShipmentEventTransaction {
+  
+}
+
+
+event NewBuyerEvent {
+  
+    --> Shipment Shipment__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o String Email optional
+  o String Name__c optional
+  o String Country__c optional
+  o Address Address__c optional
+  o Double Bitcoin_Balance__c optional
+  
+  
+  
+}
+
+transaction BuyerEventTransaction {
+  
+  
+  
+}
+
+
+event NewSupplierEvent {
+  
+    --> Shipment Shipment__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o String Email optional
+  o String Country__c optional
+  o String Name__c optional
+  o Address Address__c optional
+  o Double Bitcoin_Balance__c optional
+  
+}
+
+transaction SupplierEventTransaction {
+  
+}
+
+
+event TemperatureEvent {
+
+  --> Shipment Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o Double Centigrade__c optional
+}
+
+
+event DeductionEvent {
+  
+  --> Order order optional
+  --> Product product optional
+  o Double inventoryDeduction optional
+  o String Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o String Quantity__c optional
+  o String Status__c optional
+
+}
+
+
+event NewShipperEvent {
+  
+    --> Shipment Shipment__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o String Name__c optional
+  o String Country__c optional
+  o String Email optional
+  o Address Address__c optional
+  o Double Bitcoin_Balance__c optional
+  
+}
+
+transaction ShipperEventTransaction {
+  
+}
+
+
+transaction TemperatureEventTransaction {
+
+}
+
+
+event LightReadingEvent {
+    --> Shipment Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o Double Exposure__c optional
+}
+
+
+
+event HumidityEvent {
+    --> Shipment Shipment__c optional
+  o String OrderId__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o String Relative_Humidity__c optional
+}
+
+
+
+event CheckpointEvent {
+  --> Shipment Shipment__c optional
+  o String ShipmentId__c optional
+  o ShipmentStatus Shipment_Status__c optional
+  o Double Longitude optional
+  o Double Latitude optional
+  o String ChainpointHash optional
+  
+}
+
+
+event ReplenishmentEvent {
+  --> Product Product__c optional
+  o String Quantity__c optional
+  o String Status__c optional
+  
+}
